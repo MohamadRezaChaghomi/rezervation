@@ -1,0 +1,37 @@
+/* استایل کلی کارت‌ها */
+.sans-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.sans-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sans-card .card-body {
+    padding: 1rem;
+}
+
+.sans-card .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.sans-card .card-text {
+    font-size: 0.9rem;
+    color: #666;
+}
+/* استایل کارت انتخاب‌شده */
+.sans-card.selected {
+    .card-text{
+        color:white
+    }
+    background-color: #007bff; /* رنگ آبی پررنگ */
+    color: white; /* تغییر رنگ متن به سفید */
+    border-color: #007bff; /* تغییر رنگ حاشیه */
+}

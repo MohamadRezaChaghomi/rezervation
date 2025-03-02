@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="author" content="arezohosseini">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trizen - قالب  html گردشگری</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/line-awesome.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/datepicker-theme.css" media="all">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/animated-headline.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery.filer.css">
+    <link rel="stylesheet" href="css/flag-icon.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-rtl.css">
+    <link rel="stylesheet" href="css/selectDate.css">
+    <link rel="stylesheet" href="css/sansCard.css">
+</head>
+<body>
+<!-- start cssload-loader -->
+<div class="preloader" id="preloader">
+    <div class="loader">
+        <svg class="spinner" viewBox="0 0 50 50">
+            <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+        </svg>
+    </div>
+</div>
+<!-- end cssload-loader -->
+
+<!-- ================================
+            START HEADER AREA
+================================= -->
+<header class="header-area">
+    <div class="header-top-bar padding-right-100px padding-left-100px">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="header-top-content">
+                        <div class="header-right d-flex align-items-center justify-content-end">
+                            <div class="header-right-action" id="loginAndSignUpDiv">
+                                <a href="#" class="theme-btn theme-btn-small theme-btn-transparent mr-1" data-toggle="modal" data-target="#signupPopupForm">ثبت نام</a>
+                                <a href="#" class="theme-btn theme-btn-small" data-toggle="modal" data-target="#loginPopupForm">ورود</a>
+                            </div>
+                            <div class="header-right-action d-none">
+                                <a href="user-information.html" class="theme-btn theme-btn-small d-flex align-items-center" id="nameOfUserHeader">
+                                    <span class="la la-user form-icon font-size-24"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-menu-wrapper padding-right-100px padding-left-100px">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="menu-wrapper">
+                        <a href="#" class="down-button"><i class="la la-angle-down"></i></a>
+                        <div class="logo">
+                            <a href="index.html"><img id="headerLogo" alt="logo"></a>
+                            <div class="menu-toggler">
+                                <i class="la la-bars"></i>
+                                <i class="la la-times"></i>
+                            </div><!-- end menu-toggler -->
+                        </div><!-- end logo -->
+                        <div class="main-menu-content">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="#">صفحه اصلی</i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">تفریحات</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">وبلاگ ها</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">قوانین و مقررات</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">درباره ما</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div><!-- end main-menu-content -->
+                    </div><!-- end menu-wrapper -->
+                </div><!-- end col-lg-12 -->
+            </div><!-- end row -->
+        </div><!-- end container-fluid -->
+    </div><!-- end header-menu-wrapper -->
+</header>
+<!-- ================================
+         END HEADER AREA
+================================= -->
+
+<div class="section-block"></div>
+
+
+
+
+
+<div class="container mt-5">
+    <div class="row d-flex flex-row-reverse align-items-center">
+        <div class="col-lg-8" style="padding-right: 40px;">
+            <div class="form-content p-0">
+                <div class="card-item shadow-none radius-none mb-0 no-hover">
+                    <div class="card-img" id="productImg">
+                        <div class="d-flex justify-content-center align-items-center" style="margin-right: 140px; margin-top: 20px;">
+                            <p id="pTagLoadingImg">در حال بارگذاری...</p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center" style="margin-right: 140px; margin-top: 20px;">
+                            <p class="d-none" id="pTagLoadingImgNotFound">عکسی برای این محصول وجود ندارد.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div><!-- end form-content -->
+        </div><!-- end col-lg-4 -->
+        <div class="col-lg-4">
+            <div class="form-content p-0">
+                <div class="card-item shadow-none radius-none mb-0 no-hover">
+                    <div class="card-body p-0">
+                        <div class="d-flex justify-content-between">
+                            <div id="productName">
+                                <div class="d-flex justify-content-center align-items-center" style="margin-right: 130px; margin-top: 20px;">
+                                    <p id="pTagLoadingDetail">در حال بارگذاری...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-block"></div>
+                        <div id="productDetail">
+
+                            
+                        </div>
+
+                        <div class="qty-box d-flex align-items-center justify-content-between mb-3">
+                            <label class="font-size-18 font-weight-medium">تعداد بلیت: </label>
+                            <div class="qtyBtn d-flex align-items-center">
+                                <div class="qtyDec" id="qtyMines"><i class="la la-minus"></i></div>
+                                <input type="text" id="qtyInput" value="0">
+                                <div class="qtyInc" id="qtyPlus"><i class="la la-plus"></i></div>
+                            </div>
+                        </div><!-- end qty-box -->
+                        <div class="btn-box d-flex justify-content-center">
+                            <button class="theme-btn w-100" type="button" id="sansBtn">اتنخاب سانس</button>
+                        </div>
+                    </div>
+                </div><!-- end card-item -->
+            </div><!-- end form-content -->
+        </div><!-- end col-lg-4 -->
+    </div>
+</div>
+
+
+<!-- ================================
+    START CONTAINER CONTACT
+================================= -->
+<div class="container padding-top-50px" style="text-align: start;">
+    <div>
+        <h3 class="title title-form-contact p-0">توضیحات</h3>
+        <div class="d-flex justify-content-start align-items-center" style="margin-right: 15px; margin-top: 10px;">
+            <p id="pTagLoadingDescription">در حال بارگذاری...</p>
+        </div>
+    </div><!-- form-title-wrap -->
+
+    <div class="form-content contact-form-action p-0 mt-3" id="productDescription">
+    </div><!-- end form-content -->
+    <div>
+        <h3 class="title title-form-contact p-0 mt-3">نکات</h3>
+        <div class="d-flex justify-content-start align-items-center" style="margin-right: 15px; margin-top: 10px;">
+            <p id="pTagLoadingTip">در حال بارگذاری...</p>
+        </div>
+    </div><!-- form-title-wrap -->
+    <div class="form-content contact-form-action p-0 mt-3" id="productTip">
+    </div><!-- end form-content -->
+</div><!-- end container -->
+<!-- ================================
+    END CONTAINER CONTACT
+================================= -->
+
+
+<div class="container mt-5 padding-right-50px padding-left-50px">
+
+    <div id="productComments">
+
+    </div>
+    <div class="comment-forum padding-top-60px padding-bottom-40px d-flex justify-content-center"> 
+        <div class="form-box col-lg-9">
+            <div class="form-title-wrap">
+                <h3 class="title">نظر خود را با ما به اشتراک بگذارید</h3>
+            </div><!-- form-title-wrap -->
+            <div class="form-content">
+                <div class="rate-option">
+                    <div class="row">
+                        <div class="responsive-column w-100">
+                            <div class="rate-option-item d-flex justify-content-around">
+                                <label>امتیاز خود را ثبت کنید.</label>
+                                <div class="rate-stars-option">
+                                    <div id="starInput">
+                                        <input type="checkbox" id="lst1" value="5">
+                                        <label for="lst1"></label>
+                                        <input type="checkbox" id="lst2" value="4">
+                                        <label for="lst2"></label>
+                                        <input type="checkbox" id="lst3" value="3">
+                                        <label for="lst3"></label>
+                                        <input type="checkbox" id="lst4" value="2">
+                                        <label for="lst4"></label>
+                                        <input type="checkbox" id="lst5" value="1">
+                                        <label for="lst5"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- col-lg-4 -->
+                    </div><!-- end row -->
+                </div><!-- end rate-option -->
+                <div class="contact-form-action">
+                    <form method="post">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="input-box">
+                                    <label class="label-text">متن دیدگاه</label>
+                                    <div class="form-group">
+                                        <span class="la la-pencil form-icon"></span>
+                                        <textarea class="message-control form-control" name="message" placeholder="برای ما بنویسید..." id="bodyInput"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="btn-box d-flex justify-content-center">
+                                    <button type="button" class="theme-btn w-50 font-size-18" id="sendComment">ثبت امتیاز و دیدگاه</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div><!-- end contact-form-action -->
+            </div><!-- end form-content -->
+            <div class="form-content contact-form-action d-flex justify-content-center">
+                <p class="font-size-16">ثبت دیدگاه به معنی موافقت با <span style="color: red;">قوانین انتشار مارینا کیش </span>است.</p>
+            </div><!-- end form-content -->
+        </div><!-- end form-box -->
+    </div><!-- end comment-forum -->
+</div>
+
+<!-- ================================
+    START CTA AREA
+================================= -->
+<section class="cta-area subscriber-area section-bg-2 padding-top-60px padding-bottom-60px">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <div class="cta-content">
+                    <div class="section-heading">
+                        <h2 class="sec__title font-size-30 text-white">آخر هفته ها با مارینا </h2>
+                        <p class="sec__title font-size-20 text-light">آخر هر هفته تازه‌ترین اخبار و تخفیفات مارینا کیش رو براتون <br> ارسال می‌کنیم.</p>
+                    </div><!-- end section-heading -->
+                </div>
+            </div><!-- end col-lg-7 -->
+            <div class="col-lg-5">
+                <div class="subscriber-box">
+                    <div class="contact-form-action">
+                        <form action="#">
+                            <div class="input-box">
+                                <div class="form-group mb-0">
+                                    <span class="la la-envelope form-icon"></span>
+                                    <input class="form-control" type="email" name="email" placeholder="ایمیلتون رو وارد کنین..." id="email_news">
+                                    <button class="theme-btn theme-btn-small submit-btn" type="button" id="email_news_btn">عضو میشم</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- end section-heading -->
+            </div><!-- end col-lg-5 -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end cta-area -->
+<!-- ================================
+    END CTA AREA
+================================= -->
+
+<!-- Response Modal -->
+<div class="modal fade" id="alertComment" tabindex="-1" role="dialog" aria-labelledby="responseModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="responseModalLabel">پیام</h5>
+                </button>
+            </div>
+            <div class="modal-body" id="responseCommentModalBody">
+                <div class="d-flex justify-content-start align-items-center">
+                    <p id="pTagLoadingComment">در حال بارگذاری...</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Response Modal -->
+<div class="modal fade" id="alertLoginSelectSans" tabindex="-1" role="dialog" aria-labelledby="responseModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="responseModalLabel">پیام</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="بستن">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="responseModalBody">
+                <span>برای انتخاب سانس ابتدا وارد حساب کاربری خود شوید.</span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Response Modal -->
+<div class="modal fade" id="numberOfTicket" tabindex="-1" role="dialog" aria-labelledby="responseModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="responseModalLabel">پیام</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="بستن">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="responseModalBody">
+                <span>لطفا ابتدا تعداد بلیت های خود را مشخص کنید</span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section class="footer-area section-bg padding-top-100px padding-bottom-30px">
+    <section class="footer-area section-bg padding-top-100px padding-bottom-30px">
+        <div class="container">
+            <div class="row">
+                <div class="footer-logo padding-bottom-30px col-12 col-sm-6 col-lg-3" id="footer-logo">
+                    <a href="index.html" class="foot__logo">
+
+                    </a>
+                </div><!-- end logo -->
+            
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <p class="footer__desc">
+
+                    </p>
+                </div>
+            
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-item">
+                        <ul class="list-items pt-3" id="contact-info">
+
+                        </ul>
+                    </div>
+                </div><!-- end footer-item -->
+            
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-item">
+                        <h4 class="title curve-shape pb-3 margin-bottom-20px" data-text="curvs"></h4>
+                        <ul class="list-items list--items" id="category-list">
+
+                        </ul>
+                    </div><!-- end footer-item -->
+                </div><!-- end col-lg-3 -->
+            </div>
+            <!-- end row -->
+        </div><!-- end container -->
+    </section>
+</section>
+
+<!-- start back-to-top -->
+<div id="back-to-top">
+    <i class="la la-angle-up" title="برو بالا"></i>
+</div>
+<!-- end back-to-top -->
+
+<!-- end modal-shared -->
+<div class="modal-popup">
+    <div class="modal fade" id="signupPopupForm" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title title" id="exampleModalLongTitle">ثبت نام</h5>
+                        <p class="font-size-14">سلام! خوش اومدی ،  ایجاد یک حساب جدید</p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="la la-close"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="contact-form-action">
+                        <form method="post">
+                            <div class="input-box">
+                                <label class="label-text">کد ملی</label>
+                                <div class="form-group">
+                                    <span class="la la-user form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="کد ملیت رو وارد کن" id="national_code_Register">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="input-box">
+                                <label class="label-text">تلفن همراه</label>
+                                <div class="form-group">
+                                    <span class="la la-envelope form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="شماره تلفن همراهت را وارد کن" id="phone_number_Register">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="input-box">
+                                <label class="label-text">رمز عبور</label>
+                                <div class="form-group">
+                                    <span class="la la-lock form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="رمز عبورت رو وارد کن" id="password_Register">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="input-box">
+                                <label class="label-text">تکرار رمز عبور</label>
+                                <div class="form-group">
+                                    <span class="la la-lock form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="رمز عبورت رو دوباره وارد کن" id="password_second_Register">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="btn-box pt-3 pb-4">
+                                <button type="button" class="theme-btn w-100" id="btn_Register">ثبت حساب</button>
+                            </div>
+                        </form>
+                    </div><!-- end contact-form-action -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- end modal-popup -->
+
+
+<!-- end modal-shared -->
+<div class="modal-popup">
+    <div class="modal fade" id="loginPopupForm" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title title" id="exampleModalLongTitle2">ورود</h5>
+                        <p class="font-size-14">سلام ! به حسابت خوش اومدی </p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="la la-close"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="contact-form-action">
+                        <form method="post">
+                            <div class="input-box">
+                                <label class="label-text">کد ملی</label>
+                                <div class="form-group">
+                                    <span class="la la-user form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="کد ملیت رو وارد کن" id="national_code_login">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="input-box">
+                                <label class="label-text">رمز عبور</label>
+                                <div class="form-group mb-2">
+                                    <span class="la la-lock form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="رمزعبورت رو وارد کن" id="password_login">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="custom-checkbox mb-0">
+                                        <input type="checkbox" id="rememberchb">
+                                        <label for="rememberchb">منو یادت باشه</label>
+                                    </div>
+                                    <p class="forgot-password">
+                                        <a href="recover.html">رمزت رو فراموش کردی ؟</a>
+                                    </p>
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="btn-box pt-3 pb-4">
+                                <button type="button" class="theme-btn w-100" id="btn_login">ورود</button>
+                            </div>
+                        </form>
+                    </div><!-- end contact-form-action -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- end modal-popup -->
+
+
+<!-- end modal-shared -->
+<div class="modal-popup">
+    <div class="modal fade" id="datePickerModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title title" id="exampleModalLongTitle2">انتخاب تاریخ و سانس</h5>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="la la-close"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="calendar" id="calendarDiv">
+                        <div class="calendar-header">
+                          <button id="prev-month">ماه قبلی</button>
+                          <h3 id="month-year"></h3>
+                          <button id="next-month">ماه بعدی</button>
+                        </div>
+                        <div class="calendar-days" id="calendar-days"></div>
+                    </div>
+                    <div id="sans" class="row">
+
+                    </div>
+                    <button class="theme-btn w-100" type="button" id="sansAndDateBtn">اتنخاب سانس و تاریخ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- end modal-popup -->
+
+<script src="https://cdn.jsdelivr.net/npm/jalaali-js/dist/jalaali.min.js"></script>
+<script src="js/selectDate.js"></script>
+
+
+<!-- Template JS Files -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/moment-jalaali.js"></script>
+<script src="js/daterangepicker-fa-ex.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.countTo.min.js"></script>
+<script src="js/animated-headline.js"></script>
+<script src="js/jquery.filer.min.js"></script>
+<script src="js/jquery.ripples-min.js"></script>
+<script src="js/quantity-input.js"></script>
+<script src="js/copy-text-script.js"></script>
+<script src="js/navbar-sticky.js"></script>
+<script src="js/main-rtl.js"></script>
+<script src="js-api/Register-api.js"></script>
+<script src="js-api/login-api.js"></script>
+<script src="js-api/single-product.js"></script>
+<script src="js-api/logo.js"></script>
+<script src="js-api/footer.js"></script>
+</body>
+</html>

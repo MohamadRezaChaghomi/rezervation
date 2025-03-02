@@ -1,0 +1,259 @@
+
+
+@font-face {
+    font-family: 'yekan';
+    src: url('../fonts/lineawesome/YekanBakhFaNum-Heavy.eot');
+    src: url('../fonts/lineawesome/YekanBakhFaNum-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/lineawesome/YekanBakhFaNum-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'yekan';
+    src: url('../fonts/lineawesome/YekanBakhFaNum-Regular.eot');
+    src: url('../fonts/lineawesome/YekanBakhFaNum-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/lineawesome/YekanBakhFaNum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'yekan';
+    src: url('../fonts/lineawesome/YekanBakhFaNum-Light.eot');
+    src: url('../fonts/lineawesome/YekanBakhFaNum-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/lineawesome/YekanBakhFaNum-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'yekan';
+    src: url('../fonts/lineawesome/YekanBakhFaNum-Thin.eot');
+    src: url('../fonts/lineawesome/YekanBakhFaNum-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/lineawesome/YekanBakhFaNum-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'yekan';
+    src: url('../fonts/lineawesome/YekanBakhFaNum-Medium.eot');
+    src: url('../fonts/lineawesome/YekanBakhFaNum-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/lineawesome/YekanBakhFaNum-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'yekan';
+    src: url('../fonts/lineawesome/YekanBakhFaNum-Bold.eot');
+    src: url('../fonts/lineawesome/YekanBakhFaNum-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/lineawesome/YekanBakhFaNum-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'yekan';
+    src: url('../fonts/lineawesome/YekanBakhFaNum-Fat.eot');
+    src: url('../fonts/lineawesome/YekanBakhFaNum-Fat.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/lineawesome/YekanBakhFaNum-Fat.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'yekan', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #666666;
+    text-align: right;
+    }
+h1, h2, h3, h4, h5, h6 {
+    color: #0A1B4F;
+}
+.section-padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+hr {
+    opacity: 0.4;
+}
+/*---------------- container ----------------*/
+.container {
+    max-width: 1240px;
+}
+
+@media (min-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width:768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width:992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width:1200px) {
+    .container {
+        max-width: 1240px;
+    }
+}
+.gradient-bg {
+    background: linear-gradient(270deg, #9f8fff, #287dfa);
+}
+
+/*====== header =====*/
+.main-menu .navbar-nav .nav-link {
+    font-weight: 500;
+    transition: 0.3s;
+}
+.main-menu .navbar-nav .nav-link:hover {
+   color: #287dfa;
+}
+/*====== hero =====*/
+.hero-area {
+    padding-top: 150px;
+    padding-bottom: 180px;
+    z-index: 1;
+}
+.hero-bg {
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #082a5d;
+    opacity: 0.97;
+}
+.theme-btn {
+    background-color: #287dfa;
+    color: #fff;
+    padding: 10px 20px;
+    -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    transition: 0.3s;
+}
+.theme-btn:focus {
+    -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+.theme-btn:hover {
+    background-color: #4e94fb;
+    color: #fff;
+    transform: translateY(-2px);
+}
+.theme-btn i {
+    font-size: 18px;
+    transform: rotate(180deg);
+}
+.btn-white {
+    background-color: #ffffff;
+    color: #0A1B4F;
+}
+.section-heading .sec__title {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 500;
+}
+.section-heading .sec__desc {
+   font-size: 18px;
+    line-height: 34px;
+}
+.text-color {
+   color:  #f1be2e !important;
+}
+.hero-content .sec__title {
+    font-size: 48px;
+    line-height: 70px;
+}
+.hero-content .sec__desc {
+    color: rgba(255, 255, 255, 0.7);
+}
+.ribbon {
+    background-color: rgba(241, 190, 46, 0.1);
+    color: #f1be2e;
+    display: inline-block;
+    border-radius: 6px;
+    padding: 4px 16px;
+}
+.svg-bg {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+.svg-bg svg {
+    width: 100%;
+    height: 140px;
+    stroke: none;
+    fill: #fff;
+}
+.img-box {
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+    padding: 20px;
+    transition: 0.3s;
+}
+.img-box:hover {
+    transform: translateY(-3px);
+}
+.img-box h3 {
+    font-size: 22px;
+}
+.img-box img {
+    width: 100%;
+    transition: 0.3s;
+    border: 1px solid rgba(128, 137, 150, 0.1);
+}
+.img-box,
+.img-box a,
+.img-box img {
+    border-radius: 8px;
+}
+.copy__desc a,
+.copy__desc i {
+    color: #287dfa;
+}
+
+@media (max-width: 768px) {
+    .hero-area {
+        padding-top: 100px;
+    }
+    .section-heading .sec__title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .section-heading br {
+        display: none;
+    }
+}
