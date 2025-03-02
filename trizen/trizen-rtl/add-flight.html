@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="author" content="arezohosseini">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trizen - قالب  html گردشگری</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/line-awesome.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/datepicker-theme.css" media="all">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/animated-headline.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/flag-icon.min.css">
+    <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-rtl.css">
+</head>
+<body>
+<!-- start cssload-loader -->
+<div class="preloader" id="preloader">
+    <div class="loader">
+        <svg class="spinner" viewBox="0 0 50 50">
+            <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+        </svg>
+    </div>
+</div>
+<!-- end cssload-loader -->
+
+<!-- ================================
+            START HEADER AREA
+================================= -->
+<header class="header-area">
+    <div class="header-top-bar padding-right-100px padding-left-100px">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="header-top-content">
+                        <div class="header-left">
+                            <ul class="list-items">
+                                <li><a href="#"><i class="la la-phone mr-1"></i><span dir="ltr">(021) 358- 94000</span></a></li>
+                                <li><a href="#"><i class="la la-envelope mr-1"></i>trizen@example.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="header-top-content">
+                        <div class="header-right d-flex align-items-center justify-content-end">
+                            <div class="header-right-action">
+                                <div class="select-contain select--contain w-auto">
+                                    <select class="select-contain-select">
+                                        <option data-content='<span class="flag-icon flag-icon-id mr-1"></span> اندونزیایی'> اندونزیایی</option>
+                                        <option data-content='<span class="flag-icon flag-icon-de mr-1"></span> آلمانی'>آلمانی</option>
+                                        <option data-content='<span class="flag-icon flag-icon-ir mr-1"></span> فارسی' selected>فارسی</option>
+                                        <option data-content='<span class="flag-icon flag-icon-gb-eng mr-1"></span> انگلیسی'>انگلیسی</option>
+                                        <option data-content='<span class="flag-icon flag-icon-ro mr-1"></span> رومانیایی'>رومانیایی</option>
+                                        <option data-content='<span class="flag-icon flag-icon-es mr-1"></span> اسپانیایی'>اسپانیایی</option>
+                                        <option data-content='<span class="flag-icon flag-icon-fr mr-1"></span> فرانسه'>فرانسه</option>
+                                        <option data-content='<span class="flag-icon flag-icon-it mr-1"></span> ایتالیایی'>ایتالیایی</option>
+                                        <option data-content='<span class="flag-icon flag-icon-pl mr-1"></span> لهستانی'> لهستانی </option>
+                                        <option data-content='<span class="flag-icon flag-icon-pt mr-1"></span> پرتغالی'> پرتغالی </option>
+                                        <option data-content='<span class="flag-icon flag-icon-tr mr-1"></span> ترکی'> ترکی </option>
+                                        <option data-content='<span class="flag-icon flag-icon-ru mr-1"></span> روسی'> روسی </option>
+                                        <option data-content='<span class="flag-icon flag-icon-jp mr-1"></span> ژاپنی'> ژاپنی </option>
+                                        <option data-content='<span class="flag-icon flag-icon-cn mr-1"></span> چینی'> چینی</option>
+                                        <option data-content='<span class="flag-icon flag-icon-tw mr-1"></span> چین تایپه'> چین تایپه</option>
+                                        <option data-content='<span class="flag-icon flag-icon-kr mr-1"></span> کره ای'>کره ای</option>
+                                        <option data-content='<span class="flag-icon flag-icon-in mr-1"></span> هندی'>هندی</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="header-right-action">
+                                <div class="select-contain select--contain w-auto">
+                                    <select class="select-contain-select">
+                                       <option value="1">درهم</option>
+                                        <option value="2">دلار استرالیا</option>
+                                        <option value="3">رئال</option>
+                                        <option value="4">دلار کانادا</option>
+                                        <option value="5">فرانک</option>
+                                        <option value="6">یوان</option>
+                                        <option value="7">یورو </option>
+                                        <option value="8">پوند</option>
+                                        <option value="9">دلار هنگ کنگ</option>
+                                        <option value="10">روپیه اندونزی</option>
+                                        <option value="11">روپیه هند</option>
+                                        <option value="12">ین</option>
+                                        <option value="13">وون</option>
+                                        <option value="14">رینگیت</option>
+                                        <option value="15">دلار نیوزلند</option>
+                                        <option value="16">پزو</option>
+                                        <option value="17">زلوتی</option>
+                                        <option value="18">روبل</option>
+                                        <option value="19">ریال عربستان</option>
+                                        <option value="20">دلار سنگاپور</option>
+                                        <option value="21">بات</option>
+                                        <option value="22">لیره</option>
+                                        <option value="23">دینار</option>
+                                        <option value="24" >دلار آمریکا</option>
+                                        <option value="25">دانگ</option>
+                                        <option value="26">پزو</option>
+                                        <option value="27">راند</option>
+                                        <option value="28" selected>ریال ایران</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="header-right-action">
+                                <a href="#" class="theme-btn theme-btn-small theme-btn-transparent mr-1" data-toggle="modal" data-target="#signupPopupForm">ثبت نام</a>
+                                <a href="#" class="theme-btn theme-btn-small" data-toggle="modal" data-target="#loginPopupForm">ورود</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-menu-wrapper padding-right-100px padding-left-100px">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="menu-wrapper">
+                        <a href="#" class="down-button"><i class="la la-angle-down"></i></a>
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                            <div class="menu-toggler">
+                                <i class="la la-bars"></i>
+                                <i class="la la-times"></i>
+                            </div><!-- end menu-toggler -->
+                        </div><!-- end logo -->
+                        <div class="main-menu-content">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="#"> صفحه اصلی <i class="la la-angle-down"></i></a>
+                                        <ul class="dropdown-menu-item">
+                                            <li><a href="index.html">صفحه اصلی - اصلی</a></li>
+                                            <li><a href="index2.html">صفحه اصلی - هتل</a></li>
+                                            <li><a href="index3.html">صفحه اصلی - فعالیت ها</a></li>
+                                            <li><a href="index4.html">صفحه اصلی - خودرو</a></li>
+                                            <li><a href="index5.html">صفحه اصلی -سفرهای دریایی</a></li>
+                                            <li><a href="index6.html">صفحه اصلی - پروازها</a></li>
+                                            <li><a href="index7.html"> صفحه اصلی- تور شهری <span class="badge bg-2 text-white">جدید</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">تور<i class="la la-angle-down"></i></a>
+                                        <ul class="dropdown-menu-item">
+                                            <li><a href="tour-fullwidth.html">تور به صورت تمام صفحه</a></li>
+                                            <li><a href="tour-grid.html">تور به صورت گرید</a></li>
+                                            <li><a href="tour-list.html">تور به صورت لیست</a></li>
+                                            <li><a href="tour-left-sidebar.html">تور با سایدبار سمت چپ</a></li>
+                                            <li><a href="tour-right-sidebar.html">تور با سایدبار سمت راست</a></li>
+                                            <li><a href="tour-details.html">جزئیات تور</a></li>
+                                            <li><a href="tour-booking.html">رزرو تور</a></li>
+                                            <li><a href="tour-search-result.html">نتایج جستجوی تور</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">سفرهای دریایی<i class="la la-angle-down"></i></a>
+                                        <ul class="dropdown-menu-item">
+                                            <li><a href="cruises.html">سفرهای دریایی</a></li>
+                                            <li><a href="cruises-list.html">سفرهای دریایی به صورت لیست</a></li>
+                                            <li><a href="cruise-sidebar.html">سفرهای دریایی با ساید بار</a></li>
+                                            <li><a href="cruise-details.html">جزئیات سفرهای دریایی</a></li>
+                                            <li><a href="cruise-booking.html">رزرو سفرهای دریایی</a></li>
+                                            <li><a href="cruise-search-result.html">نتایج جستجوی سفرهای دریایی</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">صفحات <i class="la la-angle-down"></i></a>
+                                        <div class="dropdown-menu-item mega-menu">
+                                            <ul class="row no-gutters">
+                                                <li class="col-lg-3 mega-menu-item">
+                                                    <ul>
+                                                        <li><a href="add-hotel.html">افزودن هتل </a></li>
+                                                        <li><a href="add-flight.html">افزودن پرواز</a></li>
+                                                        <li><a href="add-tour.html">افزودن تور</a></li>
+                                                        <li><a href="add-cruise.html">افزودن سفر دریایی</a></li>
+                                                        <li><a href="add-car.html">افزودن خودرو</a></li>
+                                                        <li><a href="user-dashboard.html">دشبرد کاربر</a></li>
+                                                        <li><a href="admin-dashboard.html">دشبرد ادمین</a></li>
+                                                        <li><a href="career.html">استخدام<span class="badge bg-2 text-white">جدید</span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="col-lg-3 mega-menu-item">
+                                                    <ul>
+                                                        <li><a href="career-details.html">جزئیات استخدام<span class="badge bg-2 text-white">جدید</span></a></li>
+                                                        <li><a href="user-profile.html">پروفایل کاربر</a></li>
+                                                        <li><a href="become-local-expert.html"> تور لیدر محلی شو</a></li>
+                                                        <li><a href="contact.html">تماس با ما</a></li>
+                                                        <li><a href="cart.html">سبد خرید</a></li>
+                                                        <li><a href="checkout.html">پرداخت</a></li>
+                                                        <li><a href="recover.html">بازیابی رمز عبور</a></li>
+                                                        <li><a href="payment-received.html">رسید پرداخت</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="col-lg-3 mega-menu-item">
+                                                    <ul>
+                                                        <li><a href="payment-complete.html">تکمیل پرداخت</a></li>
+                                                        <li><a href="destinations.html">مکان ها</a></li>
+                                                        <li><a href="about.html">درباره ما</a></li>
+                                                        <li><a href="services.html">خدمات ما</a></li>
+                                                        <li><a href="gallery.html">گالری</a></li>
+                                                        <li><a href="pricing.html">قیمت گذاری</a></li>
+                                                        <li><a href="faq.html">سوالات متداول</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="col-lg-3 mega-menu-item">
+                                                     <ul>
+                                                        <li><a href="add-new-post.html">افزودن پست جدید</a></li>
+                                                        <li><a href="blog-full-width.html">وبلاگ به صورت تمام عرض</a></li>
+                                                        <li><a href="blog-grid.html">وبلاگ به صورت گرید</a></li>
+                                                        <li><a href="blog-sidebar.html">وبلاگ با ساید بار</a></li>
+                                                        <li><a href="blog-single.html">جزئیات وبلاگ</a></li>
+                                                        <li><a href="coming-soon.html">صفحه Coming soon</a></li>
+                                                        <li><a href="page-404.html">404 صفحه</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">پرواز ها<i class="la la-angle-down"></i></a>
+                                        <ul class="dropdown-menu-item">
+                                            <li><a href="flight-grid.html">پرواز ها به صورت گرید</a></li>
+                                            <li><a href="flight-list.html">پروازها به صورت لیست</a></li>
+                                            <li><a href="flight-sidebar.html">پروازها با ساید بار</a></li>
+                                            <li><a href="flight-single.html">جزئیات پروازها</a></li>
+                                            <li><a href="flight-booking.html">رزرو بلیط هواپیما</a></li>
+                                            <li><a href="flight-search-result.html">نتایج جستجوی بلیط هواپیما</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">هتل <i class="la la-angle-down"></i></a>
+                                        <ul class="dropdown-menu-item">
+                                            <li><a href="hotel-grid.html">هتل به صورت گرید </a></li>
+                                            <li><a href="hotel-list.html">هتل به صورت لیست</a></li>
+                                            <li><a href="hotel-sidebar.html">هتل با ساید بار</a></li>
+                                            <li><a href="hotel-single.html">جزئیات هتل</a></li>
+                                            <li><a href="hotel-booking.html">رزرو هتل</a></li>
+                                            <li><a href="hotel-search-result.html">نتایج جستجوی هتل</a></li>
+                                            <li>
+                                                <a href="#">اتاق ها<i class="la la-plus"></i></a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="room-list.html">لیست اتاق ها</a></li>
+                                                    <li><a href="room-grid.html">گرید اتاق ها</a></li>
+                                                    <li><a href="room-search-result.html">نتیجه جستجو</a></li>
+                                                    <li><a href="room-search-result-list.html">لیست نتایج </a></li>
+                                                    <li><a href="room-details.html">جزئیات اتاق</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">خودرو <i class="la la-angle-down"></i></a>
+                                        <ul class="dropdown-menu-item">
+                                            <li><a href="car-grid.html">خودرو به صورت گرید </a></li>
+                                            <li><a href="car-list.html">خودرو به صورت لیست</a></li>
+                                            <li><a href="car-sidebar.html">خودرو با ساید بار</a></li>
+                                            <li><a href="car-single.html">جزئیات خودرو</a></li>
+                                            <li><a href="car-booking.html">رزرو خودرو</a></li>
+                                            <li><a href="car-search-result.html">نتیجه جستجوی خودرو</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div><!-- end main-menu-content -->
+                        <div class="nav-btn">
+                            <a href="become-local-expert.html" class="theme-btn"> تور لیدر محلی شو</a>
+                        </div><!-- end nav-btn -->
+                    </div><!-- end menu-wrapper -->
+                </div><!-- end col-lg-12 -->
+            </div><!-- end row -->
+        </div><!-- end container-fluid -->
+    </div><!-- end header-menu-wrapper -->
+</header>
+<!-- ================================
+         END HEADER AREA
+================================= -->
+
+<!-- ================================
+    START BREADCRUMB AREA
+================================= -->
+<section class="breadcrumb-area bread-bg-6">
+    <div class="breadcrumb-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-content text-center">
+                        <div class="section-heading">
+                            <h2 class="sec__title text-white">پروازت رو توی بزرگترین  <br>
+                                انجمن مسافرتی ایران لیست کن
+                        </div>
+                    </div><!-- end breadcrumb-content -->
+                </div><!-- end col-lg-12 -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end breadcrumb-wrap -->
+    <div class="bread-svg-box">
+        <svg class="bread-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none"><polygon points="100 0 50 10 0 0 0 10 100 10"></polygon></svg>
+    </div><!-- end bread-svg -->
+</section><!-- end breadcrumb-area -->
+<!-- ================================
+    END BREADCRUMB AREA
+================================= -->
+
+<!-- ================================
+    START FORM AREA
+================================= -->
+<section class="listing-form section--padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 mx-auto">
+                <div class="listing-header pb-4">
+                    <h3 class="title font-size-28 pb-2">لیست سفر در Trizen</h3>
+                    <p class="font-size-14">اگه برای تعطیلات اجاره ای لیست میکنی<a href="#" class="text-color">  اینجا رو کلیک کن</a></p>
+                    <p class="font-size-14"><a href="#" class="text-color">قوانین و مقررات کامل Trizen رو بخون.</a></p>
+                </div>
+                <div class="form-box">
+                    <div class="form-title-wrap">
+                        <h3 class="title"><i class="la la-user mr-2 text-gray"></i>اطلاعات شما</h3>
+                    </div><!-- form-title-wrap -->
+                    <div class="form-content contact-form-action">
+                        <form method="post" class="row">
+                            <div class="col-lg-6 responsive-column">
+                                <div class="input-box">
+                                    <label class="label-text">نام شما</label>
+                                    <div class="form-group">
+                                        <span class="la la-user form-icon"></span>
+                                        <input class="form-control" type="text" name="text" placeholder="نام شما">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-6 -->
+                            <div class="col-lg-6 responsive-column">
+                                <div class="input-box">
+                                    <label class="label-text">ایمیل شما</label>
+                                    <div class="form-group">
+                                        <span class="la la-envelope-o form-icon"></span>
+                                        <input class="form-control" type="email" name="email" placeholder="ایمیل شما">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-6 -->
+                            <div class="col-lg-6 responsive-column">
+                                <div class="input-box">
+                                    <label class="label-text">نقش شما در این شغل چیست؟</label>
+                                    <div class="form-group select-contain w-100">
+                                        <select class="select-contain-select">
+                                            <option value="">یکی رو انتخاب کن</option>
+                                            <option value="OWNER">مالک</option>
+                                            <option value="GENERAL_MANAGER">مدیر کل</option>
+                                            <option value="INNKEEPER">صاحب مسافرخانه </option>
+                                            <option value="AGENCY_CONSULTANT">نمایندگی / مشاور</option>
+                                            <option value="ACCOUNTING_FINANCE">حسابداری و امور مالی</option>
+                                            <option value="GUEST_SERVICES">مهماندار / فرانت آفیس</option>
+                                            <option value="MARKETING">بازار یابی</option>
+                                            <option value="REVENUE_MANAGEMENT">مدیر فروش</option>
+                                            <option value="SALES">فروشنده</option>
+                                            <option value="OTHER">سایر</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-6 -->
+                        </form>
+                    </div><!-- end form-content -->
+                </div><!-- end form-box -->
+                <div class="form-box">
+                    <div class="form-title-wrap">
+                        <h3 class="title"><i class="la la-gear mr-2 text-gray"></i>لیست اطلاعات پرواز شما</h3>
+                    </div><!-- form-title-wrap -->
+                    <div class="form-content contact-form-action">
+                        <form method="post" class="row">
+                            <div class="col-lg-6 responsive-column">
+                                <div class="input-box">
+                                    <label class="label-text">نام تجاری رسمی</label>
+                                    <div class="form-group">
+                                        <span class="la la-briefcase form-icon"></span>
+                                        <input class="form-control" type="text" name="text" placeholder="نام تجاری رسمی">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-6 -->
+                            <div class="col-lg-6 responsive-column">
+                                <div class="input-box">
+                                    <label class="label-text">کشور</label>
+                                    <div class="form-group select-contain w-100">
+                                        <select class="select-contain-select">
+                                            <option value=""> یک کشور رو انتخاب کن</option>
+                                            <option value='AD'> آندورا</option>
+                                                      <option value='AE'> امارات متحده عربی</option>
+                                                      <option value='AF'> افغانستان</option>
+                                                      <option value='AG'> آنتیگوا و باربودا</option>
+                                                      <option value='AI'> آنگویلا</option>
+                                                      <option value='AL'> آلبانی</option>
+                                                      <option value='AM'> ارمنستان</option>
+                                                      <option value='AO'> آنگولا</option>
+                                                      <option value='AQ'> جنوبگان</option>
+                                                      <option value='AR'> آرژانتین</option>
+                                                      <option value='AS'> ساموآی آمریکا</option>
+                                                      <option value='AT'> اتریش</option>
+                                                      <option value='AU'> استرالیا</option>
+                                                      <option value='AW'> آروبا</option>
+                                                      <option value='AX'> جزایر آلند</option>
+                                                      <option value='AZ'> جمهوری آذربایجان</option>
+                                                      <option value='BA'> بوسنی و هرزگوین</option>
+                                                      <option value='BB'> باربادوس</option>
+                                                      <option value='BD'> بنگلادش</option>
+                                                      <option value='BE'> بلژیک</option>
+                                                      <option value='BF'> بورکینا فاسو</option>
+                                                      <option value='BG'> بلغارستان</option>
+                                                      <option value='BH'> بحرین</option>
+                                                      <option value='BI'> بوروندی</option>
+                                                      <option value='BJ'> بنین</option>
+                                                      <option value='BL'> سنت بارثلمی</option>
+                                                      <option value='BM'> برمودا</option>
+                                                      <option value='BN'> برونئی</option>
+                                                      <option value='BO'> بولیوی</option>
+                                                      <option value='BQ'> هلند کارائیب</option>
+                                                      <option value='BR'> برزیل</option>
+                                                      <option value='BS'> باهاما</option>
+                                                      <option value='BT'> بوتان</option>
+                                                      <option value='BV'> جزیره بووه</option>
+                                                      <option value='BW'> بوتسوانا</option>
+                                                      <option value='BY'> بلاروس</option>
+                                                      <option value='BZ'> بلیز</option>
+                                                      <option value='CA'> کانادا</option>
+                                                      <option value='CC'> جزایر کوکوس</option>
+                                                      <option value='CD'> جمهوری دموکراتیک کنگو</option>
+                                                      <option value='CF'> جمهوری آفریقای مرکزی</option>
+                                                      <option value='CG'> جمهوری کنگو</option>
+                                                      <option value='CH'> سوئیس</option>
+                                                      <option value='CI'> ساحل عاج</option>
+                                                      <option value='CK'> جزایر کوک</option>
+                                                      <option value='CL'> شیلی</option>
+                                                      <option value='CM'> کامرون</option>
+                                                      <option value='CN'> چین</option>
+                                                      <option value='CO'> کلمبیا</option>
+                                                      <option value='CR'> کاستاریکا</option>
+                                                      <option value='CU'> کوبا</option>
+                                                      <option value='CV'> کیپ ورد</option>
+                                                      <option value='CW'> کوراسائو</option>
+                                                      <option value='CX'> جزیره کریسمس</option>
+                                                      <option value='CY'> قبرس</option>
+                                                      <option value='CZ'> جمهوری چک</option>
+                                                      <option value='DE'> آلمان</option>
+                                                      <option value='DJ'> جیبوتی</option>
+                                                      <option value='DK'> دانمارک</option>
+                                                      <option value='DM'> دومینیکا</option>
+                                                      <option value='DO'> دومینیکا</option>
+                                                      <option value='DZ'> الجزایر</option>
+                                                      <option value='EC'> اکوادور</option>
+                                                      <option value='EE'> استونی</option>
+                                                      <option value='EG'> مصر</option>
+                                                      <option value='EH'> صحرای غربی</option>
+                                                      <option value='ER'> اریتره</option>
+                                                      <option value='ES'> اسپانیا</option>
+                                                      <option value='ET'> اتیوپی</option>
+                                                      <option value='FI'> فنلاند</option>
+                                                      <option value='FJ'> فیجی</option>
+                                                      <option value='FK'> جزایر فالکلند</option>
+                                                      <option value='FM'> ایالات فدرال میکرونزی</option>
+                                                      <option value='FO'> جزایر فارو</option>
+                                                      <option value='FR'> فرانسه</option>
+                                                      <option value='GA'> گابن</option>
+                                                      <option value='GB'> انگلستان</option>
+                                                      <option value='GD'> گرانادا</option>
+                                                      <option value='GE'> گرجستان</option>
+                                                      <option value='GF'> گویان فرانسه</option>
+                                                      <option value='GG'> گرنزی</option>
+                                                      <option value='GH'> غنا</option>
+                                                      <option value='GI'> جبل الطارق</option>
+                                                      <option value='GL'> گرینلند</option>
+                                                      <option value='GM'> گامبیا</option>
+                                                      <option value='GN'> گینه</option>
+                                                      <option value='GP'> جزیره گوادلوپ</option>
+                                                      <option value='GQ'> گینه استوایی</option>
+                                                      <option value='GR'> یونان</option>
+                                                      <option value='GS'> جزایر جورجیای جنوبی و ساندویچ جنوبی</option>
+                                                      <option value='GT'> گواتمالا</option>
+                                                      <option value='GU'> گوام</option>
+                                                      <option value='GW'> گینه بیسائو</option>
+                                                      <option value='GY'> گویان</option>
+                                                      <option value='HK'> هنگ کنگ</option>
+                                                      <option value='HM'> جزیره هرد و جزایر مک دونالد</option>
+                                                      <option value='HN'> هندوراس</option>
+                                                      <option value='HR'> کرواسی</option>
+                                                      <option value='HT'> هائیتی</option>
+                                                      <option value='HU'> مجارستان</option>
+                                                      <option value='ID'> اندونزی</option>
+                                                      <option value='IE'> جمهوری ایرلند</option>
+                                                      <option value='IL'> اسرائیل</option>
+                                                      <option value='IM'> جزیره من</option>
+                                                      <option value='IN'> هند</option>
+                                                      <option value='IO'> قلمروی اقیانوس هند بریتانیا</option>
+                                                      <option value='IQ'> عراق</option>
+                                                      <option value='IR' selected> ایران</option>
+                                                      <option value='IS'> ایسلند</option>
+                                                      <option value='IT'> ایتالیا</option>
+                                                      <option value='JE'> ادبیات</option>
+                                                      <option value='JM'> جامائیکا</option>
+                                                      <option value='JO'> اردن</option>
+                                                      <option value='JP'> ژاپن</option>
+                                                      <option value='KE'> کنیا</option>
+                                                      <option value='KG'> قرقیزستان</option>
+                                                      <option value='KH'> کامبوج</option>
+                                                      <option value='KI'> کیریباتی</option>
+                                                      <option value='KM'> کومور</option>
+                                                      <option value='KN'> سنت کیتس و نویس</option>
+                                                      <option value='KP'> کره شمالی</option>
+                                                      <option value='KR'> کره جنوبی</option>
+                                                      <option value='KW'> کویت</option>
+                                                      <option value='KY'> جزایر کیمن</option>
+                                                      <option value='KZ'> قزاقستان</option>
+                                                      <option value='LA'> لائوس</option>
+                                                      <option value='LB'> لبنان</option>
+                                                      <option value='LC'> سنت لوسیا</option>
+                                                      <option value='LI'> لیختن اشتاین</option>
+                                                      <option value='LK'> سری لانکا</option>
+                                                      <option value='LR'> لیبریا</option>
+                                                      <option value='LS'> لسوتو</option>
+                                                      <option value='LT'> لیتوانی</option>
+                                                      <option value='LU'> لوکزامبورگ</option>
+                                                      <option value='LV'> لتونی</option>
+                                                      <option value='LY'> لیبی</option>
+                                                      <option value='MA'> مراکش</option>
+                                                      <option value='MC'> موناکو</option>
+                                                      <option value='MD'> مولداوی</option>
+                                                      <option value='ME'> مونته نگرو</option>
+                                                      <option value='MF'> سنت مارتین فرانسه</option>
+                                                      <option value='MG'> ماداگاسکار</option>
+                                                      <option value='MH'> جزایر مارشال</option>
+                                                      <option value='MK'> جمهوری مقدونیه</option>
+                                                      <option value='ML'> مالی</option>
+                                                      <option value='MM'> میانمار</option>
+                                                      <option value='MN'> مغولستان</option>
+                                                      <option value='MO'> ماکائو</option>
+                                                      <option value='MP'> جزایر ماریانای شمالی</option>
+                                                      <option value='MQ'> مارتینیک</option>
+                                                      <option value='MR'> موریتانی</option>
+                                                      <option value='MS'> مونتسرات</option>
+                                                      <option value='MT'> مالت</option>
+                                                      <option value='MU'> موریس</option>
+                                                      <option value='MV'> مالدیو</option>
+                                                      <option value='MW'> مالاوی</option>
+                                                      <option value='MX'> مکزیک</option>
+                                                      <option value='MY'> مالزی</option>
+                                                      <option value='MZ'> موزامبیک</option>
+                                                      <option value='NA'> نامیبیا</option>
+                                                      <option value='NC'> کالدونیای جدید</option>
+                                                      <option value='NE'> نیجر</option>
+                                                      <option value='NF'> جزیره نورفولک</option>
+                                                      <option value='NG'> نیجریه</option>
+                                                      <option value='NI'> نیکاراگوئه</option>
+                                                      <option value='NL'> هلند</option>
+                                                      <option value='NO'> نروژ</option>
+                                                      <option value='NP'> نپال</option>
+                                                      <option value='NR'> نائورو</option>
+                                                      <option value='NU'> نیوئه</option>
+                                                      <option value='NZ'> نیوزلند</option>
+                                                      <option value='OM'> عمان</option>
+                                                      <option value='PA'> پاناما</option>
+                                                      <option value='PE'> پرو</option>
+                                                      <option value='PF'> پلینزی فرانسه</option>
+                                                      <option value='PG'> پاپوآ گینه نو</option>
+                                                      <option value='PH'> فیلیپین</option>
+                                                      <option value='PK'> پاکستان</option>
+                                                      <option value='PL'> لهستان</option>
+                                                      <option value='PM'> سنت پیر و ماژلان</option>
+                                                      <option value='PN'> جزایر پیت‌کرن</option>
+                                                      <option value='PR'> پورتوریکو</option>
+                                                      <option value='PS'> فلسطین</option>
+                                                      <option value='PT'> پرتغال</option>
+                                                      <option value='PW'> پالائو</option>
+                                                      <option value='PY'> پاراگوئه</option>
+                                                      <option value='QA'> قطر</option>
+                                                      <option value='RE'> ریونیون</option>
+                                                      <option value='RO'> رومانی</option>
+                                                      <option value='RS'> صربستان</option>
+                                                      <option value='RU'> روسیه</option>
+                                                      <option value='RW'> رواندا</option>
+                                                      <option value='SA'> عربستان سعودی</option>
+                                                      <option value='SB'> جزایر سلیمان</option>
+                                                      <option value='SC'> سیشل</option>
+                                                      <option value='SD'> سودان</option>
+                                                      <option value='SE'> سوئد</option>
+                                                      <option value='SG'> سنگاپور</option>
+                                                      <option value='SH'> سینت هلینا</option>
+                                                      <option value='SI'> اسلوونی</option>
+                                                      <option value='SJ'> سوالبارد و یان ماین</option>
+                                                      <option value='SK'> اسلواکی</option>
+                                                      <option value='SL'> سیرالئون</option>
+                                                      <option value='SM'> سن مارینو</option>
+                                                      <option value='SN'> سنگال</option>
+                                                      <option value='SO'> سومالی</option>
+                                                      <option value='SR'> سورینام</option>
+                                                      <option value='ST'> سائوتومه و پرینسیپ</option>
+                                                      <option value='SV'> السالوادور</option>
+                                                      <option value='SX'> سنت مارتین هلند</option>
+                                                      <option value='SY'> سوریه</option>
+                                                      <option value='SZ'> سوازیلند</option>
+                                                      <option value='TC'> جزایر تورکس و کایکوس</option>
+                                                      <option value='TD'> چاد</option>
+                                                      <option value='TF'> سرزمین‌های قطب جنوب و جنوبی فرانسه</option>
+                                                      <option value='TG'> توگو</option>
+                                                      <option value='TH'> تایلند</option>
+                                                      <option value='TJ'> تاجیکستان</option>
+                                                      <option value='TK'> توکلائو</option>
+                                                      <option value='TL'> تیمور شرقی</option>
+                                                      <option value='TM'> ترکمنستان</option>
+                                                      <option value='TN'> تونس</option>
+                                                      <option value='TO'> تونگا</option>
+                                                      <option value='TR'> ترکیه</option>
+                                                      <option value='TT'> ترینیداد و توباگو</option>
+                                                      <option value='TV'> تووالو</option>
+                                                      <option value='TW'> تایوان</option>
+                                                      <option value='TZ'> تانزانیا</option>
+                                                      <option value='UA'> اوکراین</option>
+                                                      <option value='UG'> اوگاندا</option>
+                                                      <option value='UM'> جزایر کوچک حاشیه‌ای آمریکا</option>
+                                                      <option value='US'> ایالات متحده</option>
+                                                      <option value='UY'> اروگوئه</option>
+                                                      <option value='UZ'> ازبکستان</option>
+                                                      <option value='VA'> شهر واتیکان</option>
+                                                      <option value='VC'> سنت وینسنت و گرنادین</option>
+                                                      <option value='VE'> ونزوئلا</option>
+                                                      <option value='VG'> جزایر ویرجین بریتانیا</option>
+                                                      <option value='VI'> جزایر ویرجین ایالات متحده آمریکا</option>
+                                                      <option value='VN'> ویتنام</option>
+                                                      <option value='VU'> وانواتو</option>
+                                                      <option value='WF'> والیس و فوتونا</option>
+                                                      <option value='WS'> ساموآ</option>
+                                                      <option value='YE'> یمن</option>
+                                                      <option value='YT'> مایوت</option>
+                                                      <option value='ZA'> آفریقای جنوبی</option>
+                                                      <option value='ZM'> زامبیا</option>
+                                                      <option value='ZW'> زیمبابوه</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-6 -->
+                            <div class="col-lg-6 responsive-column">
+                                <div class="input-box">
+                                    <label class="label-text">پرواز</label>
+                                    <div class="form-group select-contain w-100">
+                                        <select class="select-contain-select">
+                                            <option value="OneWay">یک طرفه</option>
+                                            <option value="RoundTrip">رفت و برگشت</option>
+                                            <option value="MultiCity">چند مسیره</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-6 -->
+                            <div class="col-lg-6">
+                                <div class="input-box">
+                                    <label class="label-text">ساعت پرواز</label>
+                                    <div class="form-group select-contain w-100">
+                                        <select class="select-contain-select">
+                                            <option value="">انتخاب</option>
+                                            <option value="Sat">شنبه 10 دی 6:50 صبح</option>
+                                            <option value="Sun">یک شنبه 11 دی 6:50 صبح</option>
+                                            <option value="Mon">دوشنبه 12 دی 6:50 صبح</option>
+                                            <option value="Tue">سه شنبه 13 دی 6:50 صبح</option>
+                                            <option value="Wed">چهارشنبه 14 دی 6:50 صبح</option>
+                                            <option value="Thu">پنج شنبه 15 دی 6:50 صبح</option>
+                                            <option value="Fri">جمعه 16 دی 6:50 صبح</option>
+                                           
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-6 -->
+                            <div class="col-lg-6">
+                                <div class="input-box">
+                                    <label class="label-text">فرود</label>
+                                    <div class="form-group select-contain w-100">
+                                        <select class="select-contain-select">
+                                            <option value="">انتخاب</option>
+                                            <option value="Sat">شنبه 10 دی 6:50 صبح</option>
+                                            <option value="Sun">یک شنبه 11 دی 6:50 صبح</option>
+                                            <option value="Mon">دوشنبه 12 دی 6:50 صبح</option>
+                                            <option value="Tue">سه شنبه 13 دی 6:50 صبح</option>
+                                            <option value="Wed">چهارشنبه 14 دی 6:50 صبح</option>
+                                            <option value="Thu">پنج شنبه 15 دی 6:50 صبح</option>
+                                            <option value="Fri">جمعه 16 دی 6:50 صبح</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-6 -->
+                             <div class="col-lg-6">
+                                <div class="input-box">
+                                    <label class="label-text">توقف پرواز</label>
+                                    <div class="form-group select-contain w-100">
+                                        <select class="select-contain-select">
+                                            <option value="">انتخاب</option>
+                                            <option value="stop1">1 توقف</option>
+                                            <option value="stops2">2 توقف</option>
+                                            <option value="stops3">3 توقف</option>
+                                            <option value="MultiStops">چند توقف</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-6 -->
+                        </form>
+                    </div><!-- end form-content -->
+                </div><!-- end form-box -->
+                <div class="form-box">
+                    <div class="form-title-wrap">
+                        <h3 class="title"><i class="la la-map mr-2 text-gray"></i>نقشه موقعیت مکانی </h3>
+                    </div><!-- form-title-wrap -->
+                    <div class="form-content contact-form-action">
+                        <form method="post" class="row">
+                            <div class="col-lg-6">
+                                <div class="input-box">
+                                    <label class="label-text">طول جغرافیایی</label>
+                                    <div class="form-group">
+                                        <span class="la la-map form-icon"></span>
+                                        <input class="form-control" id="longitude" type="text" placeholder="نقشه طول جغرافیایی">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-6 -->
+                            <div class="col-lg-6">
+                                <div class="input-box">
+                                    <label class="label-text">عرض جغرافیایی</label>
+                                    <div class="form-group">
+                                        <span class="la la-map form-icon"></span>
+                                        <input class="form-control" id="latitude" type="text" placeholder="نقشه عرض جغرافیایی">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-6 -->
+                            <div class="col-lg-12">
+                                <div class="input-box">
+                                    <label class="label-text">برای پیدا کردن مکان دقیق، نشانگر آبی رو روی نقشه بکش.</label>
+                                    <div class="form-group map-container">
+                                        <div id="singleMap" class="drag-map" data-latitude="40.7427837" data-longitude="-73.11445617675781"></div>
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-12 -->
+                            <div class="col-lg-12">
+                                <label class="label-text">یا مختصات (طول و عرض جغرافیایی) رو به صورت دستی وارد کن.</label>
+                            </div><!-- end col-lg-12 -->
+                            <div class="col-lg-6">
+                                <div class="input-box">
+                                    <label class="label-text">طول جغرافیایی</label>
+                                    <div class="form-group">
+                                        <span class="la la-map form-icon"></span>
+                                        <input class="form-control" type="text" placeholder="40.731444531797315">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-6 -->
+                            <div class="col-lg-6">
+                                <div class="input-box">
+                                    <label class="label-text">عرض جغرافیایی</label>
+                                    <div class="form-group">
+                                        <span class="la la-map form-icon"></span>
+                                        <input class="form-control" type="text" placeholder="40.731444531797315">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-6 -->
+                            <div class="col-lg-12">
+                                <div class="btn-box">
+                                    <button type="button" class="theme-btn theme-btn-small">روی نقشه پیدا کن</button>
+                                </div>
+                            </div><!-- end col-lg-12 -->
+                        </form>
+                    </div><!-- end form-content -->
+                </div><!-- end form-box -->
+                <div class="form-box">
+                    <div class="form-title-wrap">
+                        <h3 class="title"><i class="la la-user mr-2 text-gray"></i>اطلاعات تماس</h3>
+                    </div><!-- form-title-wrap -->
+                    <div class="form-content contact-form-action">
+                        <form method="post" class="row">
+                            <div class="col-lg-6">
+                                <div class="input-box">
+                                    <label class="label-text">شماره تلفن</label>
+                                    <div class="form-group">
+                                        <span class="la la-phone form-icon"></span>
+                                        <input class="form-control" type="text" placeholder="8547 632 (21) 98+ ">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-6 -->
+                            <div class="col-lg-6">
+                                <div class="input-box">
+                                    <label class="label-text">فكس</label>
+                                    <div class="form-group">
+                                        <span class="la la-print form-icon"></span>
+                                        <input class="form-control" type="text" placeholder="8547 632 (21) 98+ ">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-6 -->
+                            <div class="col-lg-6">
+                                <div class="input-box">
+                                    <label class="label-text">ایمیل</label>
+                                    <div class="form-group">
+                                        <span class="la la-envelope-o form-icon"></span>
+                                        <input class="form-control" type="text" placeholder="ایمیل برای درخواست مشتری">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-6 -->
+                            <div class="col-lg-6">
+                                <div class="input-box">
+                                    <label class="label-text">آدرس وب سایت شما</label>
+                                    <div class="form-group">
+                                        <span class="la la-globe form-icon"></span>
+                                        <input class="form-control" type="text" placeholder="https://www.arezo-hoseini.ir">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-6 -->
+                            <div class="col-lg-6">
+                                <div class="input-box">
+                                    <label class="label-text">صفحه فیسبوک</label>
+                                    <div class="form-group">
+                                        <span class="la la-facebook form-icon"></span>
+                                        <input class="form-control" type="text" placeholder="https://www.facebook.com">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-6 -->
+                            <div class="col-lg-6">
+                                <div class="input-box">
+                                    <label class="label-text">صفحه اینستاگرام</label>
+                                    <div class="form-group">
+                                        <span class="la la-instagram form-icon"></span>
+                                        <input class="form-control" type="text" placeholder="https://www.instagram.com">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-6 -->
+                            <div class="col-lg-6">
+                                <div class="input-box">
+                                    <label class="label-text">صفحه توییتر</label>
+                                    <div class="form-group">
+                                        <span class="la la-twitter form-icon"></span>
+                                        <input class="form-control" type="text" placeholder="https://www.twitter.com">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-6 -->
+                            <div class="col-lg-6">
+                                <div class="input-box">
+                                    <label class="label-text">صفحه لینکدین</label>
+                                    <div class="form-group">
+                                        <span class="la la-linkedin form-icon"></span>
+                                        <input class="form-control" type="text" placeholder="https://www.linkedin.com">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-6 -->
+                        </form>
+                    </div><!-- end form-content -->
+                </div><!-- end form-box -->
+                <div class="form-box">
+                    <div class="form-title-wrap">
+                        <h3 class="title"><i class="la la-plane mr-2 text-gray"></i>اطلاعات پرواز شما</h3>
+                    </div><!-- form-title-wrap -->
+                    <div class="form-content contact-form-action">
+                        <form method="post" class="row">
+                            <div class="col-lg-12">
+                                <div class="input-box">
+                                    <label class="label-text">کل زمان پرواز</label>
+                                    <div class="form-group">
+                                        <span class="la la-clock form-icon"></span>
+                                        <input class="form-control" type="text" name="text" placeholder="کل زمان پرواز">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-12 -->
+                            <div class="col-lg-6">
+                                <div class="input-box">
+                                    <label class="label-text">محدوده قیمت (برای هر نفر)</label>
+                                    <div class="form-group">
+                                        <span class="la la-money form-icon"></span>
+                                        <input class="form-control" type="text" name="text" placeholder="قیمت رو وارد کن">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-6 -->
+                            <div class="col-lg-6">
+                                <div class="input-box">
+                                    <label class="label-text">انتخاب واحد پول</label>
+                                    <div class="form-group select-contain w-100">
+                                        <select class="select-contain-select">
+                                            <option value="">-- انتخاب واحد پول --</option>
+                                            <option value="IRR">IRR ریال ایران</option>
+                                            <option value="USD">USD دلار آمریکا</option>
+                                            <option value="GBP">GBP پوند انگلیس</option>
+                                            <option value="EUR">EUR یورو</option>
+                                            <option value="CAD">CAD دلار کانادا</option>
+                                            <option value="CHF">CHF فرانک سوئیس</option>
+                                            <option value="AUD">AUD دلار استرالیا</option>
+                                            <option value="JPY">JPY ین ژاپن</option>
+                                            <option value="CNY">CNY یوان چین</option>
+                                            <option value="INR">INR روپیه هند</option>
+                                            <option value="SEK">SEK کرون سوئد</option>
+                                            <option value="BRL">BRL رئال برزیل</option>
+                                            <option value="TRY">TRY لیر ترکیه</option>
+                                            <option value=""> ---------------------------</option>
+                                            <option value="AED">AED درهم امارات</option>
+                                            <option value="AFN">AFN افغانی افغان</option>
+                                            <option value="AMD">AMD درام ارمنستان</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-6 -->
+                            <div class="col-lg-4">
+                                <div class="input-box">
+                                    <label class="label-text">شرکت هواپیمایی</label>
+                                    <div class="form-group select-contain w-100">
+                                        <select class="select-contain-select">
+                                            <option value="">-- انتخاب شرکت هواپیمایی --</option>
+                                            <option value="AN">ادونسد ایر</option>
+                                            <option value="A3">اجین ایرلاینز</option>
+                                            <option value="EI">ایر لینگاس</option>
+                                            <option value="5G">می‌ایر</option>
+                                            <option value="SU">آئروفلوت روسیه</option>
+                                            <option value="AR">ارولینیاس آرژانتیناس</option>
+                                            <option value="VW">آئرومار</option>
+                                            <option value="AM">آئرومکزیکو</option>
+                                            <option value="ZI">ایگل آزور</option>
+                                            <option value="AH">ایر الجزایر</option>
+                                            <option value="KC">ایر آستانه</option>
+                                            <option value="UU">ایر استرال</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-4 -->
+                            <div class="col-lg-4">
+                                <div class="input-box">
+                                    <label class="label-text">نوع پرواز</label>
+                                    <div class="form-group select-contain w-100">
+                                        <select class="select-contain-select">
+                                            <option value="">-- انتخاب--</option>
+                                            <option value="1">فرست کلاس</option>
+                                            <option value="2">بیزینسی</option>
+                                            <option value="3">اکونومی</option>
+                                            <option value="4">پریمیوم اکونومی</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-4 -->
+                            <div class="col-lg-4">
+                                <div class="input-box">
+                                    <label class="label-text">قابل استرداد</label>
+                                    <div class="form-group">
+                                        <span class="la la-briefcase form-icon"></span>
+                                        <input class="form-control" type="text" name="text" placeholder="قابل استرداد">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-4 -->
+                            <div class="col-lg-4">
+                                <div class="input-box">
+                                    <label class="label-text">هزینه لغو</label>
+                                    <div class="form-group">
+                                        <span class="la la-briefcase form-icon"></span>
+                                        <input class="form-control" type="text" name="text" placeholder="78 دلار برای هر نفر">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-4 -->
+                            <div class="col-lg-4">
+                                <div class="input-box">
+                                    <label class="label-text">تغییر پرواز</label>
+                                    <div class="form-group">
+                                        <span class="la la-briefcase form-icon"></span>
+                                        <input class="form-control" type="text" name="text" placeholder="78 دلار برای هر نفر">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-4 -->
+                            <div class="col-lg-4">
+                                <div class="input-box">
+                                    <label class="label-text">صندلی و چمدان</label>
+                                    <div class="form-group">
+                                        <span class="la la-briefcase form-icon"></span>
+                                        <input class="form-control" type="text" name="text" placeholder="صندلی و چمدان">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-4 -->
+                            <div class="col-lg-4">
+                                <div class="input-box">
+                                    <label class="label-text">ویژگی های پرواز</label>
+                                    <div class="form-group select-contain w-100">
+                                        <select class="select-contain-select">
+                                            <option value="">--انتخاب ویژگی--</option>
+                                            <option value="1">دسترس</option>
+                                            <option value="2">غیر دسترس</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-4 -->
+                            <div class="col-lg-4">
+                                <div class="input-box">
+                                    <label class="label-text">قیمت پایه</label>
+                                    <div class="form-group">
+                                        <span class="la la-briefcase form-icon"></span>
+                                        <input class="form-control" type="text" name="text" placeholder="قیمت پایه">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-4 -->
+                            <div class="col-lg-4">
+                                <div class="input-box">
+                                    <label class="label-text">مالیات ها و هزینه ها</label>
+                                    <div class="form-group">
+                                        <span class="la la-briefcase form-icon"></span>
+                                        <input class="form-control" type="text" name="text" placeholder="امالیات ها و هزینه ها">
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-4 -->
+                            <div class="col-lg-12">
+                                <div class="input-box">
+                                    <label class="label-text mb-0 line-height-20">توضیحات پرواز</label>
+                                    <p class="font-size-13 mb-3 line-height-20">حداکثر 400 کاراکتر</p>
+                                    <div class="form-group">
+                                        <span class="la la-pencil form-icon"></span>
+                                        <textarea class="message-control form-control" name="message" placeholder="فقط به زبان فارسی، بدون HTML، بدون آدرس وب یا ایمیل "></textarea>
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-12 -->
+                            <div class="col-lg-12">
+                                <div class="input-box">
+                                    <label class="label-text mb-0 line-height-20">توضیحات تکمیلی</label>
+                                    <p class="font-size-13 mb-3 line-height-20">حداکثر 400 کاراکتر</p>
+                                    <div class="form-group select-contain w-100">
+                                        <select class="select-contain-select">
+                                            <option value="">--انتخاب یک زبان--</option>
+                                            <option value="fa">فارسی</option>
+                                            <option value="ar">عربی</option>
+                                            <option value="zh">چینی</option>
+                                            <option value="cs">چکی</option>
+                                            <option value="da">دانمارکی</option>
+                                            <option value="nl">هلندی</option>
+                                            <option value="fi">فنلاندی</option>
+                                            <option value="fr">فرانسوی</option>
+                                            <option value="de">آلمانی</option>
+                                            <option value="el">یونانی</option>
+                                            <option value="iw">عبری</option>
+                                            <option value="hu">مجاری</option>
+                                            <option value="in">اندونزیایی</option>
+                                            <option value="it">ایتالیایی</option>
+                                            <option value="ja"> ژاپنی </option>
+                                            <option value="ko">کره ای</option>
+                                            <option value="no">نروژی</option>
+                                            <option value="pl">لهستانی</option>
+                                            <option value="pt"> پرتغالی </option>
+                                            <option value="ru"> روسی </option>
+                                            <option value="sr">صربی</option>
+                                            <option value="sk">اسلواکی</option>
+                                            <option value="es">اسپانیایی</option>
+                                            <option value="sv">سوئدی</option>
+                                            <option value="th">تای</option>
+                                            <option value="tr"> ترکی </option>
+                                            <option value="vi">ویتنامی</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="la la-pencil form-icon"></span>
+                                        <textarea class="message-control form-control" name="message" placeholder="بدون HTML، بدون آدرس وب یا ایمیل "></textarea>
+                                    </div>
+                                </div>
+                            </div><!-- end col-lg-12 -->
+                        </form>
+                    </div><!-- end form-content -->
+                </div><!-- end form-box -->
+                <div class="form-box">
+                    <div class="form-title-wrap">
+                        <h3 class="title"><i class="la la-gift mr-2 text-gray"></i>ویژگی های پرواز</h3>
+                    </div><!-- form-title-wrap -->
+                    <div class="form-content contact-form-action">
+                        <form method="post" class="row">
+                            <div class="col-lg-6">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="WIFI">
+                                    <label for="WIFI">وای فای</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="Coffee">
+                                    <label for="Coffee">قهوه</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="AirConditioning">
+                                    <label for="AirConditioning">تهویه مطبوع</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="Entertainment">
+                                    <label for="Entertainment">وسایل سرگرمی</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="Food">
+                                    <label for="Food">غذا</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="Drink">
+                                    <label for="Drink">نوشیدنی</label>
+                                </div>
+                            </div><!-- end col-lg-6 -->
+                            <div class="col-lg-6">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="Wines">
+                                    <label for="Wines">دسر</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="Comfort">
+                                    <label for="Comfort">آسایش</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="Television">
+                                    <label for="Television">تلویزیون</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="Games">
+                                    <label for="Games">وسایل بازی</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="Shopping">
+                                    <label for="Shopping">مرکز خرید</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="Magazines">
+                                    <label for="Magazines">مجلات</label>
+                                </div>
+                            </div><!-- end col-lg-6 -->
+                        </form>
+                    </div><!-- end form-content -->
+                </div><!-- end form-box -->
+                <div class="form-box">
+                    <div class="form-title-wrap">
+                        <h3 class="title"><i class="la la-photo mr-2 text-gray"></i>عکسی رو برای نمایش در این  لیست انتخاب کن</h3>
+                    </div><!-- form-title-wrap -->
+                    <div class="form-content contact-form-action">
+                        <form method="post" class="row">
+                            <div class="col-lg-12">
+                                <div class="file-upload-wrap">
+                                    <input type="file" name="files[]" class="multi file-upload-input with-preview" multiple maxlength="3">
+                                    <span class="file-upload-text"><i class="la la-upload mr-2"></i>برای بارگذاری روی تصاویر کلیک کن یا بکش</span>
+                                </div>
+                            </div><!-- end col-lg-12 -->
+                        </form>
+                    </div><!-- end form-content -->
+                </div><!-- end form-box -->
+                <div class="submit-box">
+                    <h3 class="title pb-3">ارسال این لیست</h3>
+                    <div class="custom-checkbox">
+                        <input type="checkbox" id="agreeChb">
+                        <label for="agreeChb">این کادر را علامت بزنید تا تأیید کنید که شما نماینده رسمی ملکی هستید که این لیست را برای آن ارسال می کنید و اطلاعاتی که ارائه کرده اید صحیح است. وقتی تصویری را ارسال می‌کنید، همچنین تصدیق می‌کنید که حق استفاده از تصویر را در وب دارید و موافقت می‌کنید که به Trizen با توجه به هیچ‌یک و همه مسائل مربوط به حق نسخه‌برداری ناشی از استفاده شما از تصویر آسیب نرسانید.</label>
+                    </div>
+                    <div class="btn-box pt-3">
+                        <button type="submit" class="theme-btn">ارسال لیست <i class="la la-arrow-right ml-1"></i></button>
+                    </div>
+                </div><!-- end submit-box -->
+            </div><!-- end col-lg-9 -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end listing-form -->
+<!-- ================================
+    END FORM AREA
+================================= -->
+
+<!-- ================================
+       START FOOTER AREA
+================================= -->
+<section class="footer-area section-bg padding-top-100px padding-bottom-30px">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 responsive-column">
+                <div class="footer-item">
+                    <div class="footer-logo padding-bottom-30px">
+                        <a href="index.html" class="foot__logo"><img src="images/logo.png" alt="logo"></a>
+                    </div><!-- end logo -->
+                    <p class="footer__desc">ترایزن؛ وب سایت خرید آنلاین، بلیط هواپیما، رزرو هتل، رزرو خودرو، سفرهای دریایی و تور</p>
+                    <ul class="list-items pt-3">
+                        <li>سعادت آباد ، بلوار سرو غربی <br> ساختمان تجاری اداری سرو</li>
+                        <li dir="ltr">+98-21-9101-0400</li>
+                        <li><a href="#">trizen@yourwebsite.com</a></li>
+                    </ul>
+                </div><!-- end footer-item -->
+            </div><!-- end col-lg-3 -->
+            <div class="col-lg-3 responsive-column">
+                <div class="footer-item">
+                    <h4 class="title curve-shape pb-3 margin-bottom-20px" data-text="curvs">شرکت ترایزن</h4>
+                    <ul class="list-items list--items">
+                        <li><a href="about.html">درباره ما</a></li>
+                        <li><a href="services.html">خدمات</a></li>
+                        <li><a href="#">فرصت های شغلی</a></li>
+                        <li><a href="blog-grid.html">اخبار</a></li>
+                        <li><a href="contact.html">پشتیبانی</a></li>
+                        <li><a href="#">تبلیغات</a></li>
+                    </ul>
+                </div><!-- end footer-item -->
+            </div><!-- end col-lg-3 -->
+            <div class="col-lg-3 responsive-column">
+                <div class="footer-item">
+                    <h4 class="title curve-shape pb-3 margin-bottom-20px" data-text="curvs">اطلاعات تکمیلی</h4>
+                    <ul class="list-items list--items">
+                        <li><a href="#">پکیج تور تفریحی امارات</a></li>
+                        <li><a href="#">پروازهای امارات</a></li>
+                        <li><a href="#">هتل های امارات</a></li>
+                        <li><a href="#"> اجاره اتومبیل در امارات</a></li>
+                        <li><a href="#"> ایجاد حساب</a></li>
+                        <li><a href="#">نظرات Trizen</a></li>
+                    </ul>
+                </div><!-- end footer-item -->
+            </div><!-- end col-lg-3 -->
+            <div class="col-lg-3 responsive-column">
+                <div class="footer-item">
+                    <h4 class="title curve-shape pb-3 margin-bottom-20px" data-text="curvs">الان عضو بشو</h4>
+                    <p class="footer__desc pb-3">برای دریافت آخرین به روز رسانی ها و تبلیغات عضو بشو</p>
+                    <div class="contact-form-action">
+                        <form action="#">
+                            <div class="input-box">
+                                <label class="label-text">آدرس ایمیلت رو وارد کن</label>
+                                <div class="form-group mb-0">
+                                    <span class="la la-envelope form-icon"></span>
+                                    <input class="form-control" type="email" name="email" placeholder="آدرس ایمیل">
+                                    <button class="theme-btn theme-btn-small submit-btn" type="submit">برو</button>
+                                    <span class="font-size-14 pt-1"><i class="la la-lock mr-1"></i>اطلاعات شما پیش ما محفوظه.</span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- end footer-item -->
+            </div><!-- end col-lg-3 -->
+        </div><!-- end row -->
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <div class="term-box footer-item">
+                    <ul class="list-items list--items d-flex align-items-center">
+                        <li><a href="#">قوانین و مقررات</a></li>
+                        <li><a href="#">شیوه نامه حقوق مسافر</a></li>
+                        <li><a href="#">راهنمای خرید</a></li>
+                    </ul>
+                </div>
+            </div><!-- end col-lg-8 -->
+            <div class="col-lg-4">
+                <div class="footer-social-box text-right">
+                    <ul class="social-profile">
+                        <li><a href="#"><i class="lab la-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="lab la-twitter"></i></a></li>
+                        <li><a href="#"><i class="lab la-instagram"></i></a></li>
+                        <li><a href="#"><i class="lab la-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div><!-- end col-lg-4 -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+    <div class="section-block mt-4"></div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <div class="copy-right padding-top-30px">
+                    <p class="copy__desc">
+                       کپی رایت &copy; تمامی حقوق محفوظ است . توسعه با
+                        <span class="la la-heart"></span>  توسط آرزو حسینی</p>
+                </div><!-- end copy-right -->
+            </div><!-- end col-lg-7 -->
+            <div class="col-lg-5">
+                <div class="copy-right-content d-flex align-items-center justify-content-end padding-top-30px">
+                    <h3 class="title font-size-15 pr-2">قبول میکنیم</h3>
+                    <img src="images/payment-img.png" alt="">
+                </div><!-- end copy-right-content -->
+            </div><!-- end col-lg-5 -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end footer-area -->
+<!-- ================================
+       START FOOTER AREA
+================================= -->
+
+<!-- start back-to-top -->
+<div id="back-to-top">
+    <i class="la la-angle-up" title="برو بالا"></i>
+</div>
+<!-- end back-to-top -->
+
+<!-- end modal-shared -->
+<div class="modal-popup">
+    <div class="modal fade" id="signupPopupForm" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title title" id="exampleModalLongTitle">ثبت نام</h5>
+                        <p class="font-size-14">سلام! خوش اومدی ،  ایجاد یک حساب جدید</p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="la la-close"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="contact-form-action">
+                        <form method="post">
+                            <div class="input-box">
+                                <label class="label-text">نام کاربری</label>
+                                <div class="form-group">
+                                    <span class="la la-user form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="نام کاربریت رو وارد کن">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="input-box">
+                                <label class="label-text">آدرس ایمیل</label>
+                                <div class="form-group">
+                                    <span class="la la-envelope form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="ایمیلت رو وارد کن">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="input-box">
+                                <label class="label-text">رمز عبور</label>
+                                <div class="form-group">
+                                    <span class="la la-lock form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="رمز عبور رو وارد کن">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="input-box">
+                                <label class="label-text">تکرار رمز عبور</label>
+                                <div class="form-group">
+                                    <span class="la la-lock form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="رمز عبورت رو دوباره وارد کن">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="btn-box pt-3 pb-4">
+                                <button type="button" class="theme-btn w-100">ثبت حساب</button>
+                            </div>
+                            <div class="action-box text-center">
+                                <p class="font-size-14">یا با استفاده از حساب های زیر ثبت نام کن</p>
+                                <ul class="social-profile py-3">
+                                    <li><a href="#" class="bg-5 text-white"><i class="lab la-facebook-f"></i></a></li>
+                                    <li><a href="#" class="bg-6 text-white"><i class="lab la-twitter"></i></a></li>
+                                    <li><a href="#" class="bg-7 text-white"><i class="lab la-instagram"></i></a></li>
+                                    <li><a href="#" class="bg-5 text-white"><i class="lab la-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div><!-- end contact-form-action -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- end modal-popup -->
+
+<!-- end modal-shared -->
+<div class="modal-popup">
+    <div class="modal fade" id="loginPopupForm" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title title" id="exampleModalLongTitle2">ورود</h5>
+                        <p class="font-size-14">سلام ! به حسابت خوش اومدی </p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="la la-close"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="contact-form-action">
+                        <form method="post">
+                            <div class="input-box">
+                                <label class="label-text">نام کاربری</label>
+                                <div class="form-group">
+                                    <span class="la la-user form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="نام کاربریت رو وارد کن">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="input-box">
+                                <label class="label-text">رمز عبور</label>
+                                <div class="form-group mb-2">
+                                    <span class="la la-lock form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="رمزعبورت رو وارد کن">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="custom-checkbox mb-0">
+                                        <input type="checkbox" id="rememberchb">
+                                        <label for="rememberchb">منو یادت باشه</label>
+                                    </div>
+                                    <p class="forgot-password">
+                                        <a href="recover.html">رمزت رو فراموش کردی ؟</a>
+                                    </p>
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="btn-box pt-3 pb-4">
+                                <button type="button" class="theme-btn w-100">ورود</button>
+                            </div>
+                            <div class="action-box text-center">
+                                <p class="font-size-14">یا با حساب های زیر وارد شو</p>
+                                <ul class="social-profile py-3">
+                                    <li><a href="#" class="bg-5 text-white"><i class="lab la-facebook-f"></i></a></li>
+                                    <li><a href="#" class="bg-6 text-white"><i class="lab la-twitter"></i></a></li>
+                                    <li><a href="#" class="bg-7 text-white"><i class="lab la-instagram"></i></a></li>
+                                    <li><a href="#" class="bg-5 text-white"><i class="lab la-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div><!-- end contact-form-action -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- end modal-popup -->
+
+<!-- Template JS Files -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/moment-jalaali.js"></script>
+<script src="js/daterangepicker-fa-ex.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.countTo.min.js"></script>
+<script src="js/animated-headline.js"></script>
+<script src="js/jquery.filer.min.js"></script>
+<script src="js/jquery.multi-file.min.js"></script>
+<script src="js/jquery.ripples-min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYzby4yYDVaXPmtu4jZAGR258K6IYwjIY&amp;libraries"></script>
+<script src="js/map-add.js"></script>
+<script src="js/main-rtl.js"></script>
+</body>
+</html>
