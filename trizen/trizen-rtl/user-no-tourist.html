@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="author" content="arezohosseini">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trizen - قالب  html گردشگری</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/line-awesome.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/datepicker-theme.css" media="all">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/animated-headline.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery.filer.css">
+    <link rel="stylesheet" href="css/flag-icon.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-rtl.css">
+</head>
+<body class="section-bg">
+<!-- start cssload-loader -->
+<div class="preloader" id="preloader">
+    <div class="loader">
+        <svg class="spinner" viewBox="0 0 50 50">
+            <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+        </svg>
+    </div>
+</div>
+<!-- end cssload-loader -->
+
+<!-- ================================
+       START DASHBOARD NAV
+================================= -->
+<div class="sidebar-nav">
+    <div class="sidebar-nav-body">
+        <div class="author-content">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="author-bio">
+                    <h4 class="author__title font-size-20" id="sidebarNameOfUser"></h4>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-menu-wrap">
+            <ul class="sidebar-menu list-items">
+                <li><a href="user-information.html"><i class="la la-user mr-2 text-color"></i>اطلاعات کاربری</a></li>
+                <li><a href="user-no-purchased-ticket.html"><i class="la la-ticket mr-2 text-color-2"></i>بلیت های من</a></li>
+                <li class="page-active"><a href="user-no-tourist.html"><i class="la la-users mr-2 text-color-3"></i>گردشگران</a></li>
+                <li><a href="user-comment.html"><i class="la la-comment mr-2"></i>نظرات ثبت شده</a></li>
+                <li><a href="user-no-ticket-send.html"><i class="la la-comment-alt mr-2 text-color-4"></i>ارسال تیکت</a></li>
+                <li><a href="index.html" id="logout"><i class="la la-power-off mr-2 text-color-6"></i>خروج</a></li>
+            </ul>
+        </div><!-- end sidebar-menu-wrap -->
+    </div>
+</div><!-- end sidebar-nav -->
+<!-- ================================
+       END DASHBOARD NAV
+================================= -->
+
+<!-- ================================
+    START DASHBOARD AREA
+================================= -->
+<section class="dashboard-area">
+    <div class="dashboard-nav">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="menu-wrapper">
+                        <div class="logo mr-5">
+                            <a href="index.html"><img id="headerLogo" alt="logo"></a>
+                        </div>
+                        <div class="nav-btn ml-auto">
+                            <div class="d-flex align-items-center">
+                                <span></span>
+                                <div class="menu-toggler">
+                                    <i class="la la-bars"></i>
+                                    <i class="la la-times"></i>
+                                </div><!-- end menu-toggler -->
+                                <span class="font-size-14 font-weight-bold text-light d-flex align-items-center" id="navNameOfUser"></span>
+                            </div>
+                        </div><!-- end nav-btn -->
+                    </div><!-- end menu-wrapper -->
+                </div><!-- end col-lg-12 -->
+            </div><!-- end row -->
+        </div><!-- end container-fluid -->
+    </div><!-- end dashboard-nav -->
+    <div class="dashboard-content-wrap" id="dashboardAreaNoTouristSection">
+        <div class="dashboard-bread dashboard--bread">
+        </div><!-- end dashboard-bread -->
+        <div class="dashboard-main-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="form-box">
+                            <div class="form-content">
+                                <div class="contact-form-action">
+                                    <form action="#">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="btn-box d-flex justify-content-between align-items-center mb-4">
+                                                    <h1 class="card-title m-0 font-size-24 font-weight-medium text-black">لیست گردشگران</h1>
+                                                    <button class="theme-btn" type="button" data-toggle="modal" data-target="#newTouristModal">افزودن گردشگر جدید</button>
+                                                </div>
+                                            </div><!-- end col-lg-12 -->
+                                            <div class="form-content contact-form-action p-0 mt-3 m-auto">
+                                                <p class="mb-5 font-size-18" id="pTagAboutTourist"></p>
+                                            </div><!-- end form-content -->
+                                        </div><!-- end row -->
+                                    </form>
+                                </div>
+                            </div>
+                        </div><!-- end form-box -->
+                    </div><!-- end col-lg-6 -->
+                </div><!-- end row -->
+            </div><!-- end container-fluid -->
+        </div><!-- end dashboard-main-content -->
+    </div><!-- end dashboard-content-wrap -->
+    <div class="dashboard-content-wrap" id="dashboardAreaHasTouristSection">
+        <div class="dashboard-bread dashboard--bread">
+        </div><!-- end dashboard-bread -->
+        <div class="dashboard-main-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="form-box">
+                            <div class="form-content pb-0">
+                                <div class="contact-form-action">
+                                    <form action="#">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="btn-box d-flex justify-content-between align-items-center">
+                                                    <h1 class="card-title m-0 font-size-24 font-weight-medium text-black">لیست گردشگران</h1>
+                                                    <button class="theme-btn" type="button" data-toggle="modal" data-target="#newTouristModal">افزودن گردشگر جدید</button>
+                                                </div>
+                                            </div><!-- end col-lg-12 -->
+                                        </div><!-- end row -->
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="form-content">
+                                <div class="table-form table-responsive">
+                                    <table class="table table-bordered table striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">ردیف</th>
+                                                <th scope="col">نام و نام خانوادگی</th>
+                                                <th scope="col">کد ملی</th>
+                                                <th scope="col">شماره تلفن</th>
+                                                <th scope="col">تاریخ تولد</th>
+                                                <th scope="col">جنسیت</th>
+                                                <th scope="col">عملیات</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="dashboardAreaHasTourist">
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div><!-- end form-box -->
+                    </div><!-- end col-lg-12 -->
+                </div><!-- end row -->
+            </div><!-- end container-fluid -->
+        </div><!-- end dashboard-main-content -->
+    </div><!-- end dashboard-content-wrap -->
+</section><!-- end dashboard-area -->
+<!-- ================================
+    END DASHBOARD AREA
+================================= -->
+
+<div class="d-flex justify-content-center align-items-center" style="margin-right: 310px; margin-top: 250px;">
+    <p id="pTagLoading">در حال بارگذاری...</p>
+</div>
+
+
+<div class="modal-popup">
+    <div class="modal fade" id="changeTouristModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title title">اطلاعات گردشگر</h5>
+                        <p class="font-size-14 text-color-4">اطلاعات مسافر باید کاملا منطبق با مدارک شناسایی باشد.</p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="la la-close"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="contact-form-action">
+                        <form method="post">
+                            <div class="col-lg-12 p-0 d-flex flex-row">
+                                <div class="col-lg-6">
+                                    <div class="input-box">
+                                        <div class="form-group">
+                                            <span class="la la-user form-icon"></span>
+                                            <input class="form-control" type="text" name="text" placeholder="نام و نام خانوادگی" id="nameAndFamilyChange">
+                                        </div>
+                                    </div>
+                                </div>                                
+                                <div class="col-lg-6">
+                                    <div class="input-box">
+                                        <div class="form-group">
+                                            <span class="la la-phone form-icon"></span>
+                                            <input class="form-control" type="text" placeholder="شماره تلفن" id="phoneNumberChange">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 p-0 d-flex flex-row">
+                                <div class="col-lg-6">
+                                    <div class="input-box">
+                                        <div class="form-group">
+                                            <span class="la la-ticket form-icon"></span>
+                                            <input class="form-control" type="text" name="text" placeholder="کد ملی" id="nationalCodeChange" readonly>
+                                        </div>
+                                    </div>
+                                </div>      
+                                <div class="col-lg-6">
+                                    <div class="input-box">
+                                        <div class="form-group">
+                                            <div class="select-contain w-auto">
+                                                <select class="select-contain-select" id="genderChange">
+                                                    <option value="">انتخاب جنسیت</option>
+                                                    <option value="mail">مرد</option>
+                                                    <option value="female">زن</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 p-0 d-flex flex-row">
+                                <div class="col-lg-6">
+                                    <div class="input-box">
+                                        <div class="form-group">
+                                            <span class="la la-calendar form-icon"></span>
+                                            <input type="text" class="form-control" id="updateBirthDateChange" required placeholder="تاریخ تولد">
+                                            <small class="text-danger dateError" style="display: none;">فرمت تاریخ نامعتبر است</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-box pt-3 pb-4">
+                                <button type="button" class="theme-btn w-100" id="changeSubmitNewTourist">ویرایش گردشگر</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-popup">
+    <div class="modal fade" id="successAddNewTourist" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title title">پیام</h5>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="la la-close"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <span class="text-success">گردشگر با موفقیت اضافه شد</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-popup">
+    <div class="modal fade" id="newTouristModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title title">اطلاعات گردشگر</h5>
+                        <p class="font-size-14 text-color-4">اطلاعات مسافر باید کاملا منطبق با مدارک شناسایی باشد.</p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="la la-close"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="contact-form-action">
+                        <form method="post">
+                            <div class="col-lg-12 p-0 d-flex flex-row">
+                                <div class="col-lg-6">
+                                    <div class="input-box">
+                                        <div class="form-group">
+                                            <span class="la la-user form-icon"></span>
+                                            <input class="form-control" type="text" name="text" placeholder="نام و نام خانوادگی" id="nameAndFamily">
+                                        </div>
+                                    </div>
+                                </div>                                
+                                <div class="col-lg-6">
+                                    <div class="input-box">
+                                        <div class="form-group">
+                                            <span class="la la-phone form-icon"></span>
+                                            <input class="form-control" type="text" placeholder="شماره تلفن" id="phoneNumber">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 p-0 d-flex flex-row">
+                                <div class="col-lg-6">
+                                    <div class="input-box">
+                                        <div class="form-group">
+                                            <span class="la la-ticket form-icon"></span>
+                                            <input class="form-control" type="text" name="text" placeholder="کد ملی" id="nationalCode">
+                                        </div>
+                                    </div>
+                                </div>      
+                                <div class="col-lg-6">
+                                    <div class="input-box">
+                                        <div class="form-group">
+                                            <div class="select-contain w-auto">
+                                                <select class="select-contain-select" id="gender">
+                                                    <option value="">انتخاب جنسیت</option>
+                                                    <option value="mail">مرد</option>
+                                                    <option value="female">زن</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 p-0 d-flex flex-row">
+                                <div class="col-lg-6">
+                                    <div class="input-box">
+                                        <div class="form-group">
+                                            <span class="la la-calendar form-icon"></span>
+                                            <input type="text" class="form-control" id="updateBirthDate" required placeholder="تاریخ تولد">
+                                            <small class="text-danger dateError" style="display: none;">فرمت تاریخ نامعتبر است</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-box pt-3 pb-4">
+                                <button type="button" class="theme-btn w-100" id="submitNewTourist">افزودن</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- start scroll top -->
+<div id="back-to-top">
+    <i class="la la-angle-up" title="برو بالا"></i>
+</div>
+<!-- end scroll top -->
+
+<!-- Template JS Files -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/moment-jalaali.js"></script>
+<script src="js/daterangepicker-fa-ex.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.countTo.min.js"></script>
+<script src="js/animated-headline.js"></script>
+<script src="js/jquery.filer.min.js"></script>
+<script src="js/jquery.multi-file.min.js"></script>
+<script src="js/jquery.ripples-min.js"></script>
+<script src="js/main-rtl.js"></script>
+<script src="js-api/logout.js"></script>
+<script src="js-api/user-dashboard.js"></script>
+<script src="js-api/add-new-tourist.js"></script>
+<script src="js-api/tourist.js"></script>
+<script src="js-api/change-information-tourist.js"></script>
+<script src="js-api/date-input.js"></script>
+<script src="js-api/remove-torist.js"></script>
+<script src="js-api/logo.js"></script>
+</body>
+</html>

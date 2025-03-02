@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="author" content="arezohosseini">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trizen - قالب  html گردشگری</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/line-awesome.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/datepicker-theme.css" media="all">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/animated-headline.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery.filer.css">
+    <link rel="stylesheet" href="css/flag-icon.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-rtl.css">
+</head>
+<body class="section-bg">
+<!-- start cssload-loader -->
+<div class="preloader" id="preloader">
+    <div class="loader">
+        <svg class="spinner" viewBox="0 0 50 50">
+            <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+        </svg>
+    </div>
+</div>
+<!-- end cssload-loader -->
+
+<!-- ================================
+       START DASHBOARD NAV
+================================= -->
+<div class="sidebar-nav">
+    <div class="sidebar-nav-body">
+        <div class="author-content">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="author-bio">
+                    <h4 class="author__title font-size-20" id="sidebarNameOfUser"></h4>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-menu-wrap">
+            <ul class="sidebar-menu list-items">
+                <li><a href="user-information.html"><i class="la la-user mr-2 text-color"></i>اطلاعات کاربری</a></li>
+                <li><a href="user-no-purchased-ticket.html"><i class="la la-ticket mr-2 text-color-2"></i>بلیت های من</a></li>
+                <li><a href="user-no-tourist.html"><i class="la la-users mr-2 text-color-3"></i>گردشگران</a></li>
+                <li><a href="user-comment.html"><i class="la la-comment mr-2"></i>نظرات ثبت شده</a></li>
+                <li class="page-active"><a href="user-no-ticket-send.html"><i class="la la-comment-alt mr-2 text-color-4"></i>ارسال تیکت</a></li>
+                <li><a href="index.html" id="logout"><i class="la la-power-off mr-2 text-color-6"></i>خروج</a></li>
+            </ul>
+        </div><!-- end sidebar-menu-wrap -->
+    </div>
+</div><!-- end sidebar-nav -->
+<!-- ================================
+       END DASHBOARD NAV
+================================= -->
+
+<!-- ================================
+    START DASHBOARD AREA
+================================= -->
+<section class="dashboard-area">
+    <div class="dashboard-nav">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="menu-wrapper">
+                        <div class="logo mr-5">
+                            <a href="index.html"><img id="headerLogo" alt="logo"></a>
+                            <div class="menu-toggler">
+                                <i class="la la-bars"></i>
+                                <i class="la la-times"></i>
+                            </div><!-- end menu-toggler -->
+                        </div>
+                        <div class="nav-btn ml-auto">
+                            <div class="d-flex align-items-center">
+                                <span class="font-size-14 font-weight-bold text-light d-flex align-items-center" id="navNameOfUser"></span>
+                            </div>
+                        </div><!-- end nav-btn -->
+                    </div><!-- end menu-wrapper -->
+                </div><!-- end col-lg-12 -->
+            </div><!-- end row -->
+        </div><!-- end container-fluid -->
+    </div><!-- end dashboard-nav -->
+    <div class="dashboard-content-wrap" id="dashboardAreaNoTicket">
+        <div class="dashboard-bread dashboard--bread">
+        </div><!-- end dashboard-bread -->
+        <div class="dashboard-main-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="form-box">
+                            <div class="form-content pt-5 pb-0">
+                                <div class="row justify-content-center flex-column">
+                                    <div class="col-lg-6 m-auto">
+                                        <div class="form-content p-0">
+                                            <div class="card-item shadow-none radius-none mb-0 no-hover">
+                                                <div class="card-img">
+                                                    <img src="../trizen-rtl/flags/4x3/New letter.7378c7e6.svg" alt="not-found"> 
+                                                </div>
+                                            </div>
+                                        </div><!-- end form-content -->
+                                    </div><!-- end col-lg-4 -->
+                                    <div class="form-content contact-form-action p-0 mt-3 m-auto text-black font-size-24 font-weight-medium">
+                                        <p>تا کنون تیکتی ارسال یا دریافت نکرده اید.</p>
+                                    </div><!-- end form-content -->
+                                    <div class="col-lg-12 btn-box mt-3 mb-5 d-flex justify-content-center">
+                                        <button type="button" class="theme-btn" id="sendTicket">ارسال تیکت</button>
+                                    </div>
+                                </div><!-- end row -->
+                            </div>
+                        </div><!-- end form-box -->
+                    </div><!-- end col-lg-12 -->
+                </div><!-- end row -->
+            </div><!-- end container-fluid -->
+        </div><!-- end dashboard-main-content -->
+    </div><!-- end dashboard-content-wrap -->
+    <div class="dashboard-content-wrap" id="dashboardAreaSendTicket">
+        <div class="dashboard-bread dashboard--bread">
+        </div><!-- end dashboard-bread -->
+        <div class="dashboard-main-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="form-box">
+                            <div class="form-title-wrap">
+                                <h3 class="title">ارسال تیکت</h3>
+                            </div>
+                            <div class="form-content">
+                                <div class="contact-form-action">
+                                    <form action="#">
+                                        <div class="row">
+                                            <div class="form-content p-0 m-auto">
+                                                <p class="font-size-16 p-3">ارسال تیکت به منزله قبول شرایط و ضوابط مندرج در سایت مارینا کیش بوده و در راستای بهبود مستمر روند پاسخگویی، کلیه پیام‌ها و گفتگوهای شما با پشتیبانان ما ذخیره و مورد بازیابی قرار می‌گیرد.</p>
+                                            </div><!-- end form-content -->
+                                            <div class="col-lg-6 responsive-column">
+                                                <div class="input-box">
+                                                    <label class="label-text">عنوان</label>
+                                                    <div class="form-group">
+                                                        <span class="la la-user form-icon"></span>
+                                                        <input class="form-control" type="text" id="titleTicket">
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col-lg-6 -->
+                                            <div class="col-lg-6 responsive-column">
+                                                <div class="input-box">
+                                                    <label class="label-text">اولویت</label>
+                                                    <div class="form-group">
+                                                        <div class="select-contain w-auto">
+                                                            <select class="select-contain-select" id="priorityTicket">
+                                                                <option value="low">کم</option>
+                                                                <option value="medium">متوسط</option>
+                                                                <option value="Important">زیاد</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="input-box">
+                                                    <label class="label-text">توضیحات</label>
+                                                    <div class="form-group">
+                                                        <span class="la la-pencil form-icon"></span>
+                                                        <textarea class="message-control form-control" name="message" id="bodyTicket"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="btn-box d-flex justify-content-end">
+                                                    <button class="theme-btn" type="button" id="btnSendTicket"><i class="la la-share mr-1"></i>ارسال</button>
+                                                </div>
+                                            </div><!-- end col-lg-12 -->
+                                        </div><!-- end row -->
+                                    </form>
+                                </div>
+                            </div>
+                        </div><!-- end form-box -->
+                    </div><!-- end col-lg-6 -->
+                </div><!-- end row -->
+            </div><!-- end container-fluid -->
+        </div><!-- end dashboard-main-content -->
+    </div><!-- end dashboard-content-wrap -->
+    <div class="dashboard-content-wrap" id="dashboardAreaHasTicketSection">
+        <div class="dashboard-bread dashboard--bread">
+        </div><!-- end dashboard-bread -->
+        <div class="dashboard-main-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="form-box">
+                            <div class="form-content pb-0">
+                                <div class="contact-form-action">
+                                    <form action="#">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="btn-box d-flex justify-content-between align-items-center">
+                                                    <h1 class="card-title m-0 font-size-24 font-weight-medium text-black">ارسال تیکت</h1>
+                                                    <button class="theme-btn" type="button" id="sendNewTicket">ارسال تیکت جدید</button>
+                                                </div>
+                                            </div><!-- end col-lg-12 -->
+                                        </div><!-- end row -->
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="form-content">
+                                <div class="table-form table-responsive">
+                                    <table class="table table-bordered table striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">ردیف</th>
+                                                <th scope="col">عنوان تیکت</th>
+                                                <th scope="col">اولویت</th>
+                                                <th scope="col">تاریخ ثبت</th>
+                                                <th scope="col">وضعیت</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="dashboardAreaHasTicket">
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div><!-- end form-box -->
+                    </div><!-- end col-lg-12 -->
+                </div><!-- end row -->
+            </div><!-- end container-fluid -->
+        </div><!-- end dashboard-main-content -->
+    </div><!-- end dashboard-content-wrap -->
+</section><!-- end dashboard-area -->
+<!-- ================================
+    END DASHBOARD AREA
+================================= -->
+
+<div class="d-flex justify-content-center align-items-center" style="margin-right: 310px; margin-top: 250px;">
+    <p id="pTagLoading">در حال بارگذاری...</p>
+</div>
+
+
+<div class="modal-popup">
+    <div class="modal fade" id="detailTicketModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title title">جزئیات تیکت</h5>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="la la-close"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="contact-form-action text-center">
+                        <form method="post">
+                            <div class="col-lg-12 text-center">
+                                <div class="input-box">
+                                    <label class="col-lg-12 text-center label-text font-weight-medium">عنوان تیکت</label>
+                                    <div class="form-group">
+                                        <span class="la la-user form-icon"></span>
+                                        <input class="form-control" type="text" placeholder="عنوان" id="titleTicketDetail" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-top mt-4 mb-4"></div>
+                            <div class="col-lg-12">
+                                <label class="col-lg-12 text-center label-text font-weight-medium">اولویت</label>
+                                <div class="form-group">
+                                    <span class="font-size-14" id="priorityTicketDetail"></span>
+                                </div>
+                            </div>
+                            <div class="border-top mt-4 mb-4"></div>
+                            <div class="col-lg-12">
+                                <div class="input-box">
+                                    <label class="col-lg-12 text-center label-text font-weight-medium">درخواست شما</label>
+                                    <div class="form-group">
+                                        <span class="la la-pencil form-icon"></span>
+                                        <textarea class="form-control" type="text" placeholder="توضیحات" id="bodyTicketDetail" readonly></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-top mt-4 mb-4"></div>
+                            <div class="col-lg-12">
+                                <div class="input-box">
+                                    <label class="col-lg-12 text-center label-text font-weight-medium">پاسخ ادمین</label>
+                                    <div class="form-group">
+                                        <span class="la la-comment form-icon"></span>
+                                        <input class="form-control" type="text" placeholder="پاسخ" id="answerTicketDetail" readonly>
+                                    </div>
+                                </div>
+                            </div>      
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- start scroll top -->
+<div id="back-to-top">
+    <i class="la la-angle-up" title="برو بالا"></i>
+</div>
+<!-- end scroll top -->
+
+<!-- Template JS Files -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/moment-jalaali.js"></script>
+<script src="js/daterangepicker-fa-ex.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.countTo.min.js"></script>
+<script src="js/animated-headline.js"></script>
+<script src="js/jquery.filer.min.js"></script>
+<script src="js/jquery.ripples-min.js"></script>
+<script src="js/main-rtl.js"></script>
+<script src="js-api/user-dashboard.js"></script>
+<script src="js-api/user-no-ticket-send.js"></script>
+<script src="js-api/user-send-ticket.js"></script>
+<script src="js-api/ticket.js"></script>
+<script src="js-api/logout.js"></script>
+<script src="js-api/logo.js"></script>
+</body>
+</html>
