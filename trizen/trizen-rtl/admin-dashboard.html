@@ -5,7 +5,11 @@
     <meta name="author" content="arezohosseini">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<<<<<<< HEAD
+    <title>Trizen - قالب  html گردشگری</title>
+=======
     <title>Trizen</title>
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.png">
 
@@ -42,6 +46,223 @@
 <!-- end cssload-loader -->
 
 <!-- ================================
+<<<<<<< HEAD
+       START USER CANVAS MENU
+================================= -->
+<div class="user-canvas-container">
+    <div class="side-menu-close">
+        <i class="la la-times"></i>
+    </div><!-- end menu-toggler -->
+    <div class="user-canvas-nav">
+        <div class="section-tab section-tab-2 text-center pt-4 pb-3 pl-4">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="notification-tab" data-toggle="tab" href="#notification" role="tab" aria-controls="notification" aria-selected="false">
+                       اطلاعیه ها
+                    </a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" id="message-tab" data-toggle="tab" href="#message" role="tab" aria-controls="message" aria-selected="false">
+                        پیام ها
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" id="account-tab" data-toggle="tab" href="#account" role="tab" aria-controls="account" aria-selected="true">
+                        حساب کاربری
+                    </a>
+                </li>
+            </ul>
+        </div><!-- end section-tab -->
+    </div>
+    <div class="user-canvas-nav-content">
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="notification" role="tabpanel" aria-labelledby="notification-tab">
+                <div class="user-sidebar-item">
+                    <div class="notification-item">
+                        <div class="list-group drop-reveal-list">
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div class="msg-body d-flex align-items-center">
+                                    <div class="icon-element flex-shrink-0 mr-3 ml-0"><i class="la la-bell"></i></div>
+                                    <div class="msg-content w-100">
+                                        <h3 class="title pb-1">درخواست شما ارسال شد</h3>
+                                        <p class="msg-text">2 دقیقه قبل</p>
+                                    </div>
+                                </div><!-- end msg-body -->
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div class="msg-body d-flex align-items-center">
+                                    <div class="icon-element bg-2 flex-shrink-0 mr-3 ml-0"><i class="la la-check"></i></div>
+                                    <div class="msg-content w-100">
+                                        <h3 class="title pb-1">حساب شما ایجاد شد</h3>
+                                        <p class="msg-text">1 روز قبل</p>
+                                    </div>
+                                </div><!-- end msg-body -->
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div class="msg-body d-flex align-items-center">
+                                    <div class="icon-element bg-3 flex-shrink-0 mr-3 ml-0"><i class="la la-user"></i></div>
+                                    <div class="msg-content w-100">
+                                        <h3 class="title pb-1">حساب شما آپدیت شد</h3>
+                                        <p class="msg-text">2 ساعت قبل</p>
+                                    </div>
+                                </div><!-- end msg-body -->
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div class="msg-body d-flex align-items-center">
+                                    <div class="icon-element bg-4 flex-shrink-0 mr-3 ml-0"><i class="la la-lock"></i></div>
+                                    <div class="msg-content w-100">
+                                        <h3 class="title pb-1">رمزعبور شما تغییر کرد</h3>
+                                        <p class="msg-text">دیروز</p>
+                                    </div>
+                                </div><!-- end msg-body -->
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div class="msg-body d-flex align-items-center">
+                                    <div class="icon-element bg-5 flex-shrink-0 mr-3 ml-0"><i class="la la-envelope"></i></div>
+                                    <div class="msg-content w-100">
+                                        <h3 class="title pb-1">ایمیل شما ارسال شد</h3>
+                                        <p class="msg-text">دیروز</p>
+                                    </div>
+                                </div><!-- end msg-body -->
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div class="msg-body d-flex align-items-center">
+                                    <div class="icon-element bg-6 flex-shrink-0 mr-3 ml-0"><i class="la la-envelope"></i></div>
+                                    <div class="msg-content w-100">
+                                        <h3 class="title pb-1">ایمیلت رو تغییر دادی</h3>
+                                        <p class="msg-text">دیروز</p>
+                                    </div>
+                                </div><!-- end msg-body -->
+                            </a>
+                        </div>
+                    </div><!-- end notification-item -->
+                </div>
+            </div>
+            <div class="tab-pane fade" id="message" role="tabpanel" aria-labelledby="message-tab">
+                <div class="user-sidebar-item">
+                    <div class="notification-item">
+                        <div class="list-group drop-reveal-list">
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div class="msg-body d-flex align-items-center">
+                                    <div class="avatar flex-shrink-0 mr-3">
+                                        <img src="images/team8.jpg" alt="">
+                                    </div>
+                                    <div class="msg-content w-100">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <h3 class="title pb-1">سعید وحدتی</h3>
+                                            <span class="msg-text">3 دقیقه قبل</span>
+                                        </div>
+                                        <p class="msg-text">نیازی به خدمتکار ویژه نیست</p>
+                                    </div>
+                                </div><!-- end msg-body -->
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div class="msg-body d-flex align-items-center">
+                                    <div class="avatar flex-shrink-0 mr-3">
+                                        <img src="images/team9.jpg" alt="">
+                                    </div>
+                                    <div class="msg-content w-100">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <h3 class="title pb-1">مهدی رسولی</h3>
+                                            <span class="msg-text">قبل 1 ساعت</span>
+                                        </div>
+                                        <p class="msg-text">نیازی به خدمتکار ویژه نیست</p>
+                                    </div>
+                                </div><!-- end msg-body -->
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div class="msg-body d-flex align-items-center">
+                                    <div class="avatar flex-shrink-0 mr-3">
+                                        <img src="images/team10.jpg" alt="">
+                                    </div>
+                                    <div class="msg-content w-100">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <h3 class="title pb-1">امید نظری</h3>
+                                            <span class="msg-text">2 ساعت قبل</span>
+                                        </div>
+                                        <p class="msg-text">نیازی به خدمتکار ویژه نیست</p>
+                                    </div>
+                                </div><!-- end msg-body -->
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div class="msg-body d-flex align-items-center">
+                                    <div class="avatar flex-shrink-0 mr-3">
+                                        <img src="images/team11.jpg" alt="">
+                                    </div>
+                                    <div class="msg-content w-100">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <h3 class="title pb-1">کیوان جعفری</h3>
+                                            <span class="msg-text">3 ساعت قبل</span>
+                                        </div>
+                                        <p class="msg-text">نیازی به خدمتکار ویژه نیست</p>
+                                    </div>
+                                </div><!-- end msg-body -->
+                            </a>
+                        </div>
+                    </div><!-- end notification-item -->
+                </div>
+            </div>
+            <div class="tab-pane fade" id="account" role="tabpanel" aria-labelledby="account-tab">
+                <div class="user-action-wrap user-sidebar-panel">
+                    <div class="notification-item">
+                        <a href="user-dashboard-profile.html" class="dropdown-item">
+                            <div class="d-flex align-items-center">
+                                <div class="avatar avatar-sm flex-shrink-0 mr-2"><img src="images/team8.jpg" alt="team-img"></div>
+                                <span class="font-size-14 font-weight-bold">آرزو حسینی</span>
+                            </div>
+                        </a>
+                        <div class="list-group drop-reveal-list user-drop-reveal-list">
+                            <a href="user-dashboard-profile.html" class="list-group-item list-group-item-action">
+                                <div class="msg-body">
+                                    <div class="msg-content">
+                                        <h3 class="title"><i class="la la-user mr-2"></i>پروفایل من</h3>
+                                    </div>
+                                </div><!-- end msg-body -->
+                            </a>
+                            <a href="user-dashboard-booking.html" class="list-group-item list-group-item-action">
+                                <div class="msg-body">
+                                    <div class="msg-content">
+                                        <h3 class="title"><i class="la la-shopping-cart mr-2"></i>رزرو های من</h3>
+                                    </div>
+                                </div><!-- end msg-body -->
+                            </a>
+                            <a href="user-dashboard-reviews.html" class="list-group-item list-group-item-action">
+                                <div class="msg-body">
+                                    <div class="msg-content">
+                                        <h3 class="title"><i class="la la-heart mr-2"></i>نظرات من</h3>
+                                    </div>
+                                </div><!-- end msg-body -->
+                            </a>
+                            <a href="user-dashboard-settings.html" class="list-group-item list-group-item-action">
+                                <div class="msg-body">
+                                    <div class="msg-content">
+                                        <h3 class="title"><i class="la la-gear mr-2"></i>تنظیمات</h3>
+                                    </div>
+                                </div><!-- end msg-body -->
+                            </a>
+                            <div class="section-block"></div>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <div class="msg-body">
+                                    <div class="msg-content">
+                                        <h3 class="title"><i class="la la-power-off mr-2"></i>خروج</h3>
+                                    </div>
+                                </div><!-- end msg-body -->
+                            </a>
+                        </div>
+                    </div><!-- end notification-item -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- end user-canvas-container -->
+<!-- ================================
+       END USER CANVAS MENU
+================================= -->
+
+<!-- ================================
+=======
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
        START DASHBOARD NAV
 ================================= -->
 <div class="sidebar-nav sidebar--nav">
@@ -51,14 +272,72 @@
         </div><!-- end menu-toggler -->
         <div class="author-content">
             <div class="d-flex align-items-center">
+<<<<<<< HEAD
+                <div class="author-img avatar-sm">
+                    <img src="images/team9.jpg" alt="testimonial image">
+                </div>
+                <div class="author-bio">
+                    <h4 class="author__title">آژانس مسافرتی رویال</h4>
+=======
                 <div class="author-bio">
                     <h4 class="author__title">Trizen</h4>
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
                     <span class="author__meta">به پنل ادمین خوشی اومدی</span>
                 </div>
             </div>
         </div>
         <div class="sidebar-menu-wrap">
             <ul class="sidebar-menu toggle-menu list-items">
+<<<<<<< HEAD
+                <li class="page-active"><a href="admin-dashboard.html"><i class="la la-dashboard mr-2"></i>دشبرد</a></li>
+                <li><a href="admin-dashboard-booking.html"><i class="la la-shopping-cart mr-2 text-color"></i>رزرو</a></li>
+                <li>
+                    <span class="side-menu-icon toggle-menu-icon">
+                        <i class="la la-angle-down"></i>
+                    </span>
+                    <a href="admin-dashboard-orders.html"><i class="la la-list mr-2 text-color-2"></i>سفارشات</a>
+                    <ul class="toggle-drop-menu">
+                        <li><a href="admin-dashboard-orders-details.html">جزئیات سفارش</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="side-menu-icon toggle-menu-icon">
+                        <i class="la la-angle-down"></i>
+                    </span>
+                    <a href="admin-dashboard-travellers.html"><i class="la la-users mr-2 text-color-3"></i>مسافران</a>
+                    <ul class="toggle-drop-menu">
+                        <li><a href="admin-dashboard-traveler-detail.html">مشخصات مسافر</a></li>
+                    </ul>
+                </li>
+                <li><a href="admin-dashboard-visa.html"><i class="la la-plane mr-2 text-color-4"></i>درخواست ویزا</a></li>
+                <li><a href="admin-dashboard-reviews.html"><i class="la la-star mr-2 text-color-5"></i>نظرات</a></li>
+                <li><a href="admin-dashboard-wishlist.html"><i class="la la-heart mr-2 text-color-6"></i>لیست علاقه مندی ها</a></li>
+                <li><a href="admin-dashboard-travel-agents.html"><i class="la la-text-width mr-2 text-color-7"></i>آژانس های مسافرتی</a></li>
+                <li>
+                    <span class="side-menu-icon toggle-menu-icon">
+                        <i class="la la-angle-down"></i>
+                    </span>
+                    <a href="#"><i class="la la-area-chart mr-2 text-color-8"></i>امور مالی</a>
+                    <ul class="toggle-drop-menu">
+                        <li><a href="admin-invoice.html">صورتحساب</a></li>
+                        <li><a href="admin-payments.html">پرداخت ها</a></li>
+                        <li><a href="admin-currency-list.html">لیست ارز ها</a></li>
+                        <li><a href="admin-dashboard-subscribers.html">مشتركين</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="side-menu-icon toggle-menu-icon">
+                        <i class="la la-angle-down"></i>
+                    </span>
+                    <a href="#"><i class="la la-map-signs mr-2 text-color-9"></i>لوکیشن ها</a>
+                    <ul class="toggle-drop-menu">
+                        <li><a href="admin-countries.html">کشورها</a></li>
+                        <li><a href="admin-airlines.html"> خطوط هوایی</a></li>
+                    </ul>
+                </li>
+                <li><a href="admin-dashboard-settings.html"><i class="la la-cog mr-2 text-color-10"></i>تنظیمات</a></li>
+                <li><a href="index.html"><i class="la la-power-off mr-2 text-color-11"></i>خروج</a></li>
+=======
                 <li  class="page-active"><a href="admin-dashboard.html"><i class="la la-dashboard mr-2 text-color"></i>دشبرد</a></li>
                 <li><a href="admin-dashboard-entertainment.html"><i class="la la-smile-o mr-2 text-color-1"></i>تفریحات</a></li>
                 <li><a href="admin-dashboard-users.html"><i class="la la-users mr-2 text-color-2"></i>کاربران</a></li>
@@ -72,6 +351,7 @@
                 <li><a href="admin-rules.html"><i class="la la-gavel mr-2 text-color-10"></i>قوانین و مقررات</a></li>
                 <li><a href="admin-dashboard-settings.html"><i class="la la-cog mr-2 text-color-11"></i>تنظیمات</a></li>
                 <li><a href="index.html"><i class="la la-power-off mr-2 text-color-12"></i>خروج</a></li>
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
             </ul>
         </div><!-- end sidebar-menu-wrap -->
     </div>
@@ -80,8 +360,11 @@
        END DASHBOARD NAV
 ================================= -->
 
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
 <!-- ================================
     START DASHBOARD AREA
 ================================= -->
@@ -92,6 +375,153 @@
                 <div class="col-lg-12">
                     <div class="menu-wrapper">
                         <div class="logo mr-5">
+<<<<<<< HEAD
+                            <a href="index.html"><img src="images/logo2.png" alt="logo"></a>
+                            <div class="menu-toggler">
+                                <i class="la la-bars"></i>
+                                <i class="la la-times"></i>
+                            </div><!-- end menu-toggler -->
+                            <div class="user-menu-open">
+                                <i class="la la-user"></i>
+                            </div><!-- end user-menu-open -->
+                        </div>
+                        <div class="dashboard-search-box">
+                            <div class="contact-form-action">
+                                <form action="#">
+                                    <div class="form-group mb-0">
+                                        <input class="form-control" type="text" name="text" placeholder="اینجا بگرد ...">
+                                        <button class="search-btn"><i class="la la-search"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="nav-btn ml-auto">
+                            <div class="notification-wrap d-flex align-items-center">
+                                <div class="notification-item mr-2">
+                                    <div class="dropdown">
+                                        <a href="#" class="dropdown-toggle drop-reveal-toggle-icon" id="notificationDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="la la-bell"></i>
+                                            <span class="noti-count">4</span>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-reveal dropdown-menu-xl dropdown-menu-right">
+                                            <div class="dropdown-header drop-reveal-header">
+                                                <h6 class="title"><strong class="text-black"> 4 </strong>اطلاعیه جدید داری</h6>
+                                            </div>
+                                            <div class="list-group drop-reveal-list">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <div class="msg-body d-flex align-items-center">
+                                                        <div class="icon-element flex-shrink-0 mr-3 ml-0"><i class="la la-bell"></i></div>
+                                                        <div class="msg-content w-100">
+                                                            <h3 class="title pb-1">درخواست شما ارسال شد</h3>
+                                                            <p class="msg-text">2 دقیقه قبل</p>
+                                                        </div>
+                                                    </div><!-- end msg-body -->
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <div class="msg-body d-flex align-items-center">
+                                                        <div class="icon-element bg-2 flex-shrink-0 mr-3 ml-0"><i class="la la-check"></i></div>
+                                                        <div class="msg-content w-100">
+                                                            <h3 class="title pb-1">حساب شما ایجاد شد</h3>
+                                                            <p class="msg-text">1 روز قبل</p>
+                                                        </div>
+                                                    </div><!-- end msg-body -->
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <div class="msg-body d-flex align-items-center">
+                                                        <div class="icon-element bg-3 flex-shrink-0 mr-3 ml-0"><i class="la la-user"></i></div>
+                                                        <div class="msg-content w-100">
+                                                            <h3 class="title pb-1">حساب شما آپدیت شد</h3>
+                                                            <p class="msg-text">2 ساعت قبل</p>
+                                                        </div>
+                                                    </div><!-- end msg-body -->
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <div class="msg-body d-flex align-items-center">
+                                                        <div class="icon-element bg-4 flex-shrink-0 mr-3 ml-0"><i class="la la-lock"></i></div>
+                                                        <div class="msg-content w-100">
+                                                            <h3 class="title pb-1">رمزعبور شما تغییر کرد</h3>
+                                                            <p class="msg-text">دیروز</p>
+                                                        </div>
+                                                    </div><!-- end msg-body -->
+                                                </a>
+                                            </div>
+                                            <a href="#" class="dropdown-item drop-reveal-btn text-center">مشاهده همه</a>
+                                        </div><!-- end dropdown-menu -->
+                                    </div>
+                                </div><!-- end notification-item -->
+                                <div class="notification-item mr-2">
+                                    <div class="dropdown">
+                                        <a href="#" class="dropdown-toggle drop-reveal-toggle-icon" id="messageDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="la la-envelope"></i>
+                                            <span class="noti-count">4</span>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-reveal dropdown-menu-xl dropdown-menu-right">
+                                            <div class="dropdown-header drop-reveal-header">
+                                                <h6 class="title"><strong class="text-black"> 4 </strong> پیام جدید داری</h6>
+                                            </div>
+                                            <div class="list-group drop-reveal-list">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <div class="msg-body d-flex align-items-center">
+                                                        <div class="avatar flex-shrink-0 mr-3">
+                                                            <img src="images/team8.jpg" alt="">
+                                                        </div>
+                                                        <div class="msg-content w-100">
+                                                            <div class="d-flex align-items-center justify-content-between">
+                                                                <h3 class="title pb-1">سعید وحدتی</h3>
+                                                                <span class="msg-text">3 دقیقه قبل</span>
+                                                            </div>
+                                                            <p class="msg-text">نیازی به خدمتکار ویژه نیست</p>
+                                                        </div>
+                                                    </div><!-- end msg-body -->
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <div class="msg-body d-flex align-items-center">
+                                                        <div class="avatar flex-shrink-0 mr-3">
+                                                            <img src="images/team9.jpg" alt="">
+                                                        </div>
+                                                        <div class="msg-content w-100">
+                                                            <div class="d-flex align-items-center justify-content-between">
+                                                                <h3 class="title pb-1">مهدی رسولی</h3>
+                                                                <span class="msg-text">قبل 1 ساعت</span>
+                                                            </div>
+                                                            <p class="msg-text">نیازی به خدمتکار ویژه نیست</p>
+                                                        </div>
+                                                    </div><!-- end msg-body -->
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <div class="msg-body d-flex align-items-center">
+                                                        <div class="avatar flex-shrink-0 mr-3">
+                                                            <img src="images/team10.jpg" alt="">
+                                                        </div>
+                                                        <div class="msg-content w-100">
+                                                            <div class="d-flex align-items-center justify-content-between">
+                                                                <h3 class="title pb-1">امید نظری</h3>
+                                                                <span class="msg-text">2 ساعت قبل</span>
+                                                            </div>
+                                                            <p class="msg-text">نیازی به خدمتکار ویژه نیست</p>
+                                                        </div>
+                                                    </div><!-- end msg-body -->
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <div class="msg-body d-flex align-items-center">
+                                                        <div class="avatar flex-shrink-0 mr-3">
+                                                            <img src="images/team11.jpg" alt="">
+                                                        </div>
+                                                        <div class="msg-content w-100">
+                                                            <div class="d-flex align-items-center justify-content-between">
+                                                                <h3 class="title pb-1">کیوان جعفری</h3>
+                                                                <span class="msg-text">3 ساعت قبل</span>
+                                                            </div>
+                                                            <p class="msg-text">نیازی به خدمتکار ویژه نیست</p>
+                                                        </div>
+                                                    </div><!-- end msg-body -->
+                                                </a>
+                                            </div>
+                                            <a href="#" class="dropdown-item drop-reveal-btn text-center">مشاهده همه</a>
+                                        </div><!-- end dropdown-menu -->
+                                    </div>
+                                </div><!-- end notification-item -->
+=======
                             <a href="index.html"><img id="header-logo" src="" alt="logo"></a>                            <div class="menu-toggler">
                                 <i class="la la-bars"></i>
                                 <i class="la la-times"></i>
@@ -99,10 +529,15 @@
                         </div>
                         <div class="nav-btn ml-auto">
                             <div class="notification-wrap d-flex align-items-center">
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
                                 <div class="notification-item">
                                     <div class="dropdown">
                                         <a href="#" class="dropdown-toggle" id="userDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <div class="d-flex align-items-center">
+<<<<<<< HEAD
+                                                <div class="avatar avatar-sm flex-shrink-0 mr-2"><img src="images/team8.jpg" alt="team-img"></div>
+=======
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
                                                 <span class="font-size-14 font-weight-bold">ادمین رویال</span>
                                             </div>
                                         </a>
@@ -111,20 +546,38 @@
                                                 <h6 class="title text-uppercase">خوش اومدی!</h6>
                                             </div>
                                             <div class="list-group drop-reveal-list user-drop-reveal-list">
+<<<<<<< HEAD
+                                                <a href="admin-dashboard-settings.html" class="list-group-item list-group-item-action">
+=======
                                                 <a href="admin-dashboard.html" class="list-group-item list-group-item-action">
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
                                                     <div class="msg-body">
                                                         <div class="msg-content">
                                                             <h3 class="title"><i class="la la-user mr-2"></i>ویرایش پروفایل</h3>
                                                         </div>
                                                     </div><!-- end msg-body -->
                                                 </a>
+<<<<<<< HEAD
+                                                <a href="admin-dashboard-orders.html" class="list-group-item list-group-item-action">
+=======
                                                 <a href="admin-dashboard-tickets.html" class="list-group-item list-group-item-action">
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
                                                     <div class="msg-body">
                                                         <div class="msg-content">
                                                             <h3 class="title"><i class="la la-shopping-cart mr-2"></i>سفارشات</h3>
                                                         </div>
                                                     </div><!-- end msg-body -->
                                                 </a>
+<<<<<<< HEAD
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <div class="msg-body">
+                                                        <div class="msg-content">
+                                                            <h3 class="title"><i class="la la-bell mr-2"></i>پیام ها</h3>
+                                                        </div>
+                                                    </div><!-- end msg-body -->
+                                                </a>
+=======
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
                                                 <a href="admin-dashboard-settings.html" class="list-group-item list-group-item-action">
                                                     <div class="msg-body">
                                                         <div class="msg-content">
@@ -166,6 +619,10 @@
                         <div class="breadcrumb-list text-right">
                             <ul class="list-items">
                                 <li><a href="index.html" class="text-white">صفحه اصلی</a></li>
+<<<<<<< HEAD
+                                <li>صفحات</li>
+=======
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
                                 <li>دشبرد</li>
                             </ul>
                         </div><!-- end breadcrumb-list -->
@@ -176,25 +633,43 @@
                         <div class="icon-box icon-layout-2 dashboard-icon-box pb-0">
                             <div class="d-flex pb-3 justify-content-between">
                                 <div class="info-content">
+<<<<<<< HEAD
+                                    <p class="info__desc">کل رزرو ها!</p>
+                                    <h4 class="info__title">55</h4>
+                                </div><!-- end info-content -->
+                                <div class="info-icon icon-element bg-4">
+=======
                                     <p class="info__desc">کل رزرو ها !</p>
                                     <h4 class="info__title title__orders"></h4>
                                 </div><!-- end info-content -->
                                 <div class="info-icon icon-element bg-2">
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
                                     <i class="la la-shopping-cart"></i>
                                 </div><!-- end info-icon-->
                             </div>
                             <div class="section-block"></div>
+<<<<<<< HEAD
+                            <a href="admin-dashboard-booking.html" class="d-flex align-items-center justify-content-between view-all">مشاهده همه<i class="la la-angle-left"></i></a>
+=======
                             <a href="admin-dashboard-tickets.html" class="d-flex align-items-center justify-content-between view-all">مشاهده همه<i class="la la-angle-left"></i></a>
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
                         </div>
                     </div><!-- end col-lg-3 -->
                     <div class="col-lg-3 responsive-column-l">
                         <div class="icon-box icon-layout-2 dashboard-icon-box pb-0">
                             <div class="d-flex pb-3 justify-content-between">
                                 <div class="info-content">
+<<<<<<< HEAD
+                                    <p class="info__desc">نظرات جدید!</p>
+                                    <h4 class="info__title">22</h4>
+                                </div><!-- end info-content -->
+                                <div class="info-icon icon-element bg-3">
+=======
                                     <p class="info__desc">نظرات جدید !</p>
                                     <h4 class="info__title title__reviews"></h4>
                                 </div><!-- end info-content -->
                                 <div class="info-icon icon-element bg-4">
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
                                     <i class="la la-star"></i>
                                 </div><!-- end info-icon-->
                             </div>
@@ -206,6 +681,17 @@
                         <div class="icon-box icon-layout-2 dashboard-icon-box pb-0">
                             <div class="d-flex pb-3 justify-content-between">
                                 <div class="info-content">
+<<<<<<< HEAD
+                                    <p class="info__desc">کل مشترکین !</p>
+                                    <h4 class="info__title">27</h4>
+                                </div><!-- end info-content -->
+                                <div class="info-icon icon-element bg-2">
+                                    <i class="la la-envelope"></i>
+                                </div><!-- end info-icon-->
+                            </div>
+                            <div class="section-block"></div>
+                            <a href="admin-dashboard-subscribers.html" class="d-flex align-items-center justify-content-between view-all">مشاهده همه<i class="la la-angle-left"></i></a>
+=======
                                     <p class="info__desc">کل کاربران !</p>
                                     <h4 class="info__title title__users"></h4>
                                 </div><!-- end info-content -->
@@ -215,12 +701,24 @@
                             </div>
                             <div class="section-block"></div>
                             <a href="admin-dashboard-users.html" class="d-flex align-items-center justify-content-between view-all">مشاهده همه<i class="la la-angle-left"></i></a>
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
                         </div>
                     </div><!-- end col-lg-3 -->
                     <div class="col-lg-3 responsive-column-l">
                         <div class="icon-box icon-layout-2 dashboard-icon-box pb-0">
                             <div class="d-flex pb-3 justify-content-between">
                                 <div class="info-content">
+<<<<<<< HEAD
+                                    <p class="info__desc">بوک مارک های جدید!</p>
+                                    <h4 class="info__title">25</h4>
+                                </div><!-- end info-content -->
+                                <div class="info-icon icon-element bg-1">
+                                    <i class="la la-bookmark-o"></i>
+                                </div><!-- end info-icon-->
+                            </div>
+                            <div class="section-block"></div>
+                            <a href="admin-dashboard-wishlist.html" class="d-flex align-items-center justify-content-between view-all">مشاهده همه<i class="la la-angle-left"></i></a>
+=======
                                     <p class="info__desc">تیکت های جدید !</p>
                                     <h4 class="info__title title__tickets"></h4>
                                 </div><!-- end info-content -->
@@ -230,6 +728,7 @@
                             </div>
                             <div class="section-block"></div>
                             <a href="admin-dashboard-ticket.html" class="d-flex align-items-center justify-content-between view-all">مشاهده همه<i class="la la-angle-left"></i></a>
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
                         </div>
                     </div><!-- end col-lg-3 -->
                 </div><!-- end row -->
@@ -238,6 +737,370 @@
         <div class="dashboard-main-content">
             <div class="container-fluid">
                 <div class="row">
+<<<<<<< HEAD
+                    <div class="col-lg-7 responsive-column--m">
+                        <div class="form-box">
+                            <div class="form-title-wrap">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <ul class="chart-pagination d-flex">
+                                        <li><a href="#" class="theme-btn theme-btn-small mr-2">روز</a></li>
+                                        <li><a href="#" class="theme-btn theme-btn-small theme-btn-transparent mr-2">هفته</a></li>
+                                        <li><a href="#" class="theme-btn theme-btn-small theme-btn-transparent">امسال</a></li>
+                                    </ul>
+                                    <div class="select-contain">
+                                        <select class="select-contain-select">
+                                            <option value="فروردین">فروردین</option>
+                                            <option value="اردیبهشت">اردیبهشت</option>
+                                            <option value="خرداد">خرداد</option>
+                                            <option value="تیر">تیر</option>
+                                            <option value="مرداد">مرداد</option>
+                                            <option value="شهریور">شهریور</option>
+                                             <option value="مهر">مهر</option>
+                                            <option value="آبان">آبان</option>
+                                            <option value="آذر">آذر</option>
+                                            <option value="دی">دی</option>
+                                            <option value="بهمن">بهمن</option>
+                                            <option value="اسفند">اسفند</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-content">
+                                <canvas id="line-chart"></canvas>
+                            </div>
+                        </div><!-- end form-box -->
+                    </div><!-- end col-lg-7-->
+                    <div class="col-lg-5 responsive-column--m">
+                        <div class="form-box dashboard-card">
+                            <div class="form-title-wrap">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h3 class="title">اعلان ها</h3>
+                                    <button type="button" class="icon-element mark-as-read-btn ml-auto mr-0" data-toggle="tooltip" data-placement="left" title="علامت زدن همه به عنوان خوانده شده">
+                                        <i class="la la-check-square"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="form-content p-0">
+                                <div class="list-group drop-reveal-list">
+                                    <a href="#" class="list-group-item list-group-item-action border-top-0">
+                                        <div class="msg-body d-flex align-items-center">
+                                            <div class="icon-element flex-shrink-0 mr-3 ml-0"><i class="la la-bell"></i></div>
+                                            <div class="msg-content w-100">
+                                                <h3 class="title pb-1">وضعیت آپدیت شد</h3>
+                                                <p class="msg-text">2 دقیقه قبل</p>
+                                            </div>
+                                            <span class="icon-element mark-as-read-btn flex-shrink-0 ml-auto mr-0" data-toggle="tooltip" data-placement="left" title="علامت زدن به عنوان خوانده شده">
+                                                <i class="la la-check-square"></i>
+                                            </span>
+                                        </div><!-- end msg-body -->
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <div class="msg-body d-flex align-items-center">
+                                            <div class="icon-element bg-1 flex-shrink-0 mr-3 ml-0"><i class="la la-bell"></i></div>
+                                            <div class="msg-content w-100">
+                                                <h3 class="title pb-1">پیشنهاد تخفیف 50 %</h3>
+                                                <p class="msg-text">2 دقیقه قبل</p>
+                                            </div>
+                                            <span class="icon-element mark-as-read-btn flex-shrink-0 ml-auto mr-0" data-toggle="tooltip" data-placement="left" title="علامت زدن به عنوان خوانده شده">
+                                                <i class="la la-check-square"></i>
+                                            </span>
+                                        </div><!-- end msg-body -->
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <div class="msg-body d-flex align-items-center">
+                                            <div class="icon-element bg-2 flex-shrink-0 mr-3 ml-0"><i class="la la-check"></i></div>
+                                            <div class="msg-content w-100">
+                                                <h3 class="title pb-1">حساب شما ایجاد شد</h3>
+                                                <p class="msg-text">1 روز قبل</p>
+                                            </div>
+                                            <span class="icon-element mark-as-read-btn flex-shrink-0 ml-auto mr-0" data-toggle="tooltip" data-placement="left" title="علامت زدن به عنوان خوانده شده">
+                                                <i class="la la-check-square"></i>
+                                            </span>
+                                        </div><!-- end msg-body -->
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <div class="msg-body d-flex align-items-center">
+                                            <div class="icon-element bg-3 flex-shrink-0 mr-3 ml-0"><i class="la la-user"></i></div>
+                                            <div class="msg-content w-100">
+                                                <h3 class="title pb-1">حساب شما آپدیت شد</h3>
+                                                <p class="msg-text">2 ساعت قبل</p>
+                                            </div>
+                                            <span class="icon-element mark-as-read-btn flex-shrink-0 ml-auto mr-0" data-toggle="tooltip" data-placement="left" title="علامت زدن به عنوان خوانده شده">
+                                                <i class="la la-check-square"></i>
+                                            </span>
+                                        </div><!-- end msg-body -->
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <div class="msg-body d-flex align-items-center">
+                                            <div class="icon-element bg-4 flex-shrink-0 mr-3 ml-0"><i class="la la-lock"></i></div>
+                                            <div class="msg-content w-100">
+                                                <h3 class="title pb-1">رمزعبور شما تغییر کرد</h3>
+                                                <p class="msg-text">دیروز</p>
+                                            </div>
+                                            <span class="icon-element mark-as-read-btn flex-shrink-0 ml-auto mr-0" data-toggle="tooltip" data-placement="left" title="علامت زدن به عنوان خوانده شده">
+                                                <i class="la la-check-square"></i>
+                                            </span>
+                                        </div><!-- end msg-body -->
+                                    </a>
+                                     <a href="#" class="list-group-item list-group-item-action">
+                                        <div class="msg-body d-flex align-items-center">
+                                            <div class="icon-element bg-5 flex-shrink-0 mr-3 ml-0"><i class="la la-user"></i></div>
+                                            <div class="msg-content w-100">
+                                                <h3 class="title pb-1">حساب شما آپدیت شد</h3>
+                                                <p class="msg-text">2 ساعت قبل</p>
+                                            </div>
+                                            <span class="icon-element mark-as-read-btn flex-shrink-0 ml-auto mr-0" data-toggle="tooltip" data-placement="left" title="علامت زدن به عنوان خوانده شده">
+                                                <i class="la la-check-square"></i>
+                                            </span>
+                                        </div><!-- end msg-body -->
+                                    </a>
+                                </div>
+                            </div>
+                        </div><!-- end form-box -->
+                    </div><!-- end col-lg-5 -->
+                    <div class="col-lg-12">
+                        <div class="form-box dashboard-card">
+                            <div class="form-title-wrap">
+                                <h3 class="title">درآمد این ماه برای هر سرویس</h3>
+                            </div>
+                            <div class="form-content">
+                                <div class="row">
+                                    <div class="col-lg-3 responsive-column-l">
+                                        <div class="icon-box icon-layout-2 dashboard-icon-box dashboard--icon-box bg-1 pb-0">
+                                            <div class="d-flex pb-3 justify-content-between">
+                                                <div class="info-content">
+                                                    <p class="info__desc">هتل ها</p>
+                                                    <h4 class="info__title">1,500,000 تومان </h4>
+                                                </div><!-- end info-content -->
+                                                <div class="info-icon icon-element bg-white text-color-2">
+                                                    <i class="la la-hotel"></i>
+                                                </div><!-- end info-icon-->
+                                            </div>
+                                            <div class="section-block"></div>
+                                            <a href="#" class="d-flex align-items-center justify-content-between view-all">مشاهده جزئیات <i class="la la-arrow-left"></i></a>
+                                        </div>
+                                    </div><!-- end col-lg-3 -->
+                                    <div class="col-lg-3 responsive-column-l">
+                                        <div class="icon-box icon-layout-2 dashboard-icon-box dashboard--icon-box bg-2 pb-0">
+                                            <div class="d-flex pb-3 justify-content-between">
+                                                <div class="info-content">
+                                                    <p class="info__desc">خودرو ها</p>
+                                                    <h4 class="info__title">420,000 تومان</h4>
+                                                </div><!-- end info-content -->
+                                                <div class="info-icon icon-element bg-white text-color-3">
+                                                    <i class="la la-car"></i>
+                                                </div><!-- end info-icon-->
+                                            </div>
+                                            <div class="section-block"></div>
+                                            <a href="#" class="d-flex align-items-center justify-content-between view-all">مشاهده جزئیات <i class="la la-arrow-left"></i></a>
+                                        </div>
+                                    </div><!-- end col-lg-3 -->
+                                    <div class="col-lg-3 responsive-column-l">
+                                        <div class="icon-box icon-layout-2 dashboard-icon-box dashboard--icon-box bg-3 pb-0">
+                                            <div class="d-flex pb-3 justify-content-between">
+                                                <div class="info-content">
+                                                    <p class="info__desc">سفرهای دریایی</p>
+                                                    <h4 class="info__title">820,000 تومان</h4>
+                                                </div><!-- end info-content -->
+                                                <div class="info-icon icon-element bg-white text-color-4">
+                                                    <i class="la la-ship"></i>
+                                                </div><!-- end info-icon-->
+                                            </div>
+                                            <div class="section-block"></div>
+                                            <a href="#" class="d-flex align-items-center justify-content-between view-all">مشاهده جزئیات <i class="la la-arrow-left"></i></a>
+                                        </div>
+                                    </div><!-- end col-lg-3 -->
+                                    <div class="col-lg-3 responsive-column-l">
+                                        <div class="icon-box icon-layout-2 dashboard-icon-box dashboard--icon-box bg-4 pb-0">
+                                            <div class="d-flex pb-3 justify-content-between">
+                                                <div class="info-content">
+                                                    <p class="info__desc">پروازها</p>
+                                                    <h4 class="info__title">320,000 تومان</h4>
+                                                </div><!-- end info-content -->
+                                                <div class="info-icon icon-element bg-white text-color-5">
+                                                    <i class="la la-plane"></i>
+                                                </div><!-- end info-icon-->
+                                            </div>
+                                            <div class="section-block"></div>
+                                            <a href="#" class="d-flex align-items-center justify-content-between view-all">مشاهده جزئیات <i class="la la-arrow-left"></i></a>
+                                        </div>
+                                    </div><!-- end col-lg-3 -->
+                                </div><!-- end row -->
+                            </div>
+                        </div><!-- end form-box -->
+                    </div><!-- end col-lg-12 -->
+                    <div class="col-lg-6 responsive-column--m">
+                        <div class="form-box dashboard-card">
+                            <div class="form-title-wrap">
+                                <h3 class="title">مجموع سفارشات</h3>
+                            </div>
+                            <div class="form-content">
+                                <canvas id="bar-chart"></canvas>
+                            </div>
+                        </div><!-- end form-box -->
+                    </div><!-- end col-lg-6 -->
+                     <div class="col-lg-6 responsive-column--m">
+                        <div class="form-box dashboard-card">
+                            <div class="form-title-wrap">
+                                <h3 class="title">آمار سرور</h3>
+                            </div>
+                            <div class="form-content pb-0">
+                                <div class="dashboard-progressbar pb-4">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="font-size-14 pt-1">فضای مصرفی دیسک: 1746.5 / 50000 مگابایت</p>
+                                </div><!-- end dashboard-progressbar -->
+                                 <div class="dashboard-progressbar pb-4">
+                                     <div class="progress">
+                                         <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                     </div>
+                                     <p class="font-size-14 pt-1">انتقال ماهانه پهنای باند: 14706.1 / 30.000</p>
+                                </div><!-- end dashboard-progressbar -->
+                                 <div class="dashboard-progressbar pb-4">
+                                     <div class="progress">
+                                         <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                     </div>
+                                     <p class="font-size-14 pt-1">زیر دامنه ها: 7/15</p>
+                                </div><!-- end dashboard-progressbar -->
+                                 <div class="dashboard-progressbar pb-4">
+                                     <div class="progress">
+                                         <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                     </div>
+                                     <p class="font-size-14 pt-1">تمام پایگاه های داده : 6/8</p>
+                                </div><!-- end dashboard-progressbar -->
+                                 <div class="dashboard-progressbar pb-4">
+                                     <div class="progress">
+                                         <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                     </div>
+                                     <p class="font-size-14 pt-1">حساب های ایمیل: 8/10</p>
+                                </div><!-- end dashboard-progressbar -->
+                            </div>
+                        </div><!-- end form-box -->
+                    </div><!-- end col-lg-6 -->
+                    <div class="col-lg-6 responsive-column--m">
+                        <div class="form-box dashboard-card">
+                            <div class="form-title-wrap">
+                                <h3 class="title">7273 نفر از سایت بازدید کردن</h3>
+                            </div>
+                            <div class="form-content pb-0">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="sparkline-chart-item">
+                                            <span class="font-size-15">بازدید</span>
+                                            <h3 class="title font-size-16">9,080</h3>
+                                            <div class="visits-chart mt-2"></div>
+                                        </div>
+                                    </div><!-- end col-lg-4 -->
+                                     <div class="col-lg-4">
+                                        <div class="sparkline-chart-item">
+                                            <span class="font-size-15">بازدید کنندگان یونیک</span>
+                                            <h3 class="title font-size-16">4,080</h3>
+                                            <div class="visits-chart mt-2"></div>
+                                        </div>
+                                    </div><!-- end col-lg-4 -->
+                                     <div class="col-lg-4">
+                                        <div class="sparkline-chart-item">
+                                            <span class="font-size-15">پیش نمایش ها</span>
+                                            <h3 class="title font-size-16">12,080</h3>
+                                            <div class="previews-chart mt-2"></div>
+                                        </div>
+                                    </div><!-- end col-lg-4 -->
+                                    <div class="col-lg-4">
+                                        <div class="sparkline-chart-item">
+                                            <span class="font-size-15">صفحات/بازدید</span>
+                                            <h3 class="title font-size-16">1.54</h3>
+                                            <div class="visits-chart-2 mt-2"></div>
+                                        </div>
+                                    </div><!-- end col-lg-4 -->
+                                     <div class="col-lg-4">
+                                        <div class="sparkline-chart-item">
+                                            <span class="font-size-15">میانگین مدت بازدید</span>
+                                            <h3 class="title font-size-16">00:01:39</h3>
+                                            <div class="previews-chart mt-2"></div>
+                                        </div>
+                                    </div><!-- end col-lg-4 -->
+                                </div><!-- end row -->
+                            </div>
+                        </div><!-- end form-box -->
+                    </div><!-- end col-lg-6 -->
+                    <div class="col-lg-3 responsive-column--m">
+                        <div class="form-box dashboard-card">
+                            <div class="form-title-wrap">
+                                <h3 class="title">بازدید از طریق مرورگر</h3>
+                            </div>
+                            <div class="form-content py-0">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item px-0 d-flex justify-content-between align-items-center">
+                                        كروم
+                                        <span class="badge bg-info text-white badge-pill">3,506</span>
+                                    </li>
+                                    <li class="list-group-item px-0 d-flex justify-content-between align-items-center">
+                                        فایرفاکس
+                                        <span class="badge bg-info text-white badge-pill">2,405</span>
+                                    </li>
+                                    <li class="list-group-item px-0 d-flex justify-content-between align-items-center">
+                                        سافاری
+                                        <span class="badge bg-info text-white badge-pill">300</span>
+                                    </li>
+                                     <li class="list-group-item px-0 d-flex justify-content-between align-items-center">
+                                        اینترنت اکسپلورر
+                                        <span class="badge bg-info text-white badge-pill">200</span>
+                                    </li>
+                                    <li class="list-group-item px-0 d-flex justify-content-between align-items-center">
+                                        اوپرا
+                                        <span class="badge bg-info text-white badge-pill">111</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- end form-box -->
+                    </div><!-- end col-lg-3 -->
+                     <div class="col-lg-3 responsive-column--m">
+                        <div class="form-box dashboard-card">
+                            <div class="form-title-wrap">
+                                <h3 class="title">نمای کلی موبایل</h3>
+                            </div>
+                            <div class="form-content py-0">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item px-0 d-flex justify-content-between align-items-center">
+                                        دسکتاپ
+                                        <span class="badge bg-info text-white badge-pill">6,506</span>
+                                    </li>
+                                    <li class="list-group-item px-0 d-flex justify-content-between align-items-center">
+                                        تلفن همراه
+                                        <span class="badge bg-info text-white badge-pill">222</span>
+                                    </li>
+                                    <li class="list-group-item px-0 d-flex justify-content-between align-items-center">
+                                        تبلت
+                                        <span class="badge bg-info text-white badge-pill">65</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- end form-box -->
+                    </div><!-- end col-lg-3 -->
+                </div><!-- end row -->
+                <div class="border-top mt-4"></div>
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="copy-right padding-top-30px">
+                            <p class="copy__desc">
+                                &copy; تمامی حقوق محفوظ است . توسعه با
+                                <span class="la la-heart"></span>  توسط <a href="https://arezo-hoseini.ir">آرزو حسینی</a>
+                            </p>
+                        </div><!-- end copy-right -->
+                    </div><!-- end col-lg-7 -->
+                    <div class="col-lg-5">
+                        <div class="footer-social-box text-right padding-top-30px">
+                            <ul class="social-profile">
+                                <li><a href="#"><i class="lab la-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="lab la-twitter"></i></a></li>
+                                <li><a href="#"><i class="lab la-instagram"></i></a></li>
+                                <li><a href="#"><i class="lab la-linkedin-in"></i></a></li>
+                            </ul>
+                        </div><!-- end copy-right-content -->
+                    </div><!-- end col-lg-5 -->
+                </div><!-- end row -->
+=======
                     <div class="col-lg-12">
                         <div class="form-box">
                             <div class="form-title-wrap">
@@ -347,6 +1210,7 @@
                 </div><!-- end row -->
                 
                 <div class="border-top mt-4"></div>
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
             </div><!-- end container-fluid -->
         </div><!-- end dashboard-main-content -->
     </div><!-- end dashboard-content-wrap -->
@@ -361,6 +1225,8 @@
 </div>
 <!-- end scroll top -->
 
+<<<<<<< HEAD
+=======
 <div class="modal-popup">
     <div class="modal fade" id="changepassword" tabindex="-1" role="dialog"  aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -434,6 +1300,7 @@
 
 
 
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
 <!-- Template JS Files -->
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/jquery-ui.js"></script>
@@ -449,11 +1316,22 @@
 <script src="js/animated-headline.js"></script>
 <script src="js/jquery.sparkline.js"></script>
 <script src="js/dashboard.js"></script>
+<<<<<<< HEAD
+<script src="js/chart.js"></script>
+<script src="js/chart.extension.js"></script>
+<script src="js/bar-chart.js"></script>
+<script src="js/line-chart.js"></script>
+<script src="js/jquery.filer.min.js"></script>
+<script src="js/jquery.ripples-min.js"></script>
+<script src="js/main-rtl.js"></script>
+<script src="js-api/user-dashboard.js"></script>
+=======
 <script src="js/jquery.filer.min.js"></script>
 <script src="js/jquery.ripples-min.js"></script>
 <script src="js/main-rtl.js"></script>
 <script src="js/adminDashboard.js"></script>
 <script src="js/loadLogo.js"></script>
 
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
 </body>
 </html>

@@ -65,6 +65,20 @@
 .testimonial-card {
     text-align: right;
 }
+<<<<<<< HEAD
+
+.cruise-img-div{
+    width: 100%;
+}
+.cruise-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+=======
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
 .cruise-card .card-title {
     text-align: left;
 }
@@ -818,6 +832,9 @@
 /* 
 .ck[dir=rtl]{
     font-family: 'yekan' !important;
+<<<<<<< HEAD
+} */
+=======
 } */
 
 .faq-box {
@@ -887,3 +904,4 @@
 .filter-links a.active {
     border-bottom: 2px solid black;
 }
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455

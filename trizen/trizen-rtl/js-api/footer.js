@@ -58,6 +58,22 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                     break;
 
+<<<<<<< HEAD
+                    case "about_us":
+                        let aboutUsTitle = document.querySelector(".title[data-text='curvs']");
+                        if (aboutUsTitle) {
+                            if (Array.isArray(item.value)) {
+                                aboutUsTitle.textContent = item.value[0] || "درباره ما اطلاعاتی موجود نیست";
+                            } else if (typeof item.value === "string") {
+                                aboutUsTitle.textContent = item.value;
+                            } else {
+                                console.error("❌ مقدار `about_us` در API معتبر نیست:", item.value);
+                                aboutUsTitle.textContent = "درباره ما اطلاعاتی موجود نیست";
+                            }
+                        }
+                        break;
+
+=======
                 case "about_us":
                     let aboutUsTitle = document.querySelector(".title[data-text='curvs']");
                     if (aboutUsTitle && typeof item.value === "string") {
@@ -68,6 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     break;
 
                 case "image":
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
                     case "image":
                         let logoContainer = document.getElementById("footer-logo"); // گرفتن `div`
                         if (logoContainer && typeof item.value === "string" && item.value.trim() !== "") {

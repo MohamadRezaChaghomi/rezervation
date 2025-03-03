@@ -27,6 +27,26 @@ let ratingStar = ''
 
 
 window.addEventListener('DOMContentLoaded', () => {
+<<<<<<< HEAD
+
+    const checkboxes = document.querySelectorAll('#starInput input[type="checkbox"]');
+                            
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function(event) {
+            const selectedValue = parseInt(event.target.value);
+            checkboxes.forEach(cb => {
+                const cbValue = parseInt(cb.value);
+                if (cbValue <= selectedValue) {
+                    cb.checked = true;
+                } else {
+                    cb.checked = false;
+                }
+            });
+        });
+    });
+
+=======
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
     let token = localStorage.getItem('Token');
 
     if(token){
@@ -55,7 +75,11 @@ window.addEventListener('DOMContentLoaded', () => {
             console.error('خطا در دریافت اطلاعات کاربر:', error);
         });
     }else{
+<<<<<<< HEAD
+        nameOfUserHeader.parentNode.classList.add('d-none');
+=======
         nameOfUserHeader.parentNode.classList.remove('d-none');
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
     }
 
     let product_id = localStorage.getItem('product_id');
@@ -100,12 +124,20 @@ window.addEventListener('DOMContentLoaded', () => {
             pTagLoadingImg.classList.add("d-none")
             
             productName.insertAdjacentHTML('beforeend', 
+<<<<<<< HEAD
+                `<h3 class="card-title pb-4 pt-4 font-size-24 font-weight-bold">${data.name}</h3>`
+=======
                 `<h3 class="card-title pb-4 font-size-24 font-weight-bold">${data.name}</h3>`
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
             );
 
             productDetail.insertAdjacentHTML('beforeend', 
                 `<ul class="list-items list-items-2 list--items-2 py-2">
+<<<<<<< HEAD
+                    <li class="font-size-18 d-flex align-items-center justify-content-between mt-4">
+=======
                     <li class="font-size-18 d-flex align-items-center justify-content-between mt-5">
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
                         <span class="w-auto d-block d-flex align-items-center">
                             <i class="la la-clock-o text-black font-size-24"></i>مدت زمان: 
                         </span>${data.time} دقیقه
@@ -117,10 +149,17 @@ window.addEventListener('DOMContentLoaded', () => {
                     </li>
                     <li class="font-size-18 d-flex align-items-center justify-content-between mt-4">
                         <span class="w-auto d-block d-flex align-items-center">
+<<<<<<< HEAD
+                            <i class="la la-comment font-size-24"></i>دیدگاه:
+                        </span>${data.comments.length}
+                    </li>
+                    <li class="font-size-18 d-flex align-items-center justify-content-between mt-4 mb-4">
+=======
                             <i class="la la-comment font-size-24"></i>دیدگاه: 
                         </span>${data.comments.length}
                     </li>
                     <li class="font-size-18 d-flex align-items-center justify-content-between mt-4 mb-5">
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
                         <span class="w-auto d-block d-flex align-items-center">
                             <i class="la la-ticket font-size-24"></i>قیمت بلیت: 
                         </span>${data.price.toLocaleString()} تومان
@@ -157,13 +196,21 @@ window.addEventListener('DOMContentLoaded', () => {
                 let fullName;
 
                 if (data.sans && data.sans.length > 0) {
+<<<<<<< HEAD
+                    let selectedSansId = ''
+                    let orderData = {}
+=======
                     let selectedSansId = ''; // ذخیره شناسه سانس انتخاب‌شده
                     let orderData = {}; // ذخیره داده‌های سفارش
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
                     let dayReserved = ''
                     data.sans.forEach(sansItem => {
                         const timeWithoutSeconds = sansItem.start_time.slice(0, -3);
                 
+<<<<<<< HEAD
+=======
                         // ایجاد کارت سانس
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
                         sansContainer.insertAdjacentHTML('beforeend',
                             `<div class="col-6 col-md-5 col-lg-4 mb-3">
                                 <div class="card sans-card" sans_id=${sansItem.id}>
@@ -174,6 +221,15 @@ window.addEventListener('DOMContentLoaded', () => {
                                 </div>
                             </div>`
                         );
+<<<<<<< HEAD
+                        const lastCard = sansContainer.lastElementChild.querySelector('.sans-card');
+                        lastCard.addEventListener('click', function () {
+                            document.querySelectorAll('.sans-card').forEach(card => {
+                                card.classList.remove('selected');
+                            });
+                            this.classList.add('selected');
+                            selectedSansId = this.getAttribute('sans_id');
+=======
                 
                         // انتخاب آخرین کارت اضافه‌شده
                         const lastCard = sansContainer.lastElementChild.querySelector('.sans-card');
@@ -192,6 +248,7 @@ window.addEventListener('DOMContentLoaded', () => {
                             selectedSansId = this.getAttribute('sans_id');
                 
 
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
                         });
                     });
                 
@@ -228,7 +285,10 @@ window.addEventListener('DOMContentLoaded', () => {
                         let underReservedDay = createErrorSpan(calendarContainer, "لطفا ابتدا روز را انتخاب کنید");
                         let underSans = createErrorSpan(sansContainer, "لطفا ابتدا سانس را انتخاب کنید");
                         
+<<<<<<< HEAD
+=======
                         // بررسی انتخاب روز رزرو
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
                         if (!dayReserved) {
                             underReservedDay.classList.remove('d-none');
                             underReservedDay.classList.add('mt-3');
@@ -238,7 +298,10 @@ window.addEventListener('DOMContentLoaded', () => {
                             underReservedDay.classList.add('d-none');
                         }
                         
+<<<<<<< HEAD
+=======
                         // بررسی انتخاب سانس
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
                         if (!selectedSansId) {
                             underSans.classList.remove('d-none');
                             return; // توقف اجرای کد
@@ -248,6 +311,14 @@ window.addEventListener('DOMContentLoaded', () => {
                         
                         localStorage.removeItem("dayReserved"); 
                         
+<<<<<<< HEAD
+                    
+                        console.log(orderData)
+                        localStorage.setItem("orderData", JSON.stringify(orderData))
+                        console.log(localStorage)
+                    });
+                } else {
+=======
                         
                         console.log(orderData)
                         localStorage.setItem("orderData", JSON.stringify(orderData))
@@ -256,6 +327,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     });
                 } else {
                     // اگر سانسی وجود ندارد
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
                     sansContainer.insertAdjacentHTML('beforeend',
                         `<div class="col-lg-12 mb-3">
                             <span class="text-center">متاسفانه سانسی وجود ندارد</span>
@@ -382,7 +454,16 @@ window.addEventListener('DOMContentLoaded', () => {
                                 let year = date.getFullYear();
                 
                                 productComments.insertAdjacentHTML('beforeend',
+<<<<<<< HEAD
+                                    `<div class="comment pb-0 pb-3"style="
+                                    border-bottom: 0;
+                                    margin-bottom: 20px; 
+                                    padding: 30px;
+                                    box-shadow: 0 0 15px 0px #e1e1e1a1;
+                                    border-radius: 10px;">
+=======
                                     `<div class="comment mr-5 ml-5" style="border-bottom: 2px solid rgb(0 0 0 / 10%);">
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
                                         <div class="comment-body">
                                             <div class="meta-data">
                                                 <h3 class="comment__author">${fullName}</h3>
@@ -406,10 +487,17 @@ window.addEventListener('DOMContentLoaded', () => {
                                     let year = date.getFullYear();
                 
                                     productComments.insertAdjacentHTML('beforeend',
+<<<<<<< HEAD
+                                        `<div class="comment pb-0 pb-3" style="margin-right: 50px; border-bottom: 0; margin-bottom: 20px;">
+                                            <div class="comment-body">
+                                                <div class="meta-data">
+                                                    <h3 class="comment__author"> پاسخ ادمین به <span class="font-size-12">(${fullName})</span></h3>
+=======
                                         `<div class="comment comment-reply-item" style="margin-right:140px; border-bottom: 2px solid rgb(0 0 0 / 10%);">
                                             <div class="comment-body">
                                                 <div class="meta-data">
                                                     <h3 class="comment__author"> پاسخ ادمین</h3>
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
                                                     <div class="meta-data-inner d-flex">
                                                         <p class="comment__date">${year}/${month}/${day}</p>
                                                     </div>
@@ -463,9 +551,25 @@ window.addEventListener('DOMContentLoaded', () => {
     
         } else {
             console.error("داده‌های دریافتی نامعتبر هستند");
+<<<<<<< HEAD
+            $.getElementById('comment-forum').classList.add('d-none') 
+            $.getElementById('detailAndSansBtnSection').classList.add('d-none')
+            $.getElementById('descriptionAndTipSection').classList.add('d-none')
+            $.getElementById('newsSection').classList.add('d-none')
+            pTagLoadingDescription.textContent = ''
+            pTagLoadingDetail.textContent = ''
+            pTagLoadingImg.textContent = ''
+            pTagLoadingTip.textContent = ''
+            $.getElementById('errorMessage').classList.remove('d-none')
+        }
+    })
+    .catch(error => console.error("خطا در دریافت اطلاعات:", error));   
+
+=======
         }
     })
     .catch(error => console.error("خطا در دریافت اطلاعات:", error));    
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
 })
 
 
@@ -526,21 +630,31 @@ sendComment.addEventListener('click', () => {
         "star": ratingStar
     };
     
+<<<<<<< HEAD
+    if (!userToken) {
+=======
     // بررسی وجود توکن
     if (!userToken) {
         // نمایش مدال "نیاز به لاگین"
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
         let modalElement = document.getElementById('alertComment');
         let modal = new bootstrap.Modal(modalElement);
     
         document.getElementById("responseCommentModalBody").innerText = "برای ارسال کامنت ابتدا باید وارد حساب کاربری خود شوید.";
         modal.show();
     
+<<<<<<< HEAD
+=======
         // کلیک روی دکمه "بستن"
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
         modalElement.querySelector(".btn.btn-secondary").addEventListener("click", function () {
             modal.hide()
         });
     
+<<<<<<< HEAD
+=======
         // کلیک روی پس‌زمینه مدال
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
         modalElement.addEventListener("click", function (event) {
             if (event.target === modalElement) {
                 modal.hide()
@@ -550,7 +664,11 @@ sendComment.addEventListener('click', () => {
         return; // توقف اجرای کد بعدی
     }
     
+<<<<<<< HEAD
+    
+=======
     // اگر توکن وجود داشت، درخواست ارسال کامنت را انجام دهید
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
     fetch('http://avatoop.com/marina_kish/api/comments/store', {
         method: 'POST',
         headers: {
