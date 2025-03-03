@@ -7,6 +7,7 @@ let loginAndSignUpDiv = document.getElementById('loginAndSignUpDiv');
 
 window.addEventListener("DOMContentLoaded", () => {
 
+<<<<<<< HEAD
     let token = localStorage.getItem('Token');
 
     if(token){
@@ -46,6 +47,19 @@ window.addEventListener("DOMContentLoaded", () => {
         });
     }else{
         nameOfUserHeader.parentNode.classList.add('d-none');
+=======
+    let userToken = localStorage.getItem('Token');
+    let firstName_lastName = localStorage.getItem('firstName_lastName');
+    if(userToken){
+        loginAndSignUpDiv.classList.add('d-none');
+        if(firstName_lastName){
+            nameOfUserHeader.parentNode.classList.remove('d-none');
+            nameOfUserHeader.innerHTML = '<span class="la la-user form-icon font-size-24 mr-2"></span> ' + '<span>' + firstName_lastName + '</span>'
+        }else{
+            nameOfUserHeader.parentNode.classList.remove('d-none');
+        }
+
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
     }
 
     alertLogin.classList.add('d-none')

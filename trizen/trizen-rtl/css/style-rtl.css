@@ -65,6 +65,7 @@
 .testimonial-card {
     text-align: right;
 }
+<<<<<<< HEAD
 
 .cruise-img-div{
     width: 100%;
@@ -76,6 +77,8 @@
 }
 
 
+=======
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
 .cruise-card .card-title {
     text-align: left;
 }
@@ -829,4 +832,76 @@
 /* 
 .ck[dir=rtl]{
     font-family: 'yekan' !important;
+<<<<<<< HEAD
 } */
+=======
+} */
+
+.faq-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-content {
+    flex-grow: 1;
+}
+
+.faq-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.faq-actions button {
+    margin-bottom: 5px;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+.form-section h3 {
+    margin-bottom: 10px;
+}
+.form-section input[type="text"],
+.form-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.form-section .input-group {
+    display: flex;
+    gap: 10px;
+}
+.form-section .input-group input {
+    flex: 1;
+}
+
+.table td {
+    word-break: break-word; /* شکستن متن‌های طولانی */
+    white-space: normal; /* اجازه بده متن به خط بعدی برود */
+    max-width: 150px; /* می‌توانید مقدار را تغییر دهید تا متن زیادی کشیده نشود */
+    overflow-wrap: break-word;
+}
+
+.filter-links {
+    text-align: center;
+    margin: 20px 0;
+}
+.filter-links a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+.filter-links a:hover,
+.filter-links a.active {
+    border-bottom: 2px solid black;
+}
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455

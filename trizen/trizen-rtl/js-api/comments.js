@@ -13,6 +13,7 @@ console.log(localStorage)
     
     const firstName_lastName = localStorage.getItem('firstName_lastName');
 
+<<<<<<< HEAD
     let navNameOfUser = document.getElementById('navNameOfUser');
     let sidebarNameOfUser = document.getElementById('sidebarNameOfUser');
     
@@ -23,6 +24,21 @@ console.log(localStorage)
         ${firstName_lastName}
     </span>
 `;
+=======
+    let navNameOfUser = $.getElementById('navNameOfUser');
+    if (firstName_lastName) {
+        navNameOfUser.innerText = firstName_lastName;
+    }else{
+        navNameOfUser.innerText = "کاربر";
+    }
+    
+    let sidebarNameOfUser = $.getElementById('sidebarNameOfUser');
+    if (firstName_lastName) {
+        sidebarNameOfUser.innerText = firstName_lastName;
+    }else{
+        sidebarNameOfUser.innerText = "کاربر";
+    }
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
     
     if (!id) {
         console.error("ID کاربر در localStorage موجود نیست.");
@@ -48,7 +64,10 @@ console.log(localStorage)
     })
     .then(response => response.json())
     .then(data => {
+<<<<<<< HEAD
         console.log(data)
+=======
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
         if (data.data && Array.isArray(data.data) && data.data.length > 0) {
             pTagLoading.parentElement.classList.add("mt-0");
             pTagLoading.classList.add('d-none')
@@ -145,7 +164,11 @@ console.log(localStorage)
                             <th scope="row"><i class="mr-1 font-size-18"></i>${counter}</th>
                             <td>
                                 <div class="table-content">
+<<<<<<< HEAD
                                     <h3 class="title">${productName}</h3>
+=======
+                                    <h3 class="title">${productName}${Comment.id}</h3>
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
                                 </div>
                             </td>
                             <td>

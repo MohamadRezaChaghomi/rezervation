@@ -58,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                     break;
 
+<<<<<<< HEAD
                     case "about_us":
                         let aboutUsTitle = document.querySelector(".title[data-text='curvs']");
                         if (aboutUsTitle) {
@@ -72,6 +73,18 @@ document.addEventListener("DOMContentLoaded", function () {
                         }
                         break;
 
+=======
+                case "about_us":
+                    let aboutUsTitle = document.querySelector(".title[data-text='curvs']");
+                    if (aboutUsTitle && typeof item.value === "string") {
+                        aboutUsTitle.textContent = item.value;
+                    } else {
+                        console.error("❌ مقدار `about_us` در API معتبر نیست:", item.value);
+                    }
+                    break;
+
+                case "image":
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
                     case "image":
                         let logoContainer = document.getElementById("footer-logo"); // گرفتن `div`
                         if (logoContainer && typeof item.value === "string" && item.value.trim() !== "") {

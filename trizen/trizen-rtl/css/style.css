@@ -656,7 +656,11 @@ body {
 
 .section-block {
     height          : 1px;
+<<<<<<< HEAD
     background-color:rgb(237, 237, 237)
+=======
+    background-color: #f5f7fc
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
 }
 
 .hover-y {
@@ -1012,6 +1016,7 @@ body {
 }
 
 .theme-btn-rgb:hover {
+<<<<<<< HEAD
     background-color: rgba(40, 125, 250, .1);
 }
 
@@ -1019,11 +1024,23 @@ body {
     color: #fff;
     background-color           : #dc3545;
     border                     : none;
+=======
+    background-color: rgba(40, 125, 250, .1)
+}
+
+.theme-btn-danger-rgb {
+    background-color: rgba(220, 54, 67, .1);
+    color           : #dc3545
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
 }
 
 .theme-btn-danger-rgb:hover {
     background-color: rgba(220, 54, 67, .1);
+<<<<<<< HEAD
     color           : #dc3545;
+=======
+    color           : #dc3545
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
 }
 
 .theme-btn-hover-gray {
@@ -3440,6 +3457,7 @@ body {
     border-bottom: 1px solid rgba(128, 137, 150, .1)
 }
 
+<<<<<<< HEAD
 .container-contact{
     padding-top: 100px;
 }
@@ -3454,6 +3472,10 @@ body {
     line-height: 1.8em;
     padding: 20px;
     font-size: 18px;
+=======
+.form-content {
+    padding: 20px
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
 }
 
 .blockquote-item {
@@ -3595,12 +3617,19 @@ body {
 .bread-bg-10 {
     background-image: url(../images/bread-bg9.jpg)
 }
+<<<<<<< HEAD
 .bread-bg-11 {
     background-image: url(../flags/4x3/cotact.svg)
 }
 .bread-svg {
     position: absolute;
     bottom  : -2px;
+=======
+
+.bread-svg {
+    position: absolute;
+    bottom  : 0;
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
     left    : 0;
     width   : 100%;
     height  : 30px;
@@ -5228,6 +5257,11 @@ body {
 }
 
 .author-content .author-img {
+<<<<<<< HEAD
+=======
+    width                : 64px;
+    height               : 64px;
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
     -webkit-border-radius: 50%;
     -moz-border-radius   : 50%;
     border-radius        : 50%;
@@ -5624,10 +5658,13 @@ body {
     transform        : translateY(-3px)
 }
 
+<<<<<<< HEAD
 .no-hover:hover{
     transform: inherit;
 }
 
+=======
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
 .destination-card {
     position: relative;
     overflow: hidden
@@ -10056,7 +10093,11 @@ body {
 }
 
 .dashboard--bread {
+<<<<<<< HEAD
     padding-bottom: 60px
+=======
+    padding-bottom: 95px
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
 }
 
 .dashboard-bread-2 {
@@ -10249,6 +10290,22 @@ body {
     position      : relative
 }
 
+<<<<<<< HEAD
+=======
+@media only screen and (min-width:480px) and (max-width:767px) {
+    .comment {
+        text-align: center;
+        display   : block
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:479px) {
+    .comment {
+        text-align: center;
+        display   : block
+    }
+}
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
 
 .comment-avatar .avatar__img {
     width                : 90px;

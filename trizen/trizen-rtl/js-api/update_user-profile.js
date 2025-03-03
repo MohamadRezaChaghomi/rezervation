@@ -150,6 +150,7 @@ window.addEventListener('DOMContentLoaded', () => {
     })
     .then(response => response.json())
     .then(data => {
+<<<<<<< HEAD
 
         const firstName_lastName = localStorage.getItem('firstName_lastName');
 
@@ -165,6 +166,8 @@ window.addEventListener('DOMContentLoaded', () => {
     `;
         
 
+=======
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
         if (data.first_name) {
             updateName.value = data.first_name;
             updateFamily.value = data.last_name;
@@ -175,6 +178,26 @@ window.addEventListener('DOMContentLoaded', () => {
             updateEmergencyPhone.value = data.emergency_phone.phone;
 
             updateGender.dispatchEvent(new Event("change"));
+<<<<<<< HEAD
+=======
+
+            const firstName_lastName = localStorage.getItem('firstName_lastName');
+
+            let navNameOfUser = $.getElementById('navNameOfUser');
+        
+            if (firstName_lastName) {
+                navNameOfUser.innerText = firstName_lastName;
+            }else{
+                navNameOfUser.innerText = "کاربر";
+            }
+            
+            let sidebarNameOfUser = $.getElementById('sidebarNameOfUser');
+            if (firstName_lastName) {
+                sidebarNameOfUser.innerText = firstName_lastName;
+            }else{
+                sidebarNameOfUser.innerText = "کاربر";
+            }
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
         }
         else{
             updateName.value = "";
@@ -184,12 +207,33 @@ window.addEventListener('DOMContentLoaded', () => {
             updateBirthDate.value = "";
             updateEmergencyName.value = "";
             updateEmergencyPhone.value = "";
+<<<<<<< HEAD
+=======
+            
+            const firstName_lastName = localStorage.getItem('firstName_lastName');
+
+            let navNameOfUser = $.getElementById('navNameOfUser');
+        
+            if (firstName_lastName) {
+                navNameOfUser.innerText = firstName_lastName;
+            }else{
+                navNameOfUser.innerText = "کاربر";
+            }
+            
+            let sidebarNameOfUser = $.getElementById('sidebarNameOfUser');
+            if (firstName_lastName) {
+                sidebarNameOfUser.innerText = firstName_lastName;
+            }else{
+                sidebarNameOfUser.innerText = "کاربر";
+            }
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
         }
     })
     .catch(error => {
         console.error('خطا در دریافت اطلاعات کاربر:', error);
     });
 });
+<<<<<<< HEAD
 
 
 
@@ -263,3 +307,5 @@ togglePasswordVisibility.addEventListener('change', function () {
         }
     });
 });
+=======
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455

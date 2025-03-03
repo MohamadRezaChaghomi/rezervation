@@ -17,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const firstName_lastName = localStorage.getItem('firstName_lastName');
 
+<<<<<<< HEAD
     let navNameOfUser = document.getElementById('navNameOfUser');
     let sidebarNameOfUser = document.getElementById('sidebarNameOfUser');
     
@@ -27,6 +28,21 @@ window.addEventListener('DOMContentLoaded', () => {
         ${firstName_lastName}
     </span>
 `;
+=======
+    let navNameOfUser = $.getElementById('navNameOfUser');
+    if (firstName_lastName) {
+        navNameOfUser.innerText = firstName_lastName;
+    }else{
+        navNameOfUser.innerText = "کاربر";
+    }
+    
+    let sidebarNameOfUser = $.getElementById('sidebarNameOfUser');
+    if (firstName_lastName) {
+        sidebarNameOfUser.innerText = firstName_lastName;
+    }else{
+        sidebarNameOfUser.innerText = "کاربر";
+    }
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
     
     if (!token) {
         console.error("توکن یافت نشد، لطفاً وارد شوید.");

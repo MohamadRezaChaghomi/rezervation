@@ -38,6 +38,10 @@ function getAllTourist(){
     dashboardAreaHasTouristSection.classList.add('d-none')
     dashboardAreaNoTouristSection.classList.add('d-none')
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
     if (!token) {
         console.error("توکن یافت نشد، لطفاً وارد شوید.");
         window.location.href = "index.html";
@@ -57,14 +61,22 @@ function getAllTourist(){
     .then(response => response.json())
     .then(data => {
         if (data && Array.isArray(data.data) && data.data.length > 0) {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
             pTagLoading.classList.add('d-none')
             dashboardAreaHasTouristSection.classList.add('d-block')
 
             let counter = 1
             dashboardAreaHasTourist.innerHTML = ''
+<<<<<<< HEAD
             data.data.forEach(user => {
 
+=======
+
+            data.data.forEach(user => {
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
 
                 let gender = "";
 
@@ -113,9 +125,14 @@ function getAllTourist(){
                     counter++
                 })
         } else {
+<<<<<<< HEAD
             pTagLoading.parentElement.classList.add("mt-0");
             pTagLoading.classList.add('d-none')
             dashboardAreaHasTouristSection.classList.remove('d-block')
+=======
+            pTagLoading.classList.add('d-none')
+            dashboardAreaHasTouristSection.classList.remove("d-block")
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
             dashboardAreaNoTouristSection.classList.add('d-block')
             pTagAboutTourist.textContent = "لیست گردشگران خالی است"
 

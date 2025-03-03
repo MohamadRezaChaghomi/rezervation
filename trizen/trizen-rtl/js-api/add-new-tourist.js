@@ -5,7 +5,10 @@ let nationalCode = $.getElementById('nationalCode')
 let gender = $.getElementById('gender')
 let BirthDate = $.getElementById('updateBirthDate')
 let submitNewTourist = $.getElementById('submitNewTourist')
+<<<<<<< HEAD
 let newTouristModal = $.getElementById('newTouristModal')
+=======
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
 
 
 function createErrorSpan(element, message) {
@@ -109,6 +112,7 @@ submitNewTourist.addEventListener("click", () => {
         })
         .then(response => response.json())
         .then(data => {
+<<<<<<< HEAD
             if(data.message === "گردشگر با موفقیت ثبت شد"){
 
                 newTouristModal.classList.remove('show');
@@ -131,6 +135,12 @@ submitNewTourist.addEventListener("click", () => {
                     window.location.reload();
                 });
             }
+=======
+            console.log(userData);
+            console.log(data);
+            console.log(token);
+            // window.location.href = "user-no-tourist.html";
+>>>>>>> 0e212a1d3f23be4a15b559431705a304661e8455
         });
     })
     .catch(error => {
