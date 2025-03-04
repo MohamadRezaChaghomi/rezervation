@@ -1,0 +1,307 @@
+/* product css */
+
+/*end products css*/
+
+
+  /* faq section */
+
+#faqs-container {
+    display: flex;
+    flex-direction: column;
+    /* نمایش آیتم‌ها به‌صورت ستونی */
+    gap: 15px;
+    /* فاصله بین آیتم‌ها */
+}
+
+.faq-card {
+    width: 100%;
+    /* کارت‌ها به عرض کل صفحه باشند */
+}
+
+.faq-card {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.faq-question {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.faq-question:hover {
+    color: #007bff;
+}
+
+
+.faq-answer {
+    font-size: 16px;
+    color: #444;
+    margin-top: 5px;
+    padding-left: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+/* end faq section */
+
+#discount-products {
+    padding: 60px;
+    background-color: #1662AD;
+}
+
+#marina-suggestions {
+    padding: 60px;
+}
+
+@media (max-width: 768px) {
+    #products-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* کارت‌ها در وسط */
+    }
+
+    .product-card {
+        margin-bottom: 20px;
+        /* فاصله بین کارت‌ها */
+        width: 100%;
+        /* کارت‌ها تمام عرض موبایل شوند */
+        max-width: 350px;
+        /* حداکثر عرض کارت‌ها */
+    }
+}
+
+body {
+    overflow-x: hidden;
+    /* جلوگیری از اسکرول افقی */
+}
+
+/* modal css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.modal-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #2473C0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.modal-message {
+    font-size: 16px;
+    color: #333;
+}
+
+.d-none {
+    display: none;
+}
+
+/* end modal css */
+
+/* blog single css */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.blog-content {
+    display: flex;
+    gap: 180px;
+    justify-content: center;
+}
+
+.blog-image img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.blog-details {
+   max-width:1000px;
+    text-align: right;
+}
+
+#blogTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00000F;
+}
+
+#blogMeta {
+    color: gray;
+    font-size: 14px;
+}
+
+#blogContent {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* 📌 حالت ریسپانسیو برای نمایش در موبایل (کوچکتر از 768px) */
+@media screen and (max-width: 768px) {
+    .blog-content {
+        flex-direction: column; /* تبدیل به چیدمان عمودی */
+        align-items: center;
+        text-align: right;
+    }
+
+    .blog-details {
+        width: 100%;
+    }
+
+    #blogTitle {
+        font-size: 22px;
+    }
+
+    #blogContent {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+
+/* 📌 حالت ریسپانسیو برای نمایش در تبلت (بین 768px تا 1024px) */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+    }
+
+    .blog-content {
+        gap: 15px;
+    }
+
+    .blog-details {
+        width: 60%;
+    }
+}
+ /* end blog single css */
+
+ .custom-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* نیمه شفاف */
+    z-index: 9998; /* بین دو مدال قرار می‌گیرد */
+}
+
+/* start rules page css   */
+
+
+#rules-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 100%;
+    margin: 50px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s ease-out;
+}
+
+/* انیمیشن Fade In برای ظاهر شدن */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* استایل عنوان */
+#rules-container h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #2c3e50 ;
+    margin-bottom: 30px;
+    text-align: right;
+    border-bottom: 2px solid #3498db  ;
+    padding-bottom: 10px;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+/* استایل برای هر قانون */
+#rules-container .rule-item {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    position: relative;
+}
+
+/* علامت‌گذاری قوانین با یک نقطه جذاب */
+#rules-container .rule-item:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3498db;
+    font-size: 1.5rem;
+}
+
+/* استایل زمانی که قوانین در حال بارگذاری هستند */
+#rules-container h3.loading {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #7f8c8d;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* استایل زمانی که خطا رخ دهد */
+#rules-container p.error {
+    color: #e74c3c;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* افکت hover روی کانتینر */
+#rules-container:hover {
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+/* استایل برای صفحات موبایل */
+@media (max-width: 768px) {
+    #rules-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    #rules-container h3 {
+        font-size: 1.4rem;
+    }
+
+    #rules-container .rule-item {
+        font-size: 1rem;
+    }
+}
+
+
+/* end rules page css */
