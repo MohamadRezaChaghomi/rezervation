@@ -331,8 +331,505 @@
 ================================= -->
 <section class="card-area section--padding">
     <div class="container">
-       
         <div class="row">
+            <div class="col-lg-12">
+                <div class="filter-wrap margin-bottom-30px">
+                    <div class="filter-top d-flex align-items-center justify-content-between pb-4">
+                        <div>
+                            <h3 class="title font-size-24">44 خودرو پیدا شد</h3>
+                            <p class="font-size-14"><span class="mr-1 pt-1">با اطمینان رزرو کن :  </span> بدون هزینه رزرو خودرو </p>
+                        </div>
+                        <div class="layout-view d-flex align-items-center">
+                            <a href="car-grid.html" data-toggle="tooltip" data-placement="top" title="نمای گرید"><i class="la la-th-large"></i></a>
+                            <a href="car-list.html" data-toggle="tooltip" data-placement="top" title="نمای لیست" class="active"><i class="la la-th-list"></i></a>
+                        </div>
+                    </div><!-- end filter-top -->
+                    <div class="filter-bar d-flex align-items-center justify-content-between">
+                        <div class="filter-bar-filter d-flex flex-wrap align-items-center">
+                            <div class="filter-option">
+                                <h3 class="title font-size-16">فیلتر بر اساس :</h3>
+                            </div>
+                            <div class="filter-option">
+                                <div class="dropdown dropdown-contain">
+                                    <a class="dropdown-toggle dropdown-btn dropdown--btn" href="#" role="button" data-toggle="dropdown">
+                                        قیمت
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-wrap">
+                                        <div class="dropdown-item">
+                                            <div class="slider-range-wrap">
+                                                <div class="price-slider-amount padding-bottom-20px">
+                                                    <label for="amount" class="filter__label">قیمت :</label>
+                                                    <input type="text" id="amount" class="amounts">
+                                                </div><!-- end price-slider-amount -->
+                                                <div id="slider-range"></div><!-- end slider-range -->
+                                            </div><!-- end slider-range-wrap -->
+                                            <div class="btn-box pt-4">
+                                                <button class="theme-btn theme-btn-small theme-btn-transparent" type="button">اعمال </button>
+                                            </div>
+                                        </div><!-- end dropdown-item -->
+                                    </div><!-- end dropdown-menu -->
+                                </div><!-- end dropdown -->
+                            </div>
+                            <div class="filter-option">
+                                <div class="dropdown dropdown-contain">
+                                    <a class="dropdown-toggle dropdown-btn dropdown--btn" href="#" role="button" data-toggle="dropdown">
+                                       رتبه 
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-wrap">
+                                        <div class="dropdown-item">
+                                            <div class="checkbox-wrap">
+                                                <div class="custom-checkbox">
+                                                    <input type="checkbox" id="r1">
+                                                    <label for="r1">
+                                                        <span class="ratings d-flex align-items-center">
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <span class="color-text-3 font-size-13 ml-1">(55.590)</span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="custom-checkbox">
+                                                    <input type="checkbox" id="r2">
+                                                    <label for="r2">
+                                                        <span class="ratings d-flex align-items-center">
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star-o"></i>
+                                                            <span class="color-text-3 font-size-13 ml-1">(40.590)</span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="custom-checkbox">
+                                                    <input type="checkbox" id="r3">
+                                                    <label for="r3">
+                                                        <span class="ratings d-flex align-items-center">
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star-o"></i>
+                                                            <i class="la la-star-o"></i>
+                                                            <span class="color-text-3 font-size-13 ml-1">(23.590)</span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="custom-checkbox">
+                                                    <input type="checkbox" id="r4">
+                                                    <label for="r4">
+                                                        <span class="ratings d-flex align-items-center">
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star-o"></i>
+                                                            <i class="la la-star-o"></i>
+                                                            <i class="la la-star-o"></i>
+                                                            <span class="color-text-3 font-size-13 ml-1">(12.590)</span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="custom-checkbox">
+                                                    <input type="checkbox" id="r5">
+                                                    <label for="r5">
+                                                        <span class="ratings d-flex align-items-center">
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star-o"></i>
+                                                            <i class="la la-star-o"></i>
+                                                            <i class="la la-star-o"></i>
+                                                            <i class="la la-star-o"></i>
+                                                            <span class="color-text-3 font-size-13 ml-1">(590)</span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div><!-- end dropdown-item -->
+                                    </div><!-- end dropdown-menu -->
+                                </div><!-- end dropdown -->
+                            </div>
+                            <div class="filter-option">
+                                <div class="dropdown dropdown-contain">
+                                    <a class="dropdown-toggle dropdown-btn dropdown--btn" href="#" role="button" data-toggle="dropdown">
+                                       دسته بندی ها
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-wrap">
+                                        <div class="dropdown-item">
+                                            <div class="checkbox-wrap">
+                                                <div class="custom-checkbox">
+                                                    <input type="checkbox" id="catChb1">
+                                                    <label for="catChb1">کانورتیبل</label>
+                                                </div>
+                                                <div class="custom-checkbox">
+                                                    <input type="checkbox" id="catChb2">
+                                                    <label for="catChb2">کوپه</label>
+                                                </div>
+                                                <div class="custom-checkbox">
+                                                    <input type="checkbox" id="catChb3">
+                                                    <label for="catChb3">مینی ون</label>
+                                                </div>
+                                                <div class="custom-checkbox">
+                                                    <input type="checkbox" id="catChb4">
+                                                    <label for="catChb4">سدان</label>
+                                                </div>
+                                                <div class="custom-checkbox">
+                                                    <input type="checkbox" id="catChb5">
+                                                    <label for="catChb5">SUV یا شاسی بلند</label>
+                                                </div>
+                                                <div class="custom-checkbox">
+                                                    <input type="checkbox" id="catChb6">
+                                                    <label for="catChb6">کامیون</label>
+                                                </div>
+                                                <div class="custom-checkbox">
+                                                    <input type="checkbox" id="catChb7">
+                                                    <label for="catChb7">واگن</label>
+                                                </div>
+                                                <div class="custom-checkbox">
+                                                    <input type="checkbox" id="catChb8">
+                                                    <label for="catChb8">کامپکت الیت</label>
+                                                </div>
+                                            </div>
+                                        </div><!-- end dropdown-item -->
+                                    </div><!-- end dropdown-menu -->
+                                </div><!-- end dropdown -->
+                            </div>
+                        </div><!-- end filter-bar-filter -->
+                        <div class="select-contain">
+                            <select class="select-contain-select">
+                                <option value="1">مرتب سازی پیشفرض</option>
+                                <option value="2">جدیدترین ها</option>
+                                <option value="3">محبوب ترین ها</option>
+                                <option value="4">ارزان ترین</option>
+                                <option value="5">گران ترین</option>
+                                <option value="6">الف تا ی</option>
+                            </select>
+                        </div><!-- end select-contain -->
+                    </div><!-- end filter-bar -->
+                </div><!-- end filter-wrap -->
+            </div><!-- end col-lg-12 -->
+        </div><!-- end row -->
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="sidebar mt-0">
+                    <div class="sidebar-widget">
+                        <h3 class="title stroke-shape">جستجوی خودرو</h3>
+                        <div class="sidebar-widget-item">
+                            <div class="contact-form-action">
+                                <form action="#">
+                                    <div class="input-box">
+                                        <label class="label-text">محل تحویل</label>
+                                        <div class="form-group">
+                                            <span class="la la-map-marker form-icon"></span>
+                                            <input class="form-control" type="text" placeholder="مکان ، شهر یا منطقه">
+                                        </div>
+                                    </div>
+                                    <div class="input-box">
+                                        <label class="label-text">محل برگشت</label>
+                                        <div class="form-group">
+                                            <span class="la la-map-marker form-icon"></span>
+                                            <input class="form-control" type="text" placeholder="مکان ، شهر یا منطقه">
+                                        </div>
+                                    </div>
+                                    <div class="input-box">
+                                        <label class="label-text">تاریخ تحویل</label>
+                                        <div class="form-group">
+                                            <span class="la la-calendar form-icon"></span>
+                                            <input class="date-range form-control" type="text" name="daterange-single" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="input-box">
+                                        <label class="label-text">ساعت تحویل</label>
+                                        <div class="form-group">
+                                            <div class="select-contain w-auto">
+                                                <select class="select-contain-select">
+                                                    <option value="1200AM">12:00صبح</option>
+                                                    <option value="1230AM">12:30صبح</option>
+                                                    <option value="0100AM">1:00صبح</option>
+                                                    <option value="0130AM">1:30صبح</option>
+                                                    <option value="0200AM">2:00صبح</option>
+                                                    <option value="0230AM">2:30صبح</option>
+                                                    <option value="0300AM">3:00صبح</option>
+                                                    <option value="0330AM">3:30صبح</option>
+                                                    <option value="0400AM">4:00صبح</option>
+                                                    <option value="0430AM">4:30صبح</option>
+                                                    <option value="0500AM">5:00صبح</option>
+                                                    <option value="0530AM">5:30صبح</option>
+                                                    <option value="0600AM">6:00صبح</option>
+                                                    <option value="0630AM">6:30صبح</option>
+                                                    <option value="0700AM">7:00صبح</option>
+                                                    <option value="0730AM">7:30صبح</option>
+                                                    <option value="0800AM">8:00صبح</option>
+                                                    <option value="0830AM">8:30صبح</option>
+                                                    <option value="0900AM" selected>9:00صبح</option>
+                                                    <option value="0930AM">9:30صبح</option>
+                                                    <option value="1000AM">10:00صبح</option>
+                                                    <option value="1030AM">10:30صبح</option>
+                                                    <option value="1100AM">11:00صبح</option>
+                                                    <option value="1130AM">11:30صبح</option>
+                                                    <option value="1200PM">12:00عصر</option>
+                                                    <option value="1230PM">12:30عصر</option>
+                                                    <option value="0100PM">1:00عصر</option>
+                                                    <option value="0130PM">1:30عصر</option>
+                                                    <option value="0200PM">2:00عصر</option>
+                                                    <option value="0230PM">2:30عصر</option>
+                                                    <option value="0300PM">3:00عصر</option>
+                                                    <option value="0330PM">3:30عصر</option>
+                                                    <option value="0400PM">4:00عصر</option>
+                                                    <option value="0430PM">4:30عصر</option>
+                                                    <option value="0500PM">5:00عصر</option>
+                                                    <option value="0530PM">5:30عصر</option>
+                                                    <option value="0600PM">6:00عصر</option>
+                                                    <option value="0630PM">6:30عصر</option>
+                                                    <option value="0700PM">7:00عصر</option>
+                                                    <option value="0730PM">7:30عصر</option>
+                                                    <option value="0800PM">8:00عصر</option>
+                                                    <option value="0830PM">8:30عصر</option>
+                                                    <option value="0900PM">9:00عصر</option>
+                                                    <option value="0930PM">9:30عصر</option>
+                                                    <option value="1000PM">10:00عصر</option>
+                                                    <option value="1030PM">10:30عصر</option>
+                                                    <option value="1100PM">11:00عصر</option>
+                                                    <option value="1130PM">11:30عصر</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-box">
+                                        <label class="label-text">تاریخ برگشت</label>
+                                        <div class="form-group">
+                                            <span class="la la-calendar form-icon"></span>
+                                            <input class="date-range form-control" type="text" name="daterange-single" readonly>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div><!-- end sidebar-widget-item -->
+                        <div class="main-search-input-item">
+                            <div class="contact-form-action">
+                                <form action="#">
+                                    <div class="input-box">
+                                        <label class="label-text">تحویل برگشت</label>
+                                        <div class="form-group">
+                                            <div class="select-contain w-auto">
+                                                <select class="select-contain-select">
+                                                    <option value="1200AM">12:00صبح</option>
+                                                    <option value="1230AM">12:30صبح</option>
+                                                    <option value="0100AM">1:00صبح</option>
+                                                    <option value="0130AM">1:30صبح</option>
+                                                    <option value="0200AM">2:00صبح</option>
+                                                    <option value="0230AM">2:30صبح</option>
+                                                    <option value="0300AM">3:00صبح</option>
+                                                    <option value="0330AM">3:30صبح</option>
+                                                    <option value="0400AM">4:00صبح</option>
+                                                    <option value="0430AM">4:30صبح</option>
+                                                    <option value="0500AM">5:00صبح</option>
+                                                    <option value="0530AM">5:30صبح</option>
+                                                    <option value="0600AM">6:00صبح</option>
+                                                    <option value="0630AM">6:30صبح</option>
+                                                    <option value="0700AM">7:00صبح</option>
+                                                    <option value="0730AM">7:30صبح</option>
+                                                    <option value="0800AM">8:00صبح</option>
+                                                    <option value="0830AM">8:30صبح</option>
+                                                    <option value="0900AM" selected>9:00صبح</option>
+                                                    <option value="0930AM">9:30صبح</option>
+                                                    <option value="1000AM">10:00صبح</option>
+                                                    <option value="1030AM">10:30صبح</option>
+                                                    <option value="1100AM">11:00صبح</option>
+                                                    <option value="1130AM">11:30صبح</option>
+                                                    <option value="1200PM">12:00</option>
+                                                    <option value="1230PM">12:30عصر</option>
+                                                    <option value="0100PM">1:00عصر</option>
+                                                    <option value="0130PM">1:30عصر</option>
+                                                    <option value="0200PM">2:00عصر</option>
+                                                    <option value="0230PM">2:30عصر</option>
+                                                    <option value="0300PM">3:00عصر</option>
+                                                    <option value="0330PM">3:30عصر</option>
+                                                    <option value="0400PM">4:00عصر</option>
+                                                    <option value="0430PM">4:30عصر</option>
+                                                    <option value="0500PM">5:00عصر</option>
+                                                    <option value="0530PM">5:30عصر</option>
+                                                    <option value="0600PM">6:00عصر</option>
+                                                    <option value="0630PM">6:30عصر</option>
+                                                    <option value="0700PM">7:00عصر</option>
+                                                    <option value="0730PM">7:30عصر</option>
+                                                    <option value="0800PM">8:00عصر</option>
+                                                    <option value="0830PM">8:30عصر</option>
+                                                    <option value="0900PM">9:00عصر</option>
+                                                    <option value="0930PM">9:30عصر</option>
+                                                    <option value="1000PM">10:00عصر</option>
+                                                    <option value="1030PM">10:30عصر</option>
+                                                    <option value="1100PM">11:00عصر</option>
+                                                    <option value="1130PM">11:30عصر</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn-box pt-2">
+                                        <a href="car-search-result.html" class="theme-btn">جستجو</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div><!-- end main-search-input-item -->
+                    </div><!-- end sidebar-widget -->
+                    <div class="sidebar-widget">
+                        <h3 class="title stroke-shape">فیلتر بر اساس قیمت</h3>
+                        <div class="sidebar-price-range">
+                            <div class="slider-range-wrap">
+                                <div class="price-slider-amount padding-bottom-20px">
+                                    <label for="amount2" class="filter__label">قیمت :</label>
+                                    <input type="text" id="amount2" class="amounts">
+                                </div><!-- end price-slider-amount -->
+                                <div id="slider-range2"></div><!-- end slider-range -->
+                            </div><!-- end slider-range-wrap -->
+                            <div class="btn-box pt-4">
+                                <button class="theme-btn theme-btn-small theme-btn-transparent" type="button">اعمال </button>
+                            </div>
+                        </div>
+                    </div><!-- end sidebar-widget -->
+                    <div class="sidebar-widget">
+                        <h3 class="title stroke-shape">جمع بندی نظرات</h3>
+                        <div class="sidebar-category">
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="r6">
+                                <label for="r6">عالی</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="r7">
+                                <label for="r7">خیلی خوب</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="r8">
+                                <label for="r8">متوسط</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="r9">
+                                <label for="r9">ضعیف</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="r10">
+                                <label for="r10">خیلی ضعیف</label>
+                            </div>
+                        </div>
+                    </div><!-- end sidebar-widget -->
+                    <div class="sidebar-widget">
+                        <h3 class="title stroke-shape">فیلتر بر اساس رتبه بندی</h3>
+                        <div class="sidebar-review">
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="s1">
+                                <label for="s1">
+                                    <span class="ratings d-flex align-items-center">
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star"></i>
+                                        <span class="color-text-3 font-size-13 ml-1">(55.590)</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="s2">
+                                <label for="s2">
+                                    <span class="ratings d-flex align-items-center">
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star-o"></i>
+                                        <span class="color-text-3 font-size-13 ml-1">(40.590)</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="s3">
+                                <label for="s3">
+                                    <span class="ratings d-flex align-items-center">
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star-o"></i>
+                                        <i class="la la-star-o"></i>
+                                        <span class="color-text-3 font-size-13 ml-1">(23.590)</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="s4">
+                                <label for="s4">
+                                    <span class="ratings d-flex align-items-center">
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star-o"></i>
+                                        <i class="la la-star-o"></i>
+                                        <i class="la la-star-o"></i>
+                                        <span class="color-text-3 font-size-13 ml-1">(12.590)</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="custom-checkbox mb-0">
+                                <input type="checkbox" id="s5">
+                                <label for="s5">
+                                    <span class="ratings d-flex align-items-center">
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star-o"></i>
+                                        <i class="la la-star-o"></i>
+                                        <i class="la la-star-o"></i>
+                                        <i class="la la-star-o"></i>
+                                        <span class="color-text-3 font-size-13 ml-1">(590)</span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div><!-- end sidebar-widget -->
+                    <div class="sidebar-widget">
+                        <h3 class="title stroke-shape">دسته بندی ها</h3>
+                        <div class="sidebar-category">
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="cat1">
+                                <label for="cat1">کانورتیبل <span class="font-size-13 ml-1">(1809)</span></label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="cat2">
+                                <label for="cat2">کوپه <span class="font-size-13 ml-1">(809)</span></label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="cat3">
+                                <label for="cat3">هاچ بک <span class="font-size-13 ml-1">(504)</span></label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="cat4">
+                                <label for="cat4">مینی ون <span class="font-size-13 ml-1">(401)</span></label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="cat5">
+                                <label for="cat5">سدان<span class="font-size-13 ml-1">(277)</span></label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="cat6">
+                                <label for="cat6">SUV یا شاسی بلند <span class="font-size-13 ml-1">(87)</span></label>
+                            </div>
+                            <div class="collapse" id="categoryMenu">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="cat7">
+                                    <label for="cat7">کامیون <span class="font-size-13 ml-1">(100)</span></label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="cat8">
+                                    <label for="cat8">وانت پیکاپ <span class="font-size-13 ml-1">(58)</span></label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="cat9">
+                                    <label for="cat9">کامپکت الیت <span class="font-size-13 ml-1">(33)</span></label>
+                                </div>
+                            </div><!-- end collapse -->
+                            <a class="btn-text" data-toggle="collapse" href="#categoryMenu" role="button" aria-expanded="false" aria-controls="categoryMenu">
+                                <span class="show-more"> نمایش بیشتر <i class="la la-angle-down"></i></span>
+                                <span class="show-less">نمایش کمتر <i class="la la-angle-up"></i></span>
+                            </a>
+                        </div>
+                    </div><!-- end sidebar-widget -->
+                </div><!-- end sidebar -->
+            </div><!-- end col-lg-4 -->
             <div class="col-lg-8">
                 <div class="card-item card-item-list car-card">
                     <div class="card-img padding-top-50px">
@@ -968,6 +1465,5 @@
 <script src="js/jquery.filer.min.js"></script>
 <script src="js/jquery.ripples-min.js"></script>
 <script src="js/main-rtl.js"></script>
-<script src="js/blogs.js"></script>
 </body>
 </html>

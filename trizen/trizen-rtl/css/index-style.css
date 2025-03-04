@@ -1,0 +1,208 @@
+body{
+    overflow-x: hidden;
+}
+p {
+font-size: 18px;
+line-height: 2.4rem;
+}
+.promo-text {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: #ffffff;
+min-width:190px;
+}
+
+.promo-text h2 {
+font-size: 28px;
+margin-bottom: 10px;
+}
+
+.promo-text p {
+font-size: 1rem;
+color: #f1f1f1;
+}
+.imagePromo{
+width: 200px;
+}
+
+/* بخش محصولات */
+.products-wrapper {
+flex: 1; /* عرض محصولات */
+position: relative;
+overflow: hidden; /* جلوگیری از اسکرول افقی */
+padding-bottom: 20px; /* فاصله برای اسکرول */
+}
+
+.products-container {
+display: flex; /* نمایش محصولات در یک خط */
+gap: 20px; /* فاصله بین محصولات */
+overflow-x: auto; /* اسکرول افقی */
+scroll-behavior: smooth; /* اسکرول نرم */
+-ms-overflow-style: none; /* مخفی کردن اسکرول بار در IE و Edge */
+scrollbar-width: none; /* مخفی کردن اسکرول بار در Firefox */
+}
+
+/* مخفی کردن اسکرول بار در مرورگرهای Webkit (Chrome, Safari) */
+.products-container::-webkit-scrollbar {
+display: none;
+}
+
+/* استایل دکمه‌های اسکرول */
+.scroll-btn {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background-color: #fff;
+border: none;
+padding: 10px;
+border-radius: 50%;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 1;
+}
+
+.scroll-btn:focus {
+outline: none;
+border: none;
+}
+
+.scroll-btn.left {
+left: 10px; /* دکمه اسکرول به چپ */
+}
+
+.scroll-btn.right {
+right: 10px; /* دکمه اسکرول به راست */
+}
+
+.scroll-btn i {
+font-size: 24px;
+color: #2255d7;
+}
+
+/* استایل کارت محصول */
+.product-card {
+background: #fff;
+border-radius: 15px;
+box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.12);
+text-align: center;
+transition: all 0.3s ease;
+position: relative;
+width: 200px;
+height: 300px;
+padding-bottom:30px;
+flex: 0 0 auto; /* جلوگیری از تغییر اندازه کارت */
+}
+
+/* استایل تصویر محصول */
+.product-image {
+width: 100%;
+height: 48%;
+object-fit: cover;
+border-radius: 18px;
+background-color: #ffffff;
+padding: 12px;
+}
+
+/* استایل عنوان محصول */
+.product-card h3 {
+font-size: 18px;
+font-weight: bold;
+margin: 10px 0;
+color: #333;
+}
+
+/* قیمت محصول */
+.product-card .product-price {
+font-size: 14px;
+font-weight: bold;
+color: #2255d7;
+}
+
+/* مدت زمان */
+.product-card .product-time {
+font-size: 14px;
+color: #777;
+}
+
+/* توضیحات محصول */
+.product-card .product-description {
+font-size: 14px;
+color: #666;
+}
+
+
+.image-fluid {
+width: 100%; /* عرض عکس‌ها را به 100% تنظیم می‌کند */
+height: auto; /* ارتفاع به صورت خودکار تنظیم می‌شود */
+}
+
+.equal-height-img {
+height: 200px; /* ارتفاع ثابت برای عکس‌ها */
+object-fit: cover; /* بدون تغییر نسبت ابعاد، فضای تعیین‌شده را پر کند */
+}
+
+
+
+@media (min-width: 992px) {
+.equal-height-img {
+    height: 200px; /* تنظیم ارتفاع عکس‌ها برای دسکتاپ */
+}
+}
+
+@media (max-width: 1200px) {
+.scroll-btn{
+    display: none;
+}    
+.reserve-now span {
+    font-size: 18px;
+}
+}
+
+@media (max-width: 767.98px) {
+.col-6 {
+    flex: 0 0 50%; /* در موبایل، هر عکس 50% عرض را اشغال کند */
+    max-width: 50%;
+}
+
+h1 {
+    font-size: 30px; /* کاهش اندازه فونت برای موبایل */
+}
+.reserve-now span {
+    font-size: 16px;
+}
+p {
+    font-size: 16px; /* کاهش اندازه فونت برای موبایل */
+    line-height: 1.8rem;
+}
+
+.equal-height-img {
+    height: 150px; /* کاهش ارتفاع عکس‌ها در موبایل */
+}
+.imagePromo{
+    width: 180px;
+}
+.promo-text h2 {
+    font-size: 20px;
+}
+.product-card{
+    width: 180px;
+}
+}
+
+@media (max-width: 567px) {
+.imagePromo{
+    width: 140px;
+}
+.promo-text h2 {
+    font-size: 18px;
+}
+.product-card{
+    width: 140px;
+}
+}
